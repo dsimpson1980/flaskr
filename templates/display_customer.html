@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+  <ul class=customer_meta_data>
+  <table class="table table-striped">
+    <tr><th>Name</th><th>Customer ID</th><th>Market</th></tr>
+        {% for customer in customer_meta_data %}
+        <tr>
+            <td>{{ customer.name }}</td>
+            <td>{{ customer.customer_id }}</td>
+            <td>{{ customer.market }}</td>
+        </tr>
+        {% endfor %}
+  </table>
+  </ul>
+  <ul class=customer_demand>
+  <table class="table table-striped">
+        <tr><th>Datetime UTC</th><th>Value</th></tr>
+        {% for demand_row in customer_demand %}
+            <tr>
+                <td>{{ demand_row.datetime_utc }}</td>
+                <td>{{ demand_row.value}}</td>
+            </tr>
+        {% else %}
+            <tr><td><em>No customer demand data</em></td></tr>
+        {% endfor %}
+  </table>
+  </ul>
+{% endblock %}
