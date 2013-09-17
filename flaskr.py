@@ -1,4 +1,6 @@
 # all the imports
+import pandas as pd
+import numpy as np
 import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
@@ -7,7 +9,7 @@ from contextlib import closing
 #Comment added on shiny thing
 
 # configuration
-DATABASE = '/Users/davesimpson/PycharmProjects/flaskr/flaskr.db'
+DATABASE = '/projects/pycharm/flaskr/flaskr.db'
 DEBUG = True
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
@@ -61,6 +63,7 @@ def display_customer(customer_id):
     customer_meta_data = [dict(customer_id=row[0], name=row[1], market=row[2]) for row in cur.fetchall()]
     cur = g.db.execute('SELECT datetime_utc, value FROM demand WHERE customer_id =' + str(customer_id))
     customer_demand = [dict(datetime_utc=row[0], value=row[1]) for row in cur.fetchall()]
+    demand = pd.TimeSeries()
     return render_template('display_customer.html', customer_demand=customer_demand, customer_meta_data=customer_meta_data)
 
 @app.route('/')
