@@ -17,7 +17,7 @@
         <tr><th>Datetime UTC</th><th>Value</th></tr>
         {% for demand_row in customer_demand %}
             <tr>
-                <td>{{ demand_row.datetime_utc }}</td>
+                <td>{{ demand_row.datetime }}</td>
                 <td>{{ demand_row.value}}</td>
             </tr>
         {% else %}
