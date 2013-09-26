@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b003cb3-928c-4059-b9d1-08dec71cd4c3" name="flaskr-4 Add method to chart and save image to string buffer" comment="Merged flask4 branch">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr.py" afterPath="$PROJECT_DIR$/flaskr.py" />
+    </list>
+    <ignored path="flaskr.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="flaskr" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="flaskr.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flaskr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="232" column="0" selection-start="7720" selection-end="7720" vertical-scroll-proportion="0.6232687" vertical-offset="3195" max-vertical-offset="3570">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Dave" />
+        <option value="dsimpson1980" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/README.rst" />
+        <option value="$PROJECT_DIR$/flaskr.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="694" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flaskr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flaskr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flaskr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="125" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="136" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/retail_schema.png" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="145" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="936" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="939" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="141" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="138" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FullScreen" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="tasks.servers" />
+    <property name="TODO_SCOPE" value="All" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task id="Default" summary="Default task">
+      <branch name="master" repository="$PROJECT_DIR$" />
+      <changelist id="" name="Default" comment="" />
+      <created>1380097697137</created>
+      <updated>1380164164954</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Changed README file">
+      <created>1380100400606</created>
+      <updated>1380100400606</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add charting to customer display page">
+      <created>1380101911602</created>
+      <updated>1380101940712</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added Datasource link, drivers and diagram uml">
+      <created>1380104735302</created>
+      <updated>1380104735302</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added missing ids file">
+      <created>1380104780183</created>
+      <updated>1380104780183</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added retail schema diagram as png">
+      <created>1380105143641</created>
+      <updated>1380105143641</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Check rendering of readme file on github">
+      <created>1380106774009</created>
+      <updated>1380106774009</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added image link in readme file">
+      <created>1380107147027</created>
+      <updated>1380107147027</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Forgot space between .. and figure">
+      <created>1380107293749</created>
+      <updated>1380107293749</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Changed readme extension to .rst">
+      <created>1380107356279</created>
+      <updated>1380107356279</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Tidied up the readme file a little">
+      <created>1380107498845</created>
+      <updated>1380107498845</updated>
+    </task>
+    <task id="flaskr-3" summary="Add field to customer table in db to contain demand image">
+      <branch name="master" repository="$PROJECT_DIR$" original="true" />
+      <branch name="flaskr-3" repository="$PROJECT_DIR$" />
+      <changelist id="" name="flaskr-3 Add field to customer table in db to contain demand image" comment="" />
+      <created>1380066748000</created>
+      <option name="issue" value="true" />
+      <option name="type" value="BUG" />
+      <updated>1380166125638</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added bytea column to customer">
+      <created>1380164215463</created>
+      <updated>1380164215463</updated>
+    </task>
+    <task active="true" id="flaskr-4" summary="Add method to chart and save image to string buffer">
+      <changelist id="2b003cb3-928c-4059-b9d1-08dec71cd4c3" name="flaskr-4 Add method to chart and save image to string buffer" comment="" />
+      <created>1380066765000</created>
+      <option name="issue" value="true" />
+      <option name="type" value="BUG" />
+      <updated>1380166125676</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added new method to encode demand image">
+      <created>1380166278089</created>
+      <updated>1380166278089</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Merged flask4 branch">
+      <created>1380167013617</created>
+      <updated>1380167013617</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <option name="clearContext" value="false" />
+    <option name="createBranch" value="false" />
+    <option name="closeIssue" value="false" />
+    <servers>
+      <GitHub shared="false" url="github.com">
+        <commitMessageFormat>{id} {summary}</commitMessageFormat>
+        <password>dfc9df9edfc6df99dfc4dfcedf9edfd8</password>
+        <token>dfcfdf9ddf9edf9adf9cdfcfdf93dfcbdf9edf9fdfc8df98df9cdf9adf98dfccdf98df99df98df9fdf9cdf93df9ddfc9df9cdf98dfcfdfc9dfcbdf9edfccdf9edf9cdf9cdfcbdfccdfccdf9fdfcfdf9a</token>
+        <option name="loginAnonymously" value="false" />
+        <option name="repoAuthor" value="dsimpson1980" />
+        <option name="repoName" value="flaskr" />
+        <option name="shouldFormatCommitMessage" value="false" />
+        <option name="useHttpAuthentication" value="true" />
+        <option name="useProxy" value="false" />
+        <option name="user" value="dsimpson1980" />
+        <username>dsimpson1980</username>
+      </GitHub>
+    </servers>
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1280" height="694" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4223706" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296875" sideWeight="0.67111856" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32888147" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.2857143" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3305509" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32888147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24921875" sideWeight="0.67111856" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Changed README file" />
+    <MESSAGE value="Added Datasource link, drivers and diagram uml" />
+    <MESSAGE value="Added missing ids file" />
+    <MESSAGE value="Added retail schema diagram as png" />
+    <MESSAGE value="Check rendering of readme file on github" />
+    <MESSAGE value="Added image link in readme file" />
+    <MESSAGE value="Forgot space between .. and figure" />
+    <MESSAGE value="Changed readme extension to .rst" />
+    <MESSAGE value="Tidied up the readme file a little" />
+    <MESSAGE value="Added bytea column to customer" />
+    <MESSAGE value="Added new method to encode demand image" />
+    <MESSAGE value="Merged flask4 branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merged flask4 branch" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/flaskr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="23" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2985">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/2f913edb-5ea1-4272-abb7-fb38329b63c1">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>2f913edb-5ea1-4272-abb7-fb38329b63c1</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="293.0" y="165.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/bde5bbea-1736-4b2b-921a-2b9778b4195a">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>bde5bbea-1736-4b2b-921a-2b9778b4195a</OriginalElement>
+          <nodes>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attrdef</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.referential_constraints</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.enabled_roles</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_seclabel</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attribute_relid_attnum_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.view_routine_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.check_constraints</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_sys_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_depend</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_language</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_user_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_settings</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.routines</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_timezone_abbrevs</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdescription_o_c_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shseclabel</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_table_relid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_pltemplate</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion_default_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.view_table_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_user_sequences</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_db_role_setting</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_inherits_relid_seqno_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_conname_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.attributes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rewrite</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.views</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.usage_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_depend_reference_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.domain_udt_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.domain_constraints</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_locks</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.administrable_role_authorizations</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_options</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject_metadata</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opclass</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_replication</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_aggregate_fnoid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_group</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_depend_depender_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries_ids_sequence</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop_opr_fam_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_index_indrelid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_views</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_matviews</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.user_defined_types</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_all_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_languages</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_sizing</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tablespace</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statistic</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_database_datname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.schemata</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.table_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_data_wrapper_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_namespace_nspname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_all_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_auth_members_role_member_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_domain_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_user_functions</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_event_trigger_evtname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mapping_user_server_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tablespace_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_udt_grants</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_user_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_all_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_server</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_authid</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_class_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.collations</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_description_o_c_o_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_database_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_am</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_servers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attribute_relid_attnam_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_data_wrapper_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_demand</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_roles</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_namespace</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sequences</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_sys_sequences</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attrdef_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.udt_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cast_source_target_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_template_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_collation_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_sizing_profiles</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_available_extension_versions</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_user_mappings</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_aggregate</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_dict_dictname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_table</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_type_typname_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_authid_rolname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mapping</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_conrelid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_column_grants</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_database</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdepend_depender_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rewrite_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_data_wrappers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_user_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_inherits</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdepend</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum_typid_label_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_features</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_authid_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amproc_fam_proc_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_sys_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.constraint_table_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_sys_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_table_options</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.table_constraints</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_sys_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.view_column_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_class_relname_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attrdef_adrelid_adnum_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_parser</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_default_acl_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_language_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_proc_proname_args_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_operator_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject_loid_pn_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_server_options</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdepend_reference_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rules</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_description</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_extension_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_event_trigger_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_extension_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mapping_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_ids_sequence</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_bgwriter</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.user_mapping_options</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opfamily</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_class</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opclass_am_name_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_user_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_user_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.data_type_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_data_wrappers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_proc</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_operator</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_template</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_range</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_language_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.routine_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.check_constraint_routine_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opclass_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_collation</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.user_mappings</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdescription</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tablespace_spcname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_parser_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_all_sequences</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_user_functions</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_table_columns</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shseclabel_object_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_all_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_implementation_info</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_type_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amproc_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.key_column_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_auth_members_member_role_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_proc_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_pltemplate_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_type</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_map</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_seclabel_object_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_cfgname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_data_wrapper_options</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_table_grants</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_collation_name_enc_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.markets</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger_tgrelid_tgname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_parts</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_inherits_parent_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stats</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mappings</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_timezone_names</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.domains</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_all_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_seclabels</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statistic_relid_att_inh_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_template_tmplname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.columns</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_default_acl_role_nsp_obj_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.collation_character_set_applicability</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cast_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_activity</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_available_extensions</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_auth_members</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_prepared_xacts</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_namespace_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_dict_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_udt_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_prepared_statements</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shadow</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_parser_prsname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.parameters</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_range_rngtypid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.character_sets</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opfamily_am_name_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_index_indexrelid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_dict</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_servers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop_fam_strat_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cast</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.information_schema_catalog_name</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_usage_grants</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_default_acl</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rewrite_rel_rulename_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_map_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_server_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_database</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_packages</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger_tgconstraint_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_extension</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_db_role_setting_databaseid_rol_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_server_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject_metadata_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_contypid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_operator_oprname_l_r_n_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cursors</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.element_types</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_am_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opfamily_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.constraint_column_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum_typid_sortorder_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_data_wrapper</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.applicable_roles</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion_name_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amproc</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_database_conflicts</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_sys_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_routine_grants</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_event_trigger</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_am_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.triggered_update_columns</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attribute</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.triggers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tables</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.055016722408026755" x="2852.0" y="1560.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/bde5bbea-1736-4b2b-921a-2b9778b4195a.schema:flaskr.retail">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>bde5bbea-1736-4b2b-921a-2b9778b4195a.schema:flaskr.retail</OriginalElement>
+          <nodes>
+            <node x="263.0" y="0.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_ids_sequence</node>
+            <node x="0.0" y="147.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customers</node>
+            <node x="0.0" y="458.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries_ids_sequence</node>
+            <node x="10.0" y="316.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_demand</node>
+            <node x="418.0" y="458.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries</node>
+            <node x="10.5" y="0.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.markets</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customers" target="bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.markets">
+              <point x="0.0" y="-59.5" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_demand" target="bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customers">
+              <point x="0.0" y="-48.5" />
+              <point x="0.0" y="59.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.4766483516483517" x="318.0" y="354.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dataSources.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="232" column="0" selection-start="7720" selection-end="7720" vertical-scroll-proportion="0.6232687" vertical-offset="3195" max-vertical-offset="3570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

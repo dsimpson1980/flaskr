@@ -231,5 +231,6 @@ def generate_customer_demand_image(demand):
     _historical_demand_image64 = base64.b64encode(buffer.getvalue())
     return _historical_demand_image64
 
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000)
