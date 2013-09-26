@@ -87,14 +87,23 @@ def add_customer():
     # add push to db demand table here
     # flash('New customer was successfully added')
     # return redirect(url_for('show_customers'))
-    customer_id = g.db.execute('''INSERT INTO retail.customers (name, market)
-                                  VALUES (%s, %s)
+    demand = generate_random_customer_data()
+    image64 = generate_customer_demand_image(demand)
+
+    customer_id = g.db.execute('''INSERT INTO retail.customers (name, market, image64)
+                                  VALUES (%s, %s, %s)
                                   RETURNING customer_id''',
-                               [request.form['name'], request.form['market']]).first()[0]
+                               [request.form['name'],
+                                request.form['market'],
+                                image64]).first()[0]
     # g.db.commit()
-    demand = generate_random_customer_data(customer_id)
+    ids = np.array(range(len(demand)))
+    ids.fill(customer_id)
+    demand_data = pd.DataFrame({'customer_id': ids,
+                                'datetime': demand.index,
+                                'value': demand.values})
     demand_buffer = StringIO()
-    demand.to_csv(demand_buffer, header=False, index=False)
+    demand_data.to_csv(demand_buffer, header=False, index=False)
     demand_buffer.seek(0)
     cur = engine.raw_connection().cursor()
     cur.copy_from(demand_buffer, 'retail.customer_demand', sep=',')
@@ -157,7 +166,7 @@ def logout():
 def hello_world():
     return 'Hello World!'
 
-def generate_random_customer_data(customer_id):
+def generate_random_customer_data():
     """Generates some random customer data
 
     Dependencies
@@ -169,8 +178,7 @@ def generate_random_customer_data(customer_id):
     Inputs
     ------
 
-    customer_id: int
-        The customer_id associated with the demand data
+    None
 
     Outputs
     -------
@@ -183,9 +191,7 @@ def generate_random_customer_data(customer_id):
     end_date = '30-Sep-13'
     dates = pd.date_range(start_date, end_date, freq='D')
     values = np.random.rand(len(dates))
-    ids = np.array(range(len(dates)))
-    ids.fill(customer_id)
-    demand = pd.DataFrame({'customer_id': ids, 'datetime': dates, 'value': values})
+    demand = pd.TimeSeries(values, dates)
     return demand
 
 def generate_customer_demand_image(demand):
@@ -193,12 +199,13 @@ def generate_customer_demand_image(demand):
 
     Dependencies
     ------------
-
-
+    matplotlib.pyplot
+    StringIO.StringIO
+    Base64
 
     Inputs
     ------
-    demand: pandas.DataFrame
+    demand: pandas.TimeSeries
         The historical demand for the customer
 
     Outputs
@@ -214,10 +221,9 @@ def generate_customer_demand_image(demand):
     import base64
 
     # Extract the timeseries part from the demand dataframe
-    _historical_demand = pd.TimeSeries(demand['value'], demand['datetime'])
 
     # Plot the historical demand
-    _historical_demand.plot()
+    demand.plot()
     plt.xlabel('date')
     plt.ylabel('demand (kwh')
     plt.title('Historical Demand')
