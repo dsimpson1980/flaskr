@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1582190834">
-    <data-source source="LOCAL" name="Data Source" product="PostgreSQL" version="9.3.0" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.2 JDBC4 (build 1002)" uuid="2f913edb-5ea1-4272-abb7-fb38329b63c1">
-      <identifier-quote-string>&quot;</identifier-quote-string>
+  <component name="DataSourceManagerImpl" format="xml" hash="2224014599">
+    <data-source source="LOCAL" name="Data Source" uuid="2f913edb-5ea1-4272-abb7-fb38329b63c1">
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/flaskr</jdbc-url>

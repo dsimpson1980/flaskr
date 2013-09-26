@@ -188,6 +188,48 @@ def generate_random_customer_data(customer_id):
     demand = pd.DataFrame({'customer_id': ids, 'datetime': dates, 'value': values})
     return demand
 
+def generate_customer_demand_image(demand):
+    """Creates a plot and saves it to a string buffer
+
+    Dependencies
+    ------------
+
+
+
+    Inputs
+    ------
+    demand: pandas.DataFrame
+        The historical demand for the customer
+
+    Outputs
+    -------
+
+    image64: StringIO
+        The string buffer containing the image plot
+
+
+    """
+    import matplotlib.pyplot as plt
+    from StringIO import StringIO
+    import base64
+
+    # Extract the timeseries part from the demand dataframe
+    _historical_demand = pd.TimeSeries(demand['value'], demand['datetime'])
+
+    # Plot the historical demand
+    _historical_demand.plot()
+    plt.xlabel('date')
+    plt.ylabel('demand (kwh')
+    plt.title('Historical Demand')
+    plt.grid(True)
+
+    # Store image in a string buffer and encode in base64
+    buffer = StringIO()
+    plt.savefig(buffer)
+    plt.close()
+    buffer.getvalue()
+    _historical_demand_image64 = base64.b64encode(buffer.getvalue())
+    return _historical_demand_image64
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000)
