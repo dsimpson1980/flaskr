@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="741398024">
-    <data-source source="LOCAL" name="Retail DB" product="PostgreSQL" version="9.3.0" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.2 JDBC4 (build 1002)" uuid="bde5bbea-1736-4b2b-921a-2b9778b4195a">
-      <identifier-quote-string>&quot;</identifier-quote-string>
+  <component name="DataSourceManagerImpl" format="xml" hash="107996626">
+    <data-source source="LOCAL" name="Retail DB" uuid="bde5bbea-1736-4b2b-921a-2b9778b4195a">
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/flaskr</jdbc-url>
