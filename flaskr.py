@@ -102,6 +102,7 @@ def add_customer():
     demand_data = pd.DataFrame({'customer_id': ids,
                                 'datetime': demand.index,
                                 'value': demand.values})
+
     demand_buffer = StringIO()
     demand_data.to_csv(demand_buffer, header=False, index=False)
     demand_buffer.seek(0)
@@ -117,10 +118,23 @@ def display_customer(customer_id):
     if not session.get('logged_in'):
         abort(401)
     # return 'customer_id = ' + str(customer_id)
-    cur = g.db.execute('SELECT customer_id, name, market FROM retail.customers WHERE customer_id = %s' % customer_id)
-    customer_meta_data = [dict(customer_id=row[0], name=row[1], market=row[2]) for row in cur.fetchall()]
+    cur = g.db.execute('SELECT customer_id, name, market, image64 FROM retail.customers WHERE customer_id = %s' % customer_id)
+    row = cur.fetchall()
+    customer_meta_data = dict(customer_id=row[0][0],
+                               name=row[0][1],
+                               market=row[0][2],
+                               image64=row[0][3])
     cur = g.db.execute('SELECT datetime, value FROM retail.customer_demand WHERE customer_id =' + str(customer_id))
-    customer_demand = [dict(datetime=row[0], value=row[1]) for row in cur.fetchall()]
+    recordset = cur.fetchall()
+    if recordset != []:
+        dates, values = zip(*recordset)
+        customer_demand = [dict(datetime=row[0], value=row[1]) for row in recordset]
+        if customer_meta_data['image64'] is None:
+            demand = pd.TimeSeries(values, dates)
+            image64 = generate_customer_demand_image(demand)
+            customer_meta_data['image64'] = image64
+    else:
+        customer_demand = []
     return render_template('display_customer.html', customer_demand=customer_demand, customer_meta_data=customer_meta_data)
 
 @app.route('/')
