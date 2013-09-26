@@ -447,7 +447,11 @@
       <created>1380167923096</created>
       <updated>1380167923096</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Merged flask4 branch">
+      <created>1380167995229</created>
+      <updated>1380167995229</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <option name="clearContext" value="false" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
