@@ -81,6 +81,35 @@ def add_customer():
     flash('New customer was successfully added')
     return redirect(url_for('show_customers'))
 
+@app.route('/display_customer_premiums/<int:customer_id>')
+def display_customer_premiums(customer_id):
+    if not session.get('logged_in'):
+        abort(401)
+    cur = g.db.execute('''SELECT customer_id, name, market, image64
+                          FROM retail.customers
+                          WHERE customer_id = %s''' % customer_id)
+    row = cur.fetchall()
+    customer_meta_data = dict(customer_id=row[0][0],
+                               name=row[0][1],
+                               market=row[0][2],
+                               image64=row[0][3])
+    cur = g.db.execute('''SELECT premium_id,
+                                 run_id,
+                                 contract_start_date_utc,
+                                 contract_end_date_utc,
+                                 premium
+                          FROM retail.premiums
+                          WHERE customer_id = %s''' % customer_id)
+    recordset = cur.fetchall()
+    premiums = [dict(premium_id=row[0],
+                     run_id=row[1],
+                     contract_start_date_utc=row[2],
+                     contract_end_date_utc=row[3],
+                     premium=row[4]) for row in recordset]
+    return render_template('display_customer_premiums.html',
+                           customer_meta_data=customer_meta_data,
+                           premiums=premiums)
+
 @app.route('/display_customer/<int:customer_id>')
 def display_customer(customer_id):
     if not session.get('logged_in'):

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+  <ul class=customer_meta_data>
+  <table class="table table-striped">
+    <tr><th>Name</th><th>Customer ID</th><th>Market</th></tr>
+    <tr>
+        <td>{{ customer_meta_data.name }}</td>
+        <td>{{ customer_meta_data.customer_id }}</td>
+        <td>{{ customer_meta_data.market }}</td>
+    </tr>
+  </table>
+  </ul>
+  <ul class=customer_demand>
+  <table class="table table-striped">
+    {% if premiums != [] %}
+        <tr><th>Premium ID</th><th>Run ID</th><th>Start Date</th><th>End Date</th><th>Premium</th></tr>
+        {% for premium in premiums %}
+            <tr>
+                <td>{{ premium.premium_id }}</td>
+                <td>{{ premium.run_id}}</td>
+                <td>{{ premium.contract_start_date_utc }}</td>
+                <td>{{ premium.contract_end_date_utc }}</td>
+                <td>{{ premium.premium}}</td>
+            </tr>
+        {% endfor %}
+    {% else %}
+        <tr><td><em>No customer demand data</em></td></tr>
+    {% endif %}
+  </table>
+  </ul>
+{% endblock %}
