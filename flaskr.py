@@ -64,7 +64,7 @@ def teardown_request(exception):
     if db is not None:
         db.close()
 
-@app.route('/retail')
+@app.route('/')
 def show_customers():
     # con = engine.connect()
     # cur = con.execute('SELECT customer_id, name, market FROM customers')
@@ -133,18 +133,12 @@ def display_customer(customer_id):
             demand = pd.TimeSeries(values, dates)
             image64 = generate_customer_demand_image(demand)
             customer_meta_data['image64'] = image64
+            cur.db.execute('SELECT')
     else:
         customer_demand = []
-    return render_template('display_customer.html', customer_demand=customer_demand, customer_meta_data=customer_meta_data)
-
-@app.route('/')
-def show_entries():
-    cur = g.db.execute('select title, text from retail.entries order by id desc')
-    entries = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
-    return render_template('show_entries.html', entries=entries)
-    # cur = g.db.execute('select title, text from entries order by id desc')
-    # entries = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
-    # return render_template('show_entries.html', entries=entries)
+    return render_template('display_customer.html',
+                           customer_demand=customer_demand,
+                           customer_meta_data=customer_meta_data)
 
 @app.route('/add', methods=['POST'])
 def add_entry():
@@ -175,10 +169,6 @@ def logout():
     session.pop('logged_in', None)
     flash('You were logged out')
     return redirect(url_for('show_entries'))
-
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
 
 def generate_random_customer_data():
     """Generates some random customer data
@@ -250,7 +240,6 @@ def generate_customer_demand_image(demand):
     buffer.getvalue()
     _historical_demand_image64 = base64.b64encode(buffer.getvalue())
     return _historical_demand_image64
-
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000)
