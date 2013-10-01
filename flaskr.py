@@ -108,10 +108,14 @@ def generate_customer_premium(customer_id):
                            customer_meta_data=customer_meta_data)
 
 class premium_parameters_form(Form):
-    contract_start = DateField(label="contract_start")#widget=MySelectDateWidget)
+    from datetime import datetime
+    from dateutil.relativedelta import relativedelta
+    default_start = datetime.now().date() + relativedelta(months=1, day=1)
+    contract_start = DateField(label="contract_start",
+                               default=default_start)
     #choices = [(None, '0')] + [(x, str(x)) for x in range(1,36)]
     #contract_adhoc = ChoiceField(label='ad hoc months', choices=choices, required=False)
-    contract12 = BooleanField(label="12 months")
+    contract12 = BooleanField(label="12 months", default=True)
     contract24 = BooleanField(label="24 months")
     contract36 = BooleanField(label="36 months")
     email = TextField(label='Email',
