@@ -11,7 +11,8 @@ from sqlalchemy import create_engine, MetaData
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-from wtforms import Form, validators, TextField, DateField, BooleanField
+from wtforms import Form, validators, TextField, BooleanField
+from wtforms.fields.html5 import DateField
 
 # postgres config
 SQLALCHEMY_DATABASE_URI = "postgresql://mapdes:default@localhost/flaskr"
