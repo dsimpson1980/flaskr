@@ -177,22 +177,13 @@ class premium_parameters_form(Form):
 def display_customer_premiums(customer_id):
     if not session.get('logged_in'):
         abort(401)
-    cur = g.db.execute('''SELECT customer_id, name, market, image64
-                          FROM retail.customers
-                          WHERE customer_id = %s''' % customer_id)
-    row = cur.fetchall()
-    customer_meta_data = dict(customer_id=row[0][0],
-                               name=row[0][1],
-                               market=row[0][2],
-                               image64=row[0][3])
-    cur = g.db.execute('''SELECT premium_id,
-                                 run_id,
-                                 contract_start_date_utc,
-                                 contract_end_date_utc,
-                                 premium
-                          FROM retail.premiums
-                          WHERE customer_id = %s''' % customer_id)
-    recordset = cur.fetchall()
+
+    customers_table = CustomersTable()
+    customer_meta_data = customers_table.from_id(customer_id)
+    customer_meta_data = dict(customer_meta_data)
+
+    premiums_table = PremiumsTable()
+    recordset = premiums_table.from_id(customer_id)
     premiums = [dict(premium_id=row[0],
                      run_id=row[1],
                      contract_start_date_utc=row[2],
