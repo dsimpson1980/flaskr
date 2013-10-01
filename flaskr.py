@@ -50,8 +50,11 @@ def teardown_request(exception):
 
 @app.route('/')
 def show_customers():
-    cur = g.db.execute('SELECT customer_id, name, market FROM retail.customers')
-    customers = [dict(customer_id=row[0], name=row[1], market=row[2]) for row in cur.fetchall()]
+    cur = g.db.execute('''SELECT customer_id, name, market
+                          FROM retail.customers''')
+    customers = [dict(customer_id=row[0],
+                      name=row[1],
+                      market=row[2]) for row in cur.fetchall()]
     return render_template('show_customers.html', customers=customers)
 
 @app.route('/add_customer', methods=['POST'])
@@ -89,6 +92,9 @@ def generate_customer_premium(customer_id):
     if not session.get('logged_in'):
         abort(401)
     form = premium_parameters_form(request.form)
+    if request.method == "POST":
+        flash('Premium has been queued for generation')
+        return display_customer_premiums(customer_id)
     cur = g.db.execute('''SELECT customer_id, name, market, image64
                           FROM retail.customers
                           WHERE customer_id = %s''' % customer_id)
