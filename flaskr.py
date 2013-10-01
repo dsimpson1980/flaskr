@@ -29,6 +29,29 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 engine = create_engine(SQLALCHEMY_DATABASE_URI, convert_unicode=True)
 
+meta = MetaData(bind=engine)
+schema = 'retail'
+meta.reflect(bind=engine, schema=schema)
+CustomerBase = declarative_base()
+
+class CustomersTable(CustomerBase):
+    __table__ = meta.tables[schema+'.'+'customers']
+
+    # to do - somehow change customer_id in where statement to primary_key
+    def from_id(self, customer_id):
+        query = self.__table__.select().where(self.__table__.c.customer_id==customer_id)
+        result = query.execute().fetchone()
+        return result
+
+PremiumsBase = declarative_base()
+class PremiumsTable(PremiumsBase):
+    __table__ = meta.tables[schema+'.'+'premiums']
+
+    def from_id(self, customer_id):
+        query = self.__table__.select().where(self.__table__.c.customer_id==customer_id)
+        result = query.execute().fetchall()
+        return result
+
 def connect_db():
     return engine.connect()
 
@@ -183,14 +206,9 @@ def display_customer_premiums(customer_id):
 def display_customer(customer_id):
     if not session.get('logged_in'):
         abort(401)
-    cur = g.db.execute('''SELECT customer_id, name, market, image64
-                          FROM retail.customers
-                          WHERE customer_id = %s''' % customer_id)
-    row = cur.fetchall()
-    customer_meta_data = dict(customer_id=row[0][0],
-                               name=row[0][1],
-                               market=row[0][2],
-                               image64=row[0][3])
+    customer_table = CustomersTable()
+    customer_meta_data = customer_table.from_id(customer_id)
+    customer_meta_data = dict(customer_meta_data)
     cur = g.db.execute('''SELECT datetime, value
                           FROM retail.customer_demand
                           WHERE customer_id =''' + str(customer_id))
