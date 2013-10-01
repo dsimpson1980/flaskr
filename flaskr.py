@@ -11,6 +11,8 @@ from sqlalchemy import create_engine, MetaData
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
+from wtforms import Form, validators, TextField, DateField, BooleanField
+
 # postgres config
 SQLALCHEMY_DATABASE_URI = "postgresql://mapdes:default@localhost/flaskr"
 SQLALCHEMY_ECHO = True
@@ -81,6 +83,32 @@ def add_customer():
     flash('New customer was successfully added')
     return redirect(url_for('show_customers'))
 
+@app.route('/generate_customer_premium/<int:customer_id>', methods=['GET', 'POST'])
+def generate_customer_premium(customer_id):
+    if not session.get('logged_in'):
+        abort(401)
+    form = premium_parameters_form(request.form)
+    cur = g.db.execute('''SELECT customer_id, name, market, image64
+                          FROM retail.customers
+                          WHERE customer_id = %s''' % customer_id)
+    row = cur.fetchall()
+    customer_meta_data = dict(customer_id=row[0][0],
+                               name=row[0][1],
+                               market=row[0][2],
+                               image64=row[0][3])
+    return render_template('generate_customer_premium.html',
+                           form=form,
+                           customer_meta_data=customer_meta_data)
+
+class premium_parameters_form(Form):
+    contract_start = DateField(label="contract_start")#widget=MySelectDateWidget)
+    #choices = [(None, '0')] + [(x, str(x)) for x in range(1,36)]
+    #contract_adhoc = ChoiceField(label='ad hoc months', choices=choices, required=False)
+    contract12 = BooleanField(label="12 months")
+    contract24 = BooleanField(label="24 months")
+    contract36 = BooleanField(label="36 months")
+    email = TextField(label='email')
+
 @app.route('/display_customer_premiums/<int:customer_id>')
 def display_customer_premiums(customer_id):
     if not session.get('logged_in'):
@@ -140,16 +168,6 @@ def display_customer(customer_id):
                            customer_demand=customer_demand,
                            customer_meta_data=customer_meta_data)
 
-@app.route('/add', methods=['POST'])
-def add_entry():
-    if not session.get('logged_in'):
-        abort(401)
-    g.db.execute('''INSERT INTO retail.entries (title, text)
-                    VALUES (%s, %s)''',
-                 [request.form['title'], request.form['text']])
-    flash('New entry was successfully posted')
-    return redirect(url_for('show_entries'))
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
@@ -161,7 +179,7 @@ def login():
         else:
             session['logged_in'] = True
             flash('You were logged in')
-            return redirect(url_for('show_entries'))
+            return redirect(url_for('show_customers'))
     return render_template('login.html', error=error)
 
 @app.route('/logout')
