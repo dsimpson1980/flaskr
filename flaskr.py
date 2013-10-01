@@ -92,7 +92,7 @@ def generate_customer_premium(customer_id):
     if not session.get('logged_in'):
         abort(401)
     form = premium_parameters_form(request.form)
-    if request.method == "POST":
+    if request.method == "POST" and form.validate():
         flash('Premium has been queued for generation')
         return display_customer_premiums(customer_id)
     cur = g.db.execute('''SELECT customer_id, name, market, image64
@@ -114,7 +114,9 @@ class premium_parameters_form(Form):
     contract12 = BooleanField(label="12 months")
     contract24 = BooleanField(label="24 months")
     contract36 = BooleanField(label="36 months")
-    email = TextField(label='email')
+    email = TextField(label='Email',
+                      default='mapdes@gmail.com',
+                      validators=[validators.Email(message='Invalid email address')])
 
 @app.route('/display_customer_premiums/<int:customer_id>')
 def display_customer_premiums(customer_id):
