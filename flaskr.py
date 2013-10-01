@@ -89,10 +89,38 @@ def add_customer():
 
 @app.route('/generate_customer_premium/<int:customer_id>', methods=['GET', 'POST'])
 def generate_customer_premium(customer_id):
+    from datetime import datetime
+    from dateutil.relativedelta import relativedelta
+    from dateutil.parser import parse
     if not session.get('logged_in'):
         abort(401)
     form = premium_parameters_form(request.form)
     if request.method == "POST" and form.validate():
+        contract_end = []
+        if form.contract12:
+            contract_end.append(form.contract_start.data + relativedelta(months=12+1, days=-1))
+        #if form.contract24:
+        #    contract_end.append(form.contract_start + relativedelta(months=12*2+1, days=-1))
+        #if form.contract36:
+        #    contract_end.append(form.contract_start + relativedelta(months=12*3+1, days=-1))
+        contract_start = [form.contract_start for x in range(len(contract_end))]
+        valuation_date = datetime.today()
+        run_id = 1
+        premium = np.random.rand()
+        cur = g.db.execute('''INSERT INTO retail.premiums (customer_id,
+                                                           run_id,
+                                                           valuation_date,
+                                                           contract_start_date_utc,
+                                                           contract_end_date_utc,
+                                                           premium)
+                              VALUES (%s, %s, %s, %s, %s, %s)
+                              RETURNING premium_id''',
+                              [customer_id,
+                               run_id,
+                               valuation_date,
+                               form.contract_start.data,
+                               datetime(*(contract_end[0].timetuple()[:6])),
+                               premium]).first()[0]
         flash('Premium has been queued for generation')
         return display_customer_premiums(customer_id)
     cur = g.db.execute('''SELECT customer_id, name, market, image64
@@ -110,7 +138,7 @@ def generate_customer_premium(customer_id):
 class premium_parameters_form(Form):
     from datetime import datetime
     from dateutil.relativedelta import relativedelta
-    default_start = datetime.now().date() + relativedelta(months=1, day=1)
+    default_start = datetime.today() + relativedelta(months=1, day=1)
     contract_start = DateField(label="contract_start",
                                default=default_start)
     #choices = [(None, '0')] + [(x, str(x)) for x in range(1,36)]
