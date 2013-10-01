@@ -12,7 +12,8 @@
   </ul>
   <ul class="premium_parameters">
       {% from "_formhelpers.html" import render_field %}
-      <form method=post action={{ url_for('generate_customer_premium', customer_id=customer_meta_data.customer_id) }}>
+      <form method=post action={{ url_for('generate_customer_premium',
+                                          customer_id=customer_meta_data.customer_id) }}>
         <dl>
             {{ render_field(form.contract_start) }}
             {{ render_field(form.contract12) }}
@@ -21,6 +22,10 @@
             {{ render_field(form.email) }}
         </dl>
           <p><input type=submit value="Generate Premium">
+      </form>
+      <form action={{ url_for('display_customer',
+                              customer_id=customer_meta_data.customer_id) }}>
+          <input type="submit" value="Cancel">
       </form>
   </ul>
 {% endblock %}
