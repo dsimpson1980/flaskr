@@ -10,6 +10,9 @@
     </tr>
   </table>
   </ul>
+  <form action={{ url_for('show_customers') }}>
+      <input type="submit" value="Return to customer list">
+  </form>
   <ul class="customer_demand_image">
     <img src="data:image/png;base64,{{ customer_meta_data.image64 }}" width="100%">
     {#    <div id="gr" style="width:600px;height:300px;"></div>#}
