@@ -10,6 +10,7 @@ from contextlib import closing
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
+from types import MethodType
 
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
@@ -29,28 +30,26 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 engine = create_engine(SQLALCHEMY_DATABASE_URI, convert_unicode=True)
 
-meta = MetaData(bind=engine)
+meta = MetaData(bind=engine, schema='retail')
 schema = 'retail'
 meta.reflect(bind=engine, schema=schema)
-CustomerBase = declarative_base()
+Base = declarative_base(metadata=meta)
 
-class CustomersTable(CustomerBase):
-    __table__ = meta.tables[schema+'.'+'customers']
+customers_table = meta.tables['retail.customers']
+def customer_from_id(self, id):
+    query = self.select().where(self.c.customer_id==id)
+    return query.execute().fetchone()
+customers_table.from_id = MethodType(customer_from_id,
+                                     customers_table,
+                                     type(customers_table))
 
-    # to do - somehow change customer_id in where statement to primary_key
-    def from_id(self, customer_id):
-        query = self.__table__.select().where(self.__table__.c.customer_id==customer_id)
-        result = query.execute().fetchone()
-        return result
-
-PremiumsBase = declarative_base()
-class PremiumsTable(PremiumsBase):
-    __table__ = meta.tables[schema+'.'+'premiums']
-
-    def from_id(self, customer_id):
-        query = self.__table__.select().where(self.__table__.c.customer_id==customer_id)
-        result = query.execute().fetchall()
-        return result
+premiums_table = meta.tables['retail.premiums']
+def premium_from_customer_id(self, id):
+    query = self.select().where(self.c.customer_id==id)
+    return query.execute().fetchall()
+premiums_table.from_id = MethodType(premium_from_customer_id,
+                                    premiums_table,
+                                    type(premiums_table))
 
 def connect_db():
     return engine.connect()
@@ -114,7 +113,6 @@ def add_customer():
 def generate_customer_premium(customer_id):
     from datetime import datetime
     from dateutil.relativedelta import relativedelta
-    from dateutil.parser import parse
     if not session.get('logged_in'):
         abort(401)
     form = premium_parameters_form(request.form)
@@ -178,11 +176,9 @@ def display_customer_premiums(customer_id):
     if not session.get('logged_in'):
         abort(401)
 
-    customers_table = CustomersTable()
     customer_meta_data = customers_table.from_id(customer_id)
     customer_meta_data = dict(customer_meta_data)
 
-    premiums_table = PremiumsTable()
     recordset = premiums_table.from_id(customer_id)
     premiums = [dict(premium_id=row[0],
                      run_id=row[1],
@@ -197,8 +193,7 @@ def display_customer_premiums(customer_id):
 def display_customer(customer_id):
     if not session.get('logged_in'):
         abort(401)
-    customer_table = CustomersTable()
-    customer_meta_data = customer_table.from_id(customer_id)
+    customer_meta_data = customers_table.from_id(customer_id)
     customer_meta_data = dict(customer_meta_data)
     cur = g.db.execute('''SELECT datetime, value
                           FROM retail.customer_demand
