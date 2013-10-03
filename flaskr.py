@@ -15,10 +15,6 @@ from types import MethodType
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
 
-# postgres config
-SQLALCHEMY_DATABASE_URI = "postgresql://mapdes:default@localhost/flaskr"
-SQLALCHEMY_ECHO = True
-
 # configuration
 DATABASE = '/projects/pycharm/flaskr/flaskr.db'
 DEBUG = True
@@ -28,6 +24,9 @@ PASSWORD = 'default'
 
 app = Flask(__name__)
 app.config.from_object(__name__)
+# postgres config
+SQLALCHEMY_DATABASE_URI = "postgresql://mapdes:default@localhost/flaskr"
+SQLALCHEMY_ECHO = True
 engine = create_engine(SQLALCHEMY_DATABASE_URI, convert_unicode=True)
 
 meta = MetaData(bind=engine, schema='retail')
@@ -87,12 +86,10 @@ def add_customer():
     demand = generate_random_customer_data()
     image64 = generate_customer_demand_image(demand)
 
-    customer_id = g.db.execute('''INSERT INTO retail.customers (name, market, image64)
-                                  VALUES (%s, %s, %s)
-                                  RETURNING customer_id''',
-                               [request.form['name'],
-                                request.form['market'],
-                                image64]).first()[0]
+    query = customers_table.insert().values(name=request.form['name'],
+                                            market=request.form['market'],
+                                            image64=image64)
+    customer_id = query.execute().inserted_primary_key[0]
     ids = np.array(range(len(demand)))
     ids.fill(customer_id)
     demand_data = pd.DataFrame({'customer_id': ids,
