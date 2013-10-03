@@ -43,14 +43,6 @@ class Customer(db.Model):
     __tablename__ = 'customers'
     metadata = meta
 
-customers_table = meta.tables['retail.customers']
-def customer_from_id(self, id):
-    query = self.select().where(self.c.customer_id==id)
-    return query.execute().fetchone()
-customers_table.from_id = MethodType(customer_from_id,
-                                     customers_table,
-                                     type(customers_table))
-
 premiums_table = meta.tables['retail.premiums']
 def premium_from_customer_id(self, id):
     query = self.select().where(self.c.customer_id==id)
@@ -186,8 +178,7 @@ def display_customer_premiums(customer_id):
     if not session.get('logged_in'):
         abort(401)
 
-    customer_meta_data = customers_table.from_id(customer_id)
-    customer_meta_data = dict(customer_meta_data)
+    customer = Customer.query.filter(Customer.customer_id==customer_id)
 
     recordset = premiums_table.from_id(customer_id)
     premiums = [dict(premium_id=row[0],
@@ -196,7 +187,7 @@ def display_customer_premiums(customer_id):
                      contract_end_date_utc=row[3],
                      premium=row[4]) for row in recordset]
     return render_template('display_customer_premiums.html',
-                           customer_meta_data=customer_meta_data,
+                           customer=customer,
                            premiums=premiums)
 
 @app.route('/display_customer/<int:customer_id>')
