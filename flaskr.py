@@ -98,12 +98,13 @@ def add_customer():
     demand = generate_random_customer_data()
     image64 = generate_customer_demand_image(demand)
 
-    query = customers_table.insert().values(name=request.form['name'],
-                                            market=request.form['market'],
-                                            image64=image64)
-    customer_id = query.execute().inserted_primary_key[0]
+    new_customer = Customer(name=request.form['name'],
+                            market=request.form['market'],
+                            image64=image64)
+    db.session.add(new_customer)
+    db.session.commit()
     ids = np.array(range(len(demand)))
-    ids.fill(customer_id)
+    ids.fill(new_customer.customer_id)
     demand_data = pd.DataFrame({'customer_id': ids,
                                 'datetime': demand.index,
                                 'value': demand.values})
