@@ -35,8 +35,6 @@ engine = create_engine(SQLALCHEMY_DATABASE_URI, convert_unicode=True)
 meta = MetaData(bind=engine, schema='retail')
 schema = 'retail'
 meta.reflect(bind=engine, schema=schema)
-#Base = declarative_base(metadata=meta)
-
 db = SQLAlchemy(app)
 
 class Customer(db.Model):
@@ -47,13 +45,9 @@ class Premium(db.Model):
     __tablename__ = 'premiums'
     metadata = meta
 
-#premiums_table = meta.tables['retail.premiums']
-#def premium_from_customer_id(self, id):
-#    query = self.select().where(self.c.customer_id==id)
-#    return query.execute().fetchall()
-#premiums_table.from_id = MethodType(premium_from_customer_id,
-#                                    premiums_table,
-#                                    type(premiums_table))
+class CustomerDemand(db.Model):
+    __tablename__ = 'customer_demand'
+    metadata = meta
 
 def connect_db():
     return engine.connect()
@@ -77,13 +71,7 @@ def teardown_request(exception):
 @app.route('/')
 @app.route('/index/<int:page>')
 def show_customers(page=1):
-    #cur = g.db.execute('''SELECT customer_id, name, market
-    #                      FROM retail.customers''')
-    #query = customers_table.select()
     customers = Customer.query.paginate(page, POSTS_PER_PAGE, False)
-    #customers = [dict(customer_id=row[0],
-    #                  name=row[1],
-    #                  market=row[2]) for row in cur.fetchall()]
     return render_template('show_customers.html', customers=customers)
 
 @app.route('/add_customer', methods=['POST'])
@@ -179,21 +167,15 @@ def display_customer(customer_id):
     if not session.get('logged_in'):
         abort(401)
     customer = Customer.query.filter(Customer.customer_id==customer_id).one()
-    #customer_meta_data = dict(customer_meta_data)
-    cur = g.db.execute('''SELECT datetime, value
-                          FROM retail.customer_demand
-                          WHERE customer_id =''' + str(customer_id))
-    recordset = cur.fetchall()
-    if recordset != []:
-        dates, values = zip(*recordset)
-        customer_demand = [dict(datetime=row[0], value=row[1]) for row in recordset]
-        if customer.image64 is None:
-            demand = pd.TimeSeries(values, dates)
-            image64 = generate_customer_demand_image(demand)
-            customer.image64 = image64
-            cur.db.execute('SELECT')
-    else:
-        customer_demand = []
+    customer_demand = CustomerDemand.query.filter(CustomerDemand.customer_id==customer_id).all()
+    #if customer_demand != []:
+    #    dates, values = zip(*customer_demand)
+    #    if customer.image64 is None:
+    #        demand = pd.TimeSeries(values, dates)
+    #        image64 = generate_customer_demand_image(demand)
+    #        customer.image64 = image64
+    #else:
+    #    customer_demand = []
     return render_template('display_customer.html',
                            customer_demand=customer_demand,
                            customer=customer)
