@@ -1,16 +1,13 @@
 # all the imports
 import pandas as pd
 import numpy as np
-import sqlite3
+
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
 from flask.ext.sqlalchemy import SQLAlchemy
 from contextlib import closing
 
 from sqlalchemy import create_engine, MetaData
-from sqlalchemy.orm import scoped_session, sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
-from types import MethodType
 
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
@@ -21,7 +18,6 @@ DEMAND_ITEMS_PER_PAGE = 10
 PREMIUMS_PER_PAGE = 3
 
 # configuration
-#DATABASE = '/projects/pycharm/flaskr/flaskr.db'
 SQLALCHEMY_DATABASE_URI = "postgresql://mapdes:default@localhost/flaskr"
 SQLALCHEMY_ECHO = True
 DEBUG = True
