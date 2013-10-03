@@ -202,8 +202,8 @@ def display_customer_premiums(customer_id):
 def display_customer(customer_id):
     if not session.get('logged_in'):
         abort(401)
-    customer_meta_data = customers_table.from_id(customer_id)
-    customer_meta_data = dict(customer_meta_data)
+    customer = Customer.query.filter(Customer.customer_id==customer_id).one()
+    #customer_meta_data = dict(customer_meta_data)
     cur = g.db.execute('''SELECT datetime, value
                           FROM retail.customer_demand
                           WHERE customer_id =''' + str(customer_id))
@@ -211,16 +211,16 @@ def display_customer(customer_id):
     if recordset != []:
         dates, values = zip(*recordset)
         customer_demand = [dict(datetime=row[0], value=row[1]) for row in recordset]
-        if customer_meta_data['image64'] is None:
+        if customer.image64 is None:
             demand = pd.TimeSeries(values, dates)
             image64 = generate_customer_demand_image(demand)
-            customer_meta_data['image64'] = image64
+            customer.image64 = image64
             cur.db.execute('SELECT')
     else:
         customer_demand = []
     return render_template('display_customer.html',
                            customer_demand=customer_demand,
-                           customer_meta_data=customer_meta_data)
+                           customer=customer)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
