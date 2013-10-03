@@ -18,6 +18,7 @@ from wtforms.fields.html5 import DateField
 #pagination
 CUSTOMERS_PER_PAGE = 10
 DEMAND_ITEMS_PER_PAGE = 10
+PREMIUMS_PER_PAGE = 3
 
 # configuration
 #DATABASE = '/projects/pycharm/flaskr/flaskr.db'
@@ -152,12 +153,14 @@ class premium_parameters_form(Form):
                       default='mapdes@gmail.com',
                       validators=[validators.Email(message='Invalid email address')])
 
+@app.route('/display_customer_premiums/<int:customer_id>/<int:page>')
 @app.route('/display_customer_premiums/<int:customer_id>')
-def display_customer_premiums(customer_id):
+def display_customer_premiums(customer_id, page=1):
     if not session.get('logged_in'):
         abort(401)
     customer = Customer.query.filter(Customer.customer_id==customer_id).one()
-    premiums = Premium.query.filter(Premium.customer_id==customer_id).all()
+    premiums = Premium.query.filter(Premium.customer_id==customer_id)
+    premiums = premiums.paginate(page, PREMIUMS_PER_PAGE, False)
     return render_template('display_customer_premiums.html',
                            customer=customer,
                            premiums=premiums)
