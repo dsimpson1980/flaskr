@@ -16,7 +16,8 @@ from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
 
 #pagination
-POSTS_PER_PAGE = 10
+CUSTOMERS_PER_PAGE = 10
+DEMAND_ITEMS_PER_PAGE = 10
 
 # configuration
 #DATABASE = '/projects/pycharm/flaskr/flaskr.db'
@@ -71,7 +72,7 @@ def teardown_request(exception):
 @app.route('/')
 @app.route('/index/<int:page>')
 def show_customers(page=1):
-    customers = Customer.query.paginate(page, POSTS_PER_PAGE, False)
+    customers = Customer.query.paginate(page, CUSTOMERS_PER_PAGE, False)
     return render_template('show_customers.html', customers=customers)
 
 @app.route('/add_customer', methods=['POST'])
@@ -92,7 +93,6 @@ def add_customer():
     demand_data = pd.DataFrame({'customer_id': ids,
                                 'datetime': demand.index,
                                 'value': demand.values})
-
     demand_buffer = StringIO()
     demand_data.to_csv(demand_buffer, header=False, index=False)
     demand_buffer.seek(0)
@@ -162,20 +162,14 @@ def display_customer_premiums(customer_id):
                            customer=customer,
                            premiums=premiums)
 
+@app.route('/display_customer/<int:customer_id>/<int:page>')
 @app.route('/display_customer/<int:customer_id>')
-def display_customer(customer_id):
+def display_customer(customer_id, page=1):
     if not session.get('logged_in'):
         abort(401)
     customer = Customer.query.filter(Customer.customer_id==customer_id).one()
-    customer_demand = CustomerDemand.query.filter(CustomerDemand.customer_id==customer_id).all()
-    #if customer_demand != []:
-    #    dates, values = zip(*customer_demand)
-    #    if customer.image64 is None:
-    #        demand = pd.TimeSeries(values, dates)
-    #        image64 = generate_customer_demand_image(demand)
-    #        customer.image64 = image64
-    #else:
-    #    customer_demand = []
+    customer_demand = CustomerDemand.query.filter(CustomerDemand.customer_id==customer_id)
+    customer_demand = customer_demand.paginate(page, DEMAND_ITEMS_PER_PAGE, False)
     return render_template('display_customer.html',
                            customer_demand=customer_demand,
                            customer=customer)
