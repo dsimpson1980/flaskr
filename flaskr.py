@@ -43,13 +43,17 @@ class Customer(db.Model):
     __tablename__ = 'customers'
     metadata = meta
 
-premiums_table = meta.tables['retail.premiums']
-def premium_from_customer_id(self, id):
-    query = self.select().where(self.c.customer_id==id)
-    return query.execute().fetchall()
-premiums_table.from_id = MethodType(premium_from_customer_id,
-                                    premiums_table,
-                                    type(premiums_table))
+class Premium(db.Model):
+    __tablename__ = 'premiums'
+    metadata = meta
+
+#premiums_table = meta.tables['retail.premiums']
+#def premium_from_customer_id(self, id):
+#    query = self.select().where(self.c.customer_id==id)
+#    return query.execute().fetchall()
+#premiums_table.from_id = MethodType(premium_from_customer_id,
+#                                    premiums_table,
+#                                    type(premiums_table))
 
 def connect_db():
     return engine.connect()
@@ -178,14 +182,8 @@ def display_customer_premiums(customer_id):
     if not session.get('logged_in'):
         abort(401)
 
-    customer = Customer.query.filter(Customer.customer_id==customer_id)
-
-    recordset = premiums_table.from_id(customer_id)
-    premiums = [dict(premium_id=row[0],
-                     run_id=row[1],
-                     contract_start_date_utc=row[2],
-                     contract_end_date_utc=row[3],
-                     premium=row[4]) for row in recordset]
+    customer = Customer.query.filter(Customer.customer_id==customer_id).one()
+    premiums = Premium.query.filter(Premium.customer_id==customer_id).all()
     return render_template('display_customer_premiums.html',
                            customer=customer,
                            premiums=premiums)
