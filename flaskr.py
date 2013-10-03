@@ -134,33 +134,20 @@ def generate_customer_premium(customer_id):
         valuation_date = datetime.today()
         run_id = 1
         premium = np.random.rand()
-        cur = g.db.execute('''INSERT INTO retail.premiums (customer_id,
-                                                           run_id,
-                                                           valuation_date,
-                                                           contract_start_date_utc,
-                                                           contract_end_date_utc,
-                                                           premium)
-                              VALUES (%s, %s, %s, %s, %s, %s)
-                              RETURNING premium_id''',
-                              [customer_id,
-                               run_id,
-                               valuation_date,
-                               form.contract_start.data,
-                               datetime(*(contract_end[0].timetuple()[:6])),
-                               premium]).first()[0]
+        new_premium = Premium(customer_id=customer_id,
+                              run_id=run_id,
+                              valuation_date=valuation_date,
+                              contract_start_date_utc=form.contract_start.data,
+                              contract_end_date_utc=datetime(*(contract_end[0].timetuple()[:6])),
+                              premium=premium)
+        db.session.add(new_premium)
+        db.session.commit()
         flash('Premium has been queued for generation')
         return display_customer_premiums(customer_id)
-    cur = g.db.execute('''SELECT customer_id, name, market, image64
-                          FROM retail.customers
-                          WHERE customer_id = %s''' % customer_id)
-    row = cur.fetchall()
-    customer_meta_data = dict(customer_id=row[0][0],
-                               name=row[0][1],
-                               market=row[0][2],
-                               image64=row[0][3])
+    customer = Customer.query.filter(Customer.customer_id==customer_id).one()
     return render_template('generate_customer_premium.html',
                            form=form,
-                           customer_meta_data=customer_meta_data)
+                           customer=customer)
 
 class premium_parameters_form(Form):
     from datetime import datetime
@@ -181,7 +168,6 @@ class premium_parameters_form(Form):
 def display_customer_premiums(customer_id):
     if not session.get('logged_in'):
         abort(401)
-
     customer = Customer.query.filter(Customer.customer_id==customer_id).one()
     premiums = Premium.query.filter(Premium.customer_id==customer_id).all()
     return render_template('display_customer_premiums.html',
