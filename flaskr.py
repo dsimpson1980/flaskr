@@ -4,7 +4,7 @@ import numpy as np
 import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
-#from flask.ext.sqlalchemy import SQLAlchemy
+from flask.ext.sqlalchemy import SQLAlchemy
 from contextlib import closing
 
 from sqlalchemy import create_engine, MetaData
@@ -15,8 +15,13 @@ from types import MethodType
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
 
+#pagination
+POSTS_PER_PAGE = 10
+
 # configuration
-DATABASE = '/projects/pycharm/flaskr/flaskr.db'
+#DATABASE = '/projects/pycharm/flaskr/flaskr.db'
+SQLALCHEMY_DATABASE_URI = "postgresql://mapdes:default@localhost/flaskr"
+SQLALCHEMY_ECHO = True
 DEBUG = True
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
@@ -25,14 +30,18 @@ PASSWORD = 'default'
 app = Flask(__name__)
 app.config.from_object(__name__)
 # postgres config
-SQLALCHEMY_DATABASE_URI = "postgresql://mapdes:default@localhost/flaskr"
-SQLALCHEMY_ECHO = True
 engine = create_engine(SQLALCHEMY_DATABASE_URI, convert_unicode=True)
 
 meta = MetaData(bind=engine, schema='retail')
 schema = 'retail'
 meta.reflect(bind=engine, schema=schema)
-Base = declarative_base(metadata=meta)
+#Base = declarative_base(metadata=meta)
+
+db = SQLAlchemy(app)
+
+class Customer(db.Model):
+    __tablename__ = 'customers'
+    metadata = meta
 
 customers_table = meta.tables['retail.customers']
 def customer_from_id(self, id):
@@ -70,12 +79,15 @@ def teardown_request(exception):
         db.close()
 
 @app.route('/')
-def show_customers():
-    cur = g.db.execute('''SELECT customer_id, name, market
-                          FROM retail.customers''')
-    customers = [dict(customer_id=row[0],
-                      name=row[1],
-                      market=row[2]) for row in cur.fetchall()]
+@app.route('/index/<int:page>')
+def show_customers(page=1):
+    #cur = g.db.execute('''SELECT customer_id, name, market
+    #                      FROM retail.customers''')
+    #query = customers_table.select()
+    customers = Customer.query.paginate(page, POSTS_PER_PAGE, False)
+    #customers = [dict(customer_id=row[0],
+    #                  name=row[1],
+    #                  market=row[2]) for row in cur.fetchall()]
     return render_template('show_customers.html', customers=customers)
 
 @app.route('/add_customer', methods=['POST'])

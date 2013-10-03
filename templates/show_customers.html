@@ -14,15 +14,24 @@
   <ul class=customers>
   <table class="table table-striped">
         <tr><th>Name</th><th>Customer ID</th><th>Market</th></tr>
-        {% for customer in customers %}
+        <!-- customers is a pagination object -->
+        {% for customer in customers.items %}
             <tr>
                 <td><a href={{ url_for('display_customer', customer_id=customer.customer_id) }}>{{ customer.name }}</a></td>
                 <td><a href={{ url_for('display_customer', customer_id=customer.customer_id) }}>{{ customer.customer_id }}</a></td>
                 <td>{{ customer.market }}</td>
             </tr>
-        {% else %}
-            <tr><td><em>No customers in database</em></td></tr>
         {% endfor %}
+        {% if customers.has_prev %}
+            <a href="{{ url_for('show_customers', page = customers.prev_num) }}"><< Newer customers</a>
+        {% else %}
+            << Newer customers
+        {% endif %}
+        {% if customers.has_next %}
+            <a href="{{ url_for('show_customers', page = customers.next_num) }}">Older customers >></a>
+        {% else %}
+            Older customers >>
+        {% endif %}
   </table>
   </ul>
 {% endblock %}
