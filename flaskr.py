@@ -125,7 +125,8 @@ def generate_customer_premium(customer_id):
         #    contract_end.append(form.contract_start + relativedelta(months=12*3+1, days=-1))
         contract_start = [form.contract_start for x in range(len(contract_end))]
         valuation_date = datetime.today()
-        parameters = fetch_run_parameters('nbp')
+        customer = Customer.query.filter(Customer.customer_id==customer_id).one()
+        parameters = fetch_run_parameters(customer.market)
         run_id = parameters.run_id
         premium = np.random.rand()
         new_premium = Premium(customer_id=customer_id,
