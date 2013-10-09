@@ -89,7 +89,7 @@ def add_customer():
     image64 = generate_customer_demand_image(demand)
 
     new_customer = Customer(name=request.form['name'],
-                            market=request.form['market'],
+                            market_id=1,
                             image64=image64)
     db.session.add(new_customer)
     db.session.commit()
@@ -126,7 +126,7 @@ def generate_customer_premium(customer_id):
         contract_start = [form.contract_start for x in range(len(contract_end))]
         valuation_date = datetime.today()
         customer = Customer.query.filter(Customer.customer_id==customer_id).one()
-        parameters = fetch_run_parameters(customer.market)
+        parameters = fetch_run_parameters(customer.market_id)
         run_id = parameters.run_id
         premium = np.random.rand()
         new_premium = Premium(customer_id=customer_id,
@@ -274,8 +274,8 @@ def generate_customer_demand_image(demand):
     _historical_demand_image64 = base64.b64encode(buffer.getvalue())
     return _historical_demand_image64
 
-def fetch_run_parameters(market):
-    parameters = Parameter.query.filter(Parameter.market==market).order_by(Parameter.db_upload_date).first()
+def fetch_run_parameters(market_id):
+    parameters = Parameter.query.filter(Parameter.market_id==market_id).order_by(Parameter.db_upload_date).first()
     return parameters
 
 if __name__ == '__main__':
