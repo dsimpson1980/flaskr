@@ -5,6 +5,7 @@ DROP SEQUENCE IF EXISTS retail.parameter_ids_sequence;
 DROP TABLE IF EXISTS retail.customer_demand;
 DROP TABLE IF EXISTS retail.customers;
 DROP SEQUENCE IF EXISTS retail.customer_ids_sequence;
+DROP VIEW IF EXISTS retail.customer_with_market;
 DROP TABLE IF EXISTS retail.markets;
 DROP SEQUENCE IF EXISTS retail.market_ids_sequence;
 
@@ -27,6 +28,15 @@ CREATE TABLE retail.customers
   market_id INTEGER NOT NULL REFERENCES retail.markets(market_id),
   image64 bytea
 );
+
+CREATE VIEW retail.customer_with_market AS
+  SELECT customer_id,
+         name,
+         market_name,
+         image64
+  FROM (retail.customers
+  LEFT JOIN retail.markets
+  ON (retail.customers.market_id=retail.markets.market_id));
 
 CREATE TABLE retail.customer_demand
 (
