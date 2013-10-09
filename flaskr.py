@@ -51,6 +51,10 @@ class CustomerDemand(db.Model):
     __tablename__ = 'customer_demand'
     metadata = meta
 
+class Parameter(db.Model):
+    __tablename__ = 'run_parameters'
+    metadata = meta
+
 def connect_db():
     return engine.connect()
 
@@ -267,6 +271,10 @@ def generate_customer_demand_image(demand):
     buffer.getvalue()
     _historical_demand_image64 = base64.b64encode(buffer.getvalue())
     return _historical_demand_image64
+
+def fetch_run_parameters(market):
+    parameters = Parameter.query.filter(Parameter.market==market).orderby(Parameter.db_upload_date).first()
+    return parameters
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000)
