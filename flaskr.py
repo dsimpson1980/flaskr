@@ -39,9 +39,19 @@ schema = 'retail'
 meta.reflect(bind=engine, schema=schema)
 db = SQLAlchemy(app)
 
+class Market(db.Model):
+    __tablename__ = 'markets'
+    metadata = meta
+
 class Customer(db.Model):
     __tablename__ = 'customers'
     metadata = meta
+
+    @property
+    def market_name(self):
+        query = Market.query.filter(Market.market_id==self.__table__.c.market_id)
+        market_name = query.one().market_name
+        return market_name
 
 class Premium(db.Model):
     __tablename__ = 'premiums'
