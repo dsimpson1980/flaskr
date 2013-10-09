@@ -36,17 +36,20 @@ CREATE TABLE retail.customer_demand
 CREATE SEQUENCE retail.parameter_ids_sequence;
 CREATE TABLE retail.run_parameters
 (
-  run_id integer NOT NULL PRIMARY KEY DEFAULT NEXTVAL('retail.parameter_ids_sequence'),
-  parameters bytea NOT NULL,
-  db_upload_datetime TIMESTAMP NOT NULL
+  run_id INTEGER NOT NULL PRIMARY KEY DEFAULT NEXTVAL('retail.parameter_ids_sequence'),
+  market CHAR(15) NOT NULL REFERENCES retail.markets(market),
+  parameters BYTEA NOT NULL,
+  db_upload_date TIMESTAMP NOT NULL
 );
+
+INSERT INTO retail.run_parameters VALUES(1, 'nbp', 'd', '01-Sep-13');
 
 CREATE SEQUENCE retail.premium_ids_sequence;
 CREATE TABLE retail.premiums
 (
-  premium_id integer NOT NULL PRIMARY KEY DEFAULT NEXTVAL('retail.premium_ids_sequence'),
-  run_id integer NOT NULL REFERENCES retail.run_parameters(run_id),
-  customer_id integer NOT NULL REFERENCES retail.customers(customer_id),
+  premium_id INTEGER NOT NULL PRIMARY KEY DEFAULT NEXTVAL('retail.premium_ids_sequence'),
+  run_id INTEGER NOT NULL REFERENCES retail.run_parameters(run_id),
+  customer_id INTEGER NOT NULL REFERENCES retail.customers(customer_id),
   valuation_date TIMESTAMP NOT NULL,
   contract_start_date_utc TIMESTAMP NOT NULL,
   contract_end_date_utc TIMESTAMP NOT NULL,

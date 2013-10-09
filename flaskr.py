@@ -125,7 +125,8 @@ def generate_customer_premium(customer_id):
         #    contract_end.append(form.contract_start + relativedelta(months=12*3+1, days=-1))
         contract_start = [form.contract_start for x in range(len(contract_end))]
         valuation_date = datetime.today()
-        run_id = 1
+        parameters = fetch_run_parameters('nbp')
+        run_id = parameters.run_id
         premium = np.random.rand()
         new_premium = Premium(customer_id=customer_id,
                               run_id=run_id,
@@ -273,7 +274,7 @@ def generate_customer_demand_image(demand):
     return _historical_demand_image64
 
 def fetch_run_parameters(market):
-    parameters = Parameter.query.filter(Parameter.market==market).orderby(Parameter.db_upload_date).first()
+    parameters = Parameter.query.filter(Parameter.market==market).order_by(Parameter.db_upload_date).first()
     return parameters
 
 if __name__ == '__main__':
