@@ -47,6 +47,7 @@ CREATE TABLE retail.premiums
   premium_id integer NOT NULL PRIMARY KEY DEFAULT NEXTVAL('retail.premium_ids_sequence'),
   run_id integer NOT NULL REFERENCES retail.run_parameters(run_id),
   customer_id integer NOT NULL REFERENCES retail.customers(customer_id),
+  valuation_date TIMESTAMP NOT NULL,
   contract_start_date_utc TIMESTAMP NOT NULL,
   contract_end_date_utc TIMESTAMP NOT NULL,
   premium FLOAT(19) NOT NULL
