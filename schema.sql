@@ -14,6 +14,8 @@ CREATE TABLE retail.markets
   commodity CHAR(10) NOT NULL
 );
 
+INSERT INTO retail.markets VALUES('nbp', 'UK', 'gas');
+
 CREATE SEQUENCE retail.customer_ids_sequence;
 CREATE TABLE retail.customers
 (
