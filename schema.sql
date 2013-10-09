@@ -18,7 +18,7 @@ CREATE SEQUENCE retail.customer_ids_sequence;
 CREATE TABLE retail.customers
 (
   customer_id integer NOT NULL PRIMARY KEY DEFAULT NEXTVAL('retail.customer_ids_sequence'),
-  name CHAR(15) NOT NULL,
+  name CHAR(30) NOT NULL,
   market CHAR(15) NOT NULL REFERENCES retail.markets(market),
   image64 bytea
 );
@@ -47,5 +47,5 @@ CREATE TABLE retail.premiums
   customer_id integer NOT NULL REFERENCES retail.customers(customer_id),
   contract_start_date_utc TIMESTAMP NOT NULL,
   contract_end_date_utc TIMESTAMP NOT NULL,
-  premium FLOAT NOT NULL
+  premium FLOAT(19) NOT NULL
 );
