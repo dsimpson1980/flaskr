@@ -1,6 +1,7 @@
 # all the imports
 import pandas as pd
 import numpy as np
+import sqlalchemy as sa
 import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
@@ -47,12 +48,6 @@ class Customer(db.Model):
     __tablename__ = 'customers'
     metadata = meta
 
-    @property
-    def market_name(self):
-        query = Market.query.filter(Market.market_id==self.__table__.c.market_id)
-        market_name = query.one().market_name
-        return market_name
-
 class Premium(db.Model):
     __tablename__ = 'premiums'
     metadata = meta
@@ -64,6 +59,15 @@ class CustomerDemand(db.Model):
 class Parameter(db.Model):
     __tablename__ = 'run_parameters'
     metadata = meta
+
+class CustomerWithMarket(db.Model):
+    __tablename__ = 'customer_with_market'
+    __table_args__ = {'extend_existing': True,
+                      'autoload': True}
+    metadata = meta
+    customer_id = sa.Column('customer_id',
+                            sa.Integer,
+                            primary_key=True)
 
 def connect_db():
     return engine.connect()
@@ -87,7 +91,7 @@ def teardown_request(exception):
 @app.route('/')
 @app.route('/index/<int:page>')
 def show_customers(page=1):
-    customers = Customer.query.paginate(page, CUSTOMERS_PER_PAGE, False)
+    customers = CustomerWithMarket.query.paginate(page, CUSTOMERS_PER_PAGE, False)
     return render_template('show_customers.html', customers=customers)
 
 @app.route('/add_customer', methods=['POST'])
@@ -135,7 +139,7 @@ def generate_customer_premium(customer_id):
         #    contract_end.append(form.contract_start + relativedelta(months=12*3+1, days=-1))
         contract_start = [form.contract_start for x in range(len(contract_end))]
         valuation_date = datetime.today()
-        customer = Customer.query.filter(Customer.customer_id==customer_id).one()
+        customer = CustomerWithMarket.query.filter(Customer.customer_id==customer_id).one()
         parameters = fetch_run_parameters(customer.market_id)
         run_id = parameters.run_id
         premium = np.random.rand()
@@ -174,7 +178,7 @@ class premium_parameters_form(Form):
 def display_customer_premiums(customer_id, page=1):
     if not session.get('logged_in'):
         abort(401)
-    customer = Customer.query.filter(Customer.customer_id==customer_id).one()
+    customer = CustomerWithMarket.query.filter(Customer.customer_id==customer_id).one()
     premiums = Premium.query.filter(Premium.customer_id==customer_id)
     premiums = premiums.paginate(page, PREMIUMS_PER_PAGE, False)
     return render_template('display_customer_premiums.html',
@@ -186,7 +190,7 @@ def display_customer_premiums(customer_id, page=1):
 def display_customer(customer_id, page=1):
     if not session.get('logged_in'):
         abort(401)
-    customer = Customer.query.filter(Customer.customer_id==customer_id).one()
+    customer = CustomerWithMarket.query.filter(Customer.customer_id==customer_id).one()
     customer_demand = CustomerDemand.query.filter(CustomerDemand.customer_id==customer_id)
     customer_demand = customer_demand.paginate(page, DEMAND_ITEMS_PER_PAGE, False)
     return render_template('display_customer.html',
