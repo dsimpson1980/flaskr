@@ -6,7 +6,6 @@ DROP TABLE IF EXISTS retail.customer_demand;
 DROP VIEW IF EXISTS retail.customer_with_market;
 DROP TABLE IF EXISTS retail.customers;
 DROP SEQUENCE IF EXISTS retail.customer_ids_sequence;
-DROP VIEW IF EXISTS retail.customer_with_market;
 DROP TABLE IF EXISTS retail.markets;
 DROP SEQUENCE IF EXISTS retail.market_ids_sequence;
 
