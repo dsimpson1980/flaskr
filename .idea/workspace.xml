@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d993f086-7cb5-4685-bb88-3968fe7a02a1" name="Default" comment="" />
+    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Merge with laptop&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.html" afterPath="$PROJECT_DIR$/templates/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="flaskr.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381662987025" ignored="false" />
-    <file path="/a.sql" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381295529077" ignored="false" />
-    <file path="/dummy.sql" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381295526693" ignored="false" />
-    <file path="/schema.sql" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381372008930" ignored="false" />
-    <file path="/Python Console" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381377973719" ignored="false" />
-    <file path="/flaskr.py" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381371708864" ignored="false" />
-    <file path="/display_customer_premiums.html" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381301005045" ignored="false" />
-    <file path="/display_customer.html" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381301014419" ignored="false" />
-    <file path="/show_customers.html" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381302991411" ignored="false" />
-    <file path="/start_script.py" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381377256564" ignored="false" />
+    <file path="/Dummy.txt" changelist="c35f6f32-237e-4197-a190-ff264231772a" time="1381663326336" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +17,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/flaskr$flaskr.coverage" NAME="flaskr Coverage Results" MODIFIED="1380842205966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -41,10 +40,74 @@
       <file leaf-file-name="flaskr.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.5483871">
-              <folding>
-                <element signature="e#18#37#0" expanded="true" />
-              </folding>
+            <state line="20" column="26" selection-start="631" selection-end="631" vertical-scroll-proportion="0.16930023">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schema.sql">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="33" selection-start="500" selection-end="500" vertical-scroll-proportion="-0.5555556">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generate_customer_premium.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/generate_customer_premium.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="49" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_customers.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/show_customers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="970" selection-end="1389" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_formhelpers.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/_formhelpers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="16" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="8" selection-start="1343" selection-end="1343" vertical-scroll-proportion="-11.208333">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="display_customer_premiums.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/display_customer_premiums.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="22" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="display_customer.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/display_customer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="716" selection-end="903" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,9 +120,21 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Dave" />
+        <option value="dsimpson1980" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="reflect_db_models" />
+      </map>
+    </option>
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -67,11 +142,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/display_customer_premiums.html" />
-        <option value="$PROJECT_DIR$/templates/display_customer.html" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/README.rst" />
+        <option value="dbtable:/6325f605/2f913edb-5ea1-4272-abb7-fb38329b63c1/flaskr.retail.customers" />
+        <option value="dbtable:/6325f605/2f913edb-5ea1-4272-abb7-fb38329b63c1/flaskr.retail.premiums" />
+        <option value="dbtable:/6325f605/2f913edb-5ea1-4272-abb7-fb38329b63c1/flaskr.retail.run_parameters" />
+        <option value="$PROJECT_DIR$/templates/_formhelpers.html" />
+        <option value="$PROJECT_DIR$/pagination.py" />
+        <option value="$PROJECT_DIR$/templates/show_customers_paged.html" />
         <option value="$PROJECT_DIR$/templates/show_customers.html" />
-        <option value="$PROJECT_DIR$/schema.sql" />
+        <option value="$PROJECT_DIR$/templates/generate_customer_premium.html" />
+        <option value="$PROJECT_DIR$/models.py" />
+        <option value="$PROJECT_DIR$/templates/display_customer.html" />
+        <option value="$PROJECT_DIR$/templates/display_customer_premiums.html" />
         <option value="$PROJECT_DIR$/flaskr.py" />
+        <option value="$PROJECT_DIR$/templates/layout.html" />
       </list>
     </option>
   </component>
@@ -80,6 +165,25 @@
     <option name="width" value="1440" />
     <option name="height" value="874" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Buildout</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -87,7 +191,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -106,7 +210,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -141,50 +244,132 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="125" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="136" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/retail_schema.png" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="145" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="939" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="936" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="141" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="138" />
+    <property name="Database.TableEditor.Splitter" value="0.9" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="TODO_SCOPE" value="All" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
-      <PyConsoleSettings>
-        <option name="myUseModuleSdk" value="true" />
-        <option name="myModuleName" value="flaskr" />
-      </PyConsoleSettings>
+      <PyConsoleSettings />
     </option>
     <option name="myDjangoConsoleState">
       <PyConsoleSettings />
     </option>
   </component>
   <component name="RunManager" selected="Python.flaskr">
-    <configuration default="false" name="flaskr" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="flaskr" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskr.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -247,20 +432,56 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
+    <configuration default="false" name="flaskr" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskr.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Python.flaskr" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.flaskr" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
@@ -281,92 +502,292 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="d993f086-7cb5-4685-bb88-3968fe7a02a1" name="Default" comment="" />
-      <created>1381047274352</created>
-      <updated>1381047274352</updated>
+    <task id="Default" summary="Default task">
+      <created>1380097697137</created>
+      <updated>1380164164954</updated>
     </task>
-    <task id="LOCAL-00001" summary="Wrote schema.sql for postgres database">
-      <created>1381297933975</created>
-      <updated>1381297933975</updated>
+    <task id="LOCAL-00001" summary="Changed README file">
+      <created>1380100400606</created>
+      <updated>1380100400606</updated>
     </task>
-    <task id="LOCAL-00002" summary="Minor corrections&#10;Changed sqldialect to postgres">
-      <created>1381298048759</created>
-      <updated>1381298048759</updated>
+    <task id="LOCAL-00003" summary="Add charting to customer display page">
+      <created>1380101911602</created>
+      <updated>1380101940712</updated>
     </task>
-    <task id="LOCAL-00003" summary="Added default 'nbp' market">
-      <created>1381298356965</created>
-      <updated>1381298356965</updated>
+    <task id="LOCAL-00004" summary="Added Datasource link, drivers and diagram uml">
+      <created>1380104735302</created>
+      <updated>1380104735302</updated>
     </task>
-    <task id="LOCAL-00004" summary="Added valuation_date to retail.premiums table">
-      <created>1381299170411</created>
-      <updated>1381299170411</updated>
+    <task id="LOCAL-00005" summary="Added missing ids file">
+      <created>1380104780183</created>
+      <updated>1380104780183</updated>
     </task>
-    <task id="LOCAL-00005" summary="Added method fetch_run_parameters()">
-      <created>1381299927093</created>
-      <updated>1381299927093</updated>
+    <task id="LOCAL-00006" summary="Added retail schema diagram as png">
+      <created>1380105143641</created>
+      <updated>1380105143641</updated>
     </task>
-    <task id="LOCAL-00006" summary="Implemented fetch_run_paramters() using dummy 'nbp'">
-      <created>1381300448295</created>
-      <updated>1381300448302</updated>
+    <task id="LOCAL-00007" summary="Check rendering of readme file on github">
+      <created>1380106774009</created>
+      <updated>1380106774009</updated>
     </task>
-    <task id="LOCAL-00007" summary="Changed call to fetch_run_parameters to use customer.market field">
-      <created>1381300558511</created>
-      <updated>1381300558511</updated>
+    <task id="LOCAL-00008" summary="Added image link in readme file">
+      <created>1380107147027</created>
+      <updated>1380107147027</updated>
     </task>
-    <task id="LOCAL-00008" summary="Added market_id as primary key for markets for better referencing between tables&#10;Changed templates to look up up market_name">
-      <created>1381301153369</created>
-      <updated>1381301153369</updated>
+    <task id="LOCAL-00009" summary="Forgot space between .. and figure">
+      <created>1380107293749</created>
+      <updated>1380107293749</updated>
     </task>
-    <task id="LOCAL-00009" summary="Created customer_with_market view">
-      <created>1381301948234</created>
-      <updated>1381301948234</updated>
+    <task id="LOCAL-00010" summary="Changed readme extension to .rst">
+      <created>1380107356279</created>
+      <updated>1380107356279</updated>
     </task>
-    <task id="LOCAL-00010" summary="Added Market class&#10;Added property to Customer that form a basic &quot;JOIN&quot; on the Market class">
-      <created>1381303051850</created>
-      <updated>1381303051861</updated>
+    <task id="LOCAL-00011" summary="Tidied up the readme file a little">
+      <created>1380107498845</created>
+      <updated>1380107498845</updated>
     </task>
-    <task id="LOCAL-00011" summary="Removed property addition from reflected customers table&#10;Added CustomerWithMarket class reflecting table in db&#10;primary_key for view overwritten by extend_existing to allow class creation (postgres doesn't allow views to have primary keys)">
-      <created>1381371906864</created>
-      <updated>1381371906864</updated>
+    <task id="flaskr-3" summary="Add field to customer table in db to contain demand image">
+      <created>1380066748000</created>
+      <option name="issue" value="true" />
+      <option name="type" value="BUG" />
+      <updated>1380166125638</updated>
     </task>
-    <task id="LOCAL-00012" summary="Removed commit() from init_db()&#10;Added Drop View customer_with_market to start of schema.sql">
-      <created>1381372146851</created>
-      <updated>1381372146859</updated>
+    <task id="LOCAL-00012" summary="Added bytea column to customer">
+      <created>1380164215463</created>
+      <updated>1380164215463</updated>
     </task>
-    <task id="LOCAL-00013" summary="Removed duplicated drop on customer_with_market&#10;Updated uml and png">
-      <created>1381372499004</created>
-      <updated>1381372499005</updated>
+    <task id="flaskr-4" summary="Add method to chart and save image to string buffer">
+      <created>1380066765000</created>
+      <option name="issue" value="true" />
+      <option name="type" value="BUG" />
+      <updated>1380169131874</updated>
     </task>
-    <task id="LOCAL-00014" summary="Added additional support files">
-      <created>1381662991148</created>
-      <updated>1381662991148</updated>
+    <task id="LOCAL-00013" summary="Added new method to encode demand image">
+      <created>1380166278089</created>
+      <updated>1380166278089</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
-    <servers />
+    <task id="LOCAL-00014" summary="Merged flask4 branch">
+      <created>1380167013617</created>
+      <updated>1380167013617</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Merged flask4 branch">
+      <created>1380167923096</created>
+      <updated>1380167923096</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Merged flask4 branch">
+      <created>1380167995229</created>
+      <updated>1380167995229</updated>
+    </task>
+    <task id="LOCAL-00017" summary="workspace.xml">
+      <created>1380168400442</created>
+      <updated>1380168400442</updated>
+    </task>
+    <task active="true" id="flaskr-5" summary="Add method to push string buffer contents to db">
+      <changelist id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="" />
+      <created>1380066785000</created>
+      <option name="issue" value="true" />
+      <option name="type" value="BUG" />
+      <updated>1380173414136</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added code tp push image64 to database">
+      <created>1380169955972</created>
+      <updated>1380169955972</updated>
+    </task>
+    <task id="flaskr-6" summary="Add code to check if image exists in db and pull it if it exists">
+      <created>1380067015000</created>
+      <option name="issue" value="true" />
+      <option name="type" value="BUG" />
+      <updated>1380173414089</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added code to auto generate image if it doesn't exist">
+      <created>1380173390742</created>
+      <updated>1380173390742</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Display image in template">
+      <created>1380173456742</created>
+      <updated>1380173456742</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Removed references to entries and tables from database">
+      <created>1380539682035</created>
+      <updated>1380539682035</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Removed redundant comments">
+      <created>1380540050056</created>
+      <updated>1380540050056</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added run_parameters table&#10;Added premiums tables&#10;Added display_customer_premiums template">
+      <created>1380549854793</created>
+      <updated>1380549854793</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Updated schema diagram">
+      <created>1380549942992</created>
+      <updated>1380549942992</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added foreign key constraint to premiums table&#10;Linked default for premium_id tp premiums table">
+      <created>1380584844289</created>
+      <updated>1380584844289</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added form for entering parameters&#10;Added forms helper">
+      <created>1380594649960</created>
+      <updated>1380594649960</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Changed DateField import to come from wtforms.fields.html5">
+      <created>1380595962555</created>
+      <updated>1380595962555</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fixed up redirect after submission of generate premium form&#10;This doesn't currently generate anything or enter anything to the db">
+      <created>1380597350996</created>
+      <updated>1380597350996</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added email validation and default email address">
+      <created>1380600168631</created>
+      <updated>1380600168631</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added default start date for contract to be the first day of the next calendar month">
+      <created>1380601104049</created>
+      <updated>1380601104049</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Created dummy premium for insertion into database">
+      <created>1380604541687</created>
+      <updated>1380604541687</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Added cancel button to generate premium template">
+      <created>1380604763993</created>
+      <updated>1380604763993</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added return to customer list button to display customer">
+      <created>1380604903627</created>
+      <updated>1380604903627</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added generate button to display customer template">
+      <created>1380605121178</created>
+      <updated>1380605121178</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Moved to extended classes for tables with declarative bases">
+      <created>1380633933505</created>
+      <updated>1380633933505</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Used extended class in display_customer_premiums">
+      <created>1380634798963</created>
+      <updated>1380634798963</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Changed extended class for MethodType on single instance of Table">
+      <created>1380707457967</created>
+      <updated>1380707457967</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Updated add customer to use insert from customer_table">
+      <created>1380776594819</created>
+      <updated>1380776594819</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Changed to SQLAlchemy models for customer&#10;Added pagination to show_customers view and template">
+      <created>1380781707215</created>
+      <updated>1380781707215</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Used Customer class in display_customer">
+      <created>1380782023455</created>
+      <updated>1380782023455</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Used Customer class in add_customer">
+      <created>1380782496141</created>
+      <updated>1380782496141</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Used Customer class in generate_premium&#10;Removed customers_table">
+      <created>1380782635962</created>
+      <updated>1380782635962</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Add Premiums class&#10;Used premiums class in display_customer_premiums">
+      <created>1380783232617</created>
+      <updated>1380783232617</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Used Premium class in generate_premium view">
+      <created>1380783718009</created>
+      <updated>1380783718009</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Added CustomerDemand class&#10;Used CustomerDemand class in display_customer">
+      <created>1380784104652</created>
+      <updated>1380784104652</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Cleaned up comments&#10;Added pagination to demand table on display customer&#10;Added Display premiums button to display customer page">
+      <created>1380801224143</created>
+      <updated>1380801224143</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Paginated premiums">
+      <created>1380802181187</created>
+      <updated>1380802181188</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Cleaned up redundant import statements">
+      <created>1380840048374</created>
+      <updated>1380840048374</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Merge with laptop&#10;">
+      <created>1381648299405</created>
+      <updated>1381648299405</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Merge with laptop&#10;">
+      <created>1381648465492</created>
+      <updated>1381648465493</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
+    <option name="clearContext" value="false" />
+    <servers>
+      <GitHub shared="false">
+        <commitMessageFormat>{id} {summary}</commitMessageFormat>
+        <password>dfc9df9edfc6df99dfc4dfcedf9edfd8</password>
+        <option name="loginAnonymously" value="false" />
+        <option name="repoAuthor" value="dsimpson1980" />
+        <option name="repoName" value="flaskr" />
+        <option name="shouldFormatCommitMessage" value="false" />
+        <option name="url" value="https://github.com" />
+        <option name="useHttpAuthentication" value="true" />
+        <option name="useProxy" value="false" />
+        <username>dsimpson1980</username>
+      </GitHub>
+    </servers>
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25107604" sideWeight="0.6710875" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2682927" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38050735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.52797705" sideWeight="0.7396529" order="3" side_tool="false" content_ui="tabs" x="28" y="63" width="736" height="749" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4201389" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19081779" sideWeight="0.67241377" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.858885" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22525108" sideWeight="0.45490715" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20731707" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22525108" sideWeight="0.21618037" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275862" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.45409015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="6" y="22" width="784" height="694" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671958" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33039647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -411,7 +832,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added additional support files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge with laptop&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -425,89 +846,347 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Wrote schema.sql for postgres database" />
-    <MESSAGE value="Minor corrections&#10;Changed sqldialect to postgres" />
-    <MESSAGE value="Added default 'nbp' market" />
-    <MESSAGE value="Added valuation_date to retail.premiums table" />
-    <MESSAGE value="Added method fetch_run_parameters()" />
-    <MESSAGE value="Implemented fetch_run_paramters() using dummy 'nbp'" />
-    <MESSAGE value="Changed call to fetch_run_parameters to use customer.market field" />
-    <MESSAGE value="Added market_id as primary key for markets for better referencing between tables&#10;Changed templates to look up up market_name" />
-    <MESSAGE value="Created customer_with_market view" />
-    <MESSAGE value="Added Market class&#10;Added property to Customer that form a basic &quot;JOIN&quot; on the Market class" />
-    <MESSAGE value="Removed property addition from reflected customers table&#10;Added CustomerWithMarket class reflecting table in db&#10;primary_key for view overwritten by extend_existing to allow class creation (postgres doesn't allow views to have primary keys)" />
-    <MESSAGE value="Removed commit() from init_db()&#10;Added Drop View customer_with_market to start of schema.sql" />
-    <MESSAGE value="Removed duplicated drop on customer_with_market&#10;Updated uml and png" />
-    <MESSAGE value="Added additional support files" />
+    <MESSAGE value="Added foreign key constraint to premiums table&#10;Linked default for premium_id tp premiums table" />
+    <MESSAGE value="Added form for entering parameters&#10;Added forms helper" />
+    <MESSAGE value="Changed DateField import to come from wtforms.fields.html5" />
+    <MESSAGE value="Fixed up redirect after submission of generate premium form&#10;This doesn't currently generate anything or enter anything to the db" />
+    <MESSAGE value="Added email validation and default email address" />
+    <MESSAGE value="Added default start date for contract to be the first day of the next calendar month" />
+    <MESSAGE value="Created dummy premium for insertion into database" />
+    <MESSAGE value="Added cancel button to generate premium template" />
+    <MESSAGE value="Added return to customer list button to display customer" />
+    <MESSAGE value="Added generate button to display customer template" />
+    <MESSAGE value="Moved to extended classes for tables with declarative bases" />
+    <MESSAGE value="Used extended class in display_customer_premiums" />
+    <MESSAGE value="Changed extended class for MethodType on single instance of Table" />
+    <MESSAGE value="Updated add customer to use insert from customer_table" />
+    <MESSAGE value="Changed to SQLAlchemy models for customer&#10;Added pagination to show_customers view and template" />
+    <MESSAGE value="Used Customer class in display_customer" />
+    <MESSAGE value="Used Customer class in add_customer" />
+    <MESSAGE value="Used Customer class in generate_premium&#10;Removed customers_table" />
+    <MESSAGE value="Add Premiums class&#10;Used premiums class in display_customer_premiums" />
+    <MESSAGE value="Used Premium class in generate_premium view" />
+    <MESSAGE value="Added CustomerDemand class&#10;Used CustomerDemand class in display_customer" />
+    <MESSAGE value="Cleaned up comments&#10;Added pagination to demand table on display customer&#10;Added Display premiums button to display customer page" />
+    <MESSAGE value="Paginated premiums" />
+    <MESSAGE value="Cleaned up redundant import statements" />
+    <MESSAGE value="Merge with laptop&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/schema.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/templates/display_customer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="32" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="55" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
+        <state line="20" column="0" selection-start="716" selection-end="903" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/show_customers.html">
+    <entry file="file://$PROJECT_DIR$/templates/_formhelpers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" />
+        <state line="6" column="16" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="8" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/display_customer_premiums.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" />
+        <state line="37" column="22" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/display_customer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" />
+        <state line="20" column="0" selection-start="716" selection-end="903" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schema.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="32" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr.wsgi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file:///Applications/anaconda/lib/python2.7/site-packages/sqlalchemy/orm/mapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="772" column="55" selection-start="30668" selection-end="30668" vertical-scroll-proportion="21.929657" />
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customers">
+    <entry file="uml://DATABASE/bde5bbea-1736-4b2b-921a-2b9778b4195a">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>DATABASE</ID>
-          <OriginalElement>5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customers</OriginalElement>
+          <OriginalElement>bde5bbea-1736-4b2b-921a-2b9778b4195a</OriginalElement>
           <nodes>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.markets</node>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attrdef</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.referential_constraints</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.enabled_roles</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_seclabel</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attribute_relid_attnum_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.view_routine_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.check_constraints</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_sys_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_depend</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_language</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_user_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_settings</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.routines</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_timezone_abbrevs</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdescription_o_c_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shseclabel</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_table_relid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.view_table_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion_default_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_pltemplate</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_user_sequences</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_conname_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_inherits_relid_seqno_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_db_role_setting</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.attributes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rewrite</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.views</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.usage_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_depend_reference_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.domain_udt_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.domain_constraints</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_locks</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.administrable_role_authorizations</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_options</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject_metadata</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opclass</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_replication</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_aggregate_fnoid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_group</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_depend_depender_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries_ids_sequence</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop_opr_fam_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_index_indrelid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_views</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_matviews</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.user_defined_types</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_all_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_languages</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_sizing</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tablespace</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statistic</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_database_datname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.schemata</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.table_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_data_wrapper_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_namespace_nspname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_all_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_auth_members_role_member_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_user_functions</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_domain_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_event_trigger_evtname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mapping_user_server_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tablespace_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_udt_grants</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_user_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_all_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_server</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_authid</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_class_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.collations</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_description_o_c_o_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_database_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_servers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_am</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_data_wrapper_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attribute_relid_attnam_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_roles</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_demand</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_namespace</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sequences</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.udt_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attrdef_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_sys_sequences</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_template_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cast_source_target_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_collation_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_available_extension_versions</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_sizing_profiles</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_user_mappings</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_aggregate</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_dict_dictname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_table</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_type_typname_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_authid_rolname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mapping</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_conrelid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_column_grants</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_database</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdepend_depender_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rewrite_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_data_wrappers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_user_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_inherits</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdepend</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum_typid_label_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_features</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_authid_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amproc_fam_proc_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_sys_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.constraint_table_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_sys_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_table_options</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.table_constraints</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_sys_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.view_column_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_class_relname_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attrdef_adrelid_adnum_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_parser</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_default_acl_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_language_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_proc_proname_args_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_operator_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject_loid_pn_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_server_options</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdepend_reference_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rules</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_description</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_extension_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_event_trigger_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_extension_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mapping_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_ids_sequence</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_bgwriter</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.user_mapping_options</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opfamily</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_class</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opclass_am_name_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_user_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_user_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.data_type_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_data_wrappers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_proc</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_operator</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_template</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_range</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_language_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.routine_privileges</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.check_constraint_routine_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opclass_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_collation</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.user_mappings</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdescription</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tablespace_spcname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_parser_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_all_sequences</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_user_functions</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_table_columns</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shseclabel_object_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_all_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_implementation_info</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_type_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amproc_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.key_column_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_auth_members_member_role_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_proc_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_pltemplate_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_type</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_map</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_seclabel_object_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_cfgname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_data_wrapper_options</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_table_grants</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_collation_name_enc_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.markets</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger_tgrelid_tgname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_parts</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_inherits_parent_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stats</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mappings</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_timezone_names</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.domains</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_template_tmplname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statistic_relid_att_inh_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_seclabels</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_all_indexes</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.columns</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_default_acl_role_nsp_obj_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cast_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.collation_character_set_applicability</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_available_extensions</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_activity</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_auth_members</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_prepared_xacts</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_namespace_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_dict_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_udt_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_prepared_statements</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_parser_prsname_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shadow</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.parameters</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.character_sets</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_range_rngtypid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_index_indexrelid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opfamily_am_name_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_dict</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_servers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop_fam_strat_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cast</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_usage_grants</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.information_schema_catalog_name</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_default_acl</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rewrite_rel_rulename_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_map_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_server_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_database</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_packages</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger_tgconstraint_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_extension</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_db_role_setting_databaseid_rol_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_server_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject_metadata_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_contypid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cursors</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_operator_oprname_l_r_n_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.element_types</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_am_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum_typid_sortorder_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.constraint_column_usage</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opfamily_oid_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_data_wrapper</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.applicable_roles</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amproc</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion_name_nsp_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_sys_tables</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_database_conflicts</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_routine_grants</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_event_trigger</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_am_name_index</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.triggered_update_columns</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attribute</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.triggers</node>
+            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tables</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="109.0" y="131.0" />
+          <settings layout="Hierarchic Group" zoom="0.055016722408026755" x="2852.0" y="1560.0" />
           <SelectedNodes />
           <Categories>
             <Category>Columns</Category>
@@ -517,26 +1196,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/5c2850af-7cce-491a-84cd-f0cc0451282b.schema:flaskr.retail">
+    <entry file="uml://DATABASE/bde5bbea-1736-4b2b-921a-2b9778b4195a.schema:flaskr.retail">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>DATABASE</ID>
-          <OriginalElement>5c2850af-7cce-491a-84cd-f0cc0451282b.schema:flaskr.retail</OriginalElement>
+          <OriginalElement>bde5bbea-1736-4b2b-921a-2b9778b4195a.schema:flaskr.retail</OriginalElement>
           <nodes>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.premiums</node>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.markets</node>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.market_ids_sequence</node>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.parameter_ids_sequence</node>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customer_demand</node>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.premium_ids_sequence</node>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.run_parameters</node>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customer_ids_sequence</node>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customers</node>
-            <node x="" y="">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customer_with_market</node>
+            <node x="263.0" y="0.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_ids_sequence</node>
+            <node x="0.0" y="147.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customers</node>
+            <node x="0.0" y="458.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries_ids_sequence</node>
+            <node x="10.0" y="316.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_demand</node>
+            <node x="10.5" y="0.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.markets</node>
+            <node x="418.0" y="458.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries</node>
           </nodes>
           <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5966460723742277" x="467.0" y="557.0" />
+          <edges>
+            <edge source="bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customers" target="bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.markets">
+              <point x="0.0" y="-59.5" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_demand" target="bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customers">
+              <point x="0.0" y="-48.5" />
+              <point x="0.0" y="59.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.4766483516483517" x="318.0" y="354.0" />
           <SelectedNodes />
           <Categories>
             <Category>Columns</Category>
@@ -546,34 +1230,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://AlchemyModelDependency/#flaskr">
+    <entry file="uml://DATABASE/2f913edb-5ea1-4272-abb7-fb38329b63c1.schema:flaskr.retail">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <ID>AlchemyModelDependency</ID>
-          <OriginalElement>#flaskr</OriginalElement>
-          <nodes />
+          <ID>DATABASE</ID>
+          <OriginalElement>2f913edb-5ea1-4272-abb7-fb38329b63c1.schema:flaskr.retail</OriginalElement>
+          <nodes>
+            <node x="604.8149546827793" y="227.88519637462232">2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.parameter_ids_sequence</node>
+            <node x="227.75000000000003" y="147.0">2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customers</node>
+            <node x="0.0" y="524.0">2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customer_ids_sequence</node>
+            <node x="418.0" y="524.0">2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.premium_ids_sequence</node>
+            <node x="292.25" y="349.0">2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customer_demand</node>
+            <node x="15.250000000000057" y="316.0">2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.premiums</node>
+            <node x="238.25000000000003" y="0.0">2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.markets</node>
+            <node x="0.0" y="158.0">2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.run_parameters</node>
+          </nodes>
           <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="341.0" y="338.0" />
+          <edges>
+            <edge source="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customer_demand" target="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customers">
+              <point x="0.0" y="-48.5" />
+              <point x="54.5" y="59.5" />
+            </edge>
+            <edge source="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.premiums" target="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.run_parameters">
+              <point x="-64.25000000000003" y="-81.5" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customers" target="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.markets">
+              <point x="0.0" y="-59.5" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.premiums" target="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customers">
+              <point x="64.24999999999997" y="-81.5" />
+              <point x="208.00000000000003" y="291.0" />
+              <point x="282.25" y="291.0" />
+              <point x="-54.5" y="59.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.4168765743073048" x="230.0" y="486.0" />
           <SelectedNodes />
-          <Categories />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
           <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/_formhelpers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="16" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/display_customer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="716" selection-end="903" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/generate_customer_premium.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="49" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/show_customers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="251" selection-end="251" vertical-scroll-proportion="0.15765765" />
+        <state line="25" column="0" selection-start="970" selection-end="1389" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/display_customer_premiums.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="376" selection-end="376" vertical-scroll-proportion="0.021770682" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/display_customer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="403" selection-end="403" vertical-scroll-proportion="0.021770682" />
+        <state line="37" column="22" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/schema.sql">
@@ -581,15 +1316,22 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="21" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.4373178" />
+        <state line="11" column="33" selection-start="500" selection-end="500" vertical-scroll-proportion="-0.5555556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="8" selection-start="1343" selection-end="1343" vertical-scroll-proportion="-11.208333">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.5483871">
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
+        <state line="20" column="26" selection-start="631" selection-end="631" vertical-scroll-proportion="0.16930023">
+          <folding />
         </state>
       </provider>
     </entry>
