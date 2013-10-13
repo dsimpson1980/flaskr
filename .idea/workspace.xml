@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Fixed">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retail.uml" afterPath="$PROJECT_DIR$/retail.uml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retail_schema.png" afterPath="$PROJECT_DIR$/retail_schema.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/flaskr.iml" afterPath="$PROJECT_DIR$/.idea/flaskr.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.html" afterPath="$PROJECT_DIR$/templates/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schema.sql" afterPath="$PROJECT_DIR$/schema.sql" />
+    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Fixed schema diagram">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c35f6f32-237e-4197-a190-ff264231772a" time="1381663774294" ignored="false" />
+    <file path="/Dummy.txt" changelist="c35f6f32-237e-4197-a190-ff264231772a" time="1381673385372" ignored="false" />
     <file path="/schema.sql" changelist="c35f6f32-237e-4197-a190-ff264231772a" time="1381668995381" ignored="false" />
     <file path="/README.rst" changelist="c35f6f32-237e-4197-a190-ff264231772a" time="1381673367061" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,7 +78,7 @@
       <file leaf-file-name="README.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="16" selection-start="292" selection-end="292" vertical-scroll-proportion="0.36105034">
+            <state line="11" column="25" selection-start="301" selection-end="301" vertical-scroll-proportion="0.36105034">
               <folding />
             </state>
           </provider>
@@ -778,7 +769,11 @@
       <created>1381665432595</created>
       <updated>1381665432596</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Fixed schema diagram">
+      <created>1381673416742</created>
+      <updated>1381673416743</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <option name="clearContext" value="false" />
     <servers>
       <GitHub shared="false">
@@ -883,7 +878,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed schema diagram" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -897,7 +892,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Fixed up redirect after submission of generate premium form&#10;This doesn't currently generate anything or enter anything to the db" />
     <MESSAGE value="Added email validation and default email address" />
     <MESSAGE value="Added default start date for contract to be the first day of the next calendar month" />
     <MESSAGE value="Created dummy premium for insertion into database" />
@@ -922,6 +916,7 @@
     <MESSAGE value="Added heroku support files" />
     <MESSAGE value="Split out config parameters into separate file config.py&#10;Split out create_db into separate script file&#10;Added Profile for heroku&#10;Removed redundant import statements" />
     <MESSAGE value="Fixed" />
+    <MESSAGE value="Fixed schema diagram" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1093,7 +1088,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="292" selection-end="292" vertical-scroll-proportion="0.36105034">
+        <state line="11" column="25" selection-start="301" selection-end="301" vertical-scroll-proportion="0.36105034">
           <folding />
         </state>
       </provider>
