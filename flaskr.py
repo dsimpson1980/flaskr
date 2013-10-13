@@ -2,40 +2,22 @@
 import pandas as pd
 import numpy as np
 import sqlalchemy as sa
-import sqlite3
+from config import *
+
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
 from flask.ext.sqlalchemy import SQLAlchemy
 from contextlib import closing
 
-from sqlalchemy import create_engine, MetaData
-from sqlalchemy.orm import scoped_session, sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
-from types import MethodType
-
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
-
-#pagination
-CUSTOMERS_PER_PAGE = 10
-DEMAND_ITEMS_PER_PAGE = 10
-PREMIUMS_PER_PAGE = 3
-
-# configuration
-#DATABASE = '/projects/pycharm/flaskr/flaskr.db'
-SQLALCHEMY_DATABASE_URI = "postgresql://mapdes:default@localhost/flaskr"
-SQLALCHEMY_ECHO = True
-DEBUG = True
-SECRET_KEY = 'development key'
-USERNAME = 'admin'
-PASSWORD = 'default'
 
 app = Flask(__name__)
 app.config.from_object(__name__)
 # postgres config
-engine = create_engine(SQLALCHEMY_DATABASE_URI, convert_unicode=True)
+engine = sa.create_engine(SQLALCHEMY_DATABASE_URI, convert_unicode=True)
 
-meta = MetaData(bind=engine, schema='retail')
+meta = sa.MetaData(bind=engine, schema='retail')
 schema = 'retail'
 meta.reflect(bind=engine, schema=schema)
 db = SQLAlchemy(app)
@@ -71,11 +53,6 @@ class CustomerWithMarket(db.Model):
 
 def connect_db():
     return engine.connect()
-
-def init_db():
-    with closing(connect_db()) as db:
-        with app.open_resource('schema.sql', mode='r') as f:
-            db.execute(f.read())
 
 @app.before_request
 def before_request():
