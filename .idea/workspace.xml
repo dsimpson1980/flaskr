@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d993f086-7cb5-4685-bb88-3968fe7a02a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/testrunner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="d993f086-7cb5-4685-bb88-3968fe7a02a1" name="Default" comment="" />
     <ignored path="flaskr.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381662376866" ignored="false" />
+    <file path="/Dummy.txt" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381662987025" ignored="false" />
     <file path="/a.sql" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381295529077" ignored="false" />
     <file path="/dummy.sql" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381295526693" ignored="false" />
     <file path="/schema.sql" changelist="d993f086-7cb5-4685-bb88-3968fe7a02a1" time="1381372008930" ignored="false" />
@@ -47,7 +41,7 @@
       <file leaf-file-name="flaskr.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="10" selection-start="579" selection-end="579" vertical-scroll-proportion="0.58064514">
+            <state line="17" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.5483871">
               <folding>
                 <element signature="e#18#37#0" expanded="true" />
               </folding>
@@ -344,13 +338,18 @@
       <created>1381372499004</created>
       <updated>1381372499005</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added additional support files">
+      <created>1381662991148</created>
+      <updated>1381662991148</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25107604" sideWeight="0.6710875" order="3" side_tool="false" content_ui="tabs" />
@@ -365,7 +364,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33039647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -413,7 +411,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed duplicated drop on customer_with_market&#10;Updated uml and png" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added additional support files" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -440,6 +438,7 @@
     <MESSAGE value="Removed property addition from reflected customers table&#10;Added CustomerWithMarket class reflecting table in db&#10;primary_key for view overwritten by extend_existing to allow class creation (postgres doesn't allow views to have primary keys)" />
     <MESSAGE value="Removed commit() from init_db()&#10;Added Drop View customer_with_market to start of schema.sql" />
     <MESSAGE value="Removed duplicated drop on customer_with_market&#10;Updated uml and png" />
+    <MESSAGE value="Added additional support files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -587,7 +586,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="10" selection-start="579" selection-end="579" vertical-scroll-proportion="0.58064514">
+        <state line="17" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.5483871">
           <folding>
             <element signature="e#18#37#0" expanded="true" />
           </folding>
