@@ -1,13 +1,17 @@
 # all the imports
 import pandas as pd
 import numpy as np
-
+import sqlalchemy as sa
+import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
 from flask.ext.sqlalchemy import SQLAlchemy
 from contextlib import closing
 
 from sqlalchemy import create_engine, MetaData
+from sqlalchemy.orm import scoped_session, sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
+from types import MethodType
 
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
@@ -18,6 +22,7 @@ DEMAND_ITEMS_PER_PAGE = 10
 PREMIUMS_PER_PAGE = 3
 
 # configuration
+#DATABASE = '/projects/pycharm/flaskr/flaskr.db'
 SQLALCHEMY_DATABASE_URI = "postgresql://mapdes:default@localhost/flaskr"
 SQLALCHEMY_ECHO = True
 DEBUG = True
@@ -35,6 +40,10 @@ schema = 'retail'
 meta.reflect(bind=engine, schema=schema)
 db = SQLAlchemy(app)
 
+class Market(db.Model):
+    __tablename__ = 'markets'
+    metadata = meta
+
 class Customer(db.Model):
     __tablename__ = 'customers'
     metadata = meta
@@ -47,6 +56,19 @@ class CustomerDemand(db.Model):
     __tablename__ = 'customer_demand'
     metadata = meta
 
+class Parameter(db.Model):
+    __tablename__ = 'run_parameters'
+    metadata = meta
+
+class CustomerWithMarket(db.Model):
+    __tablename__ = 'customer_with_market'
+    __table_args__ = {'extend_existing': True,
+                      'autoload': True}
+    metadata = meta
+    customer_id = sa.Column('customer_id',
+                            sa.Integer,
+                            primary_key=True)
+
 def connect_db():
     return engine.connect()
 
@@ -54,7 +76,6 @@ def init_db():
     with closing(connect_db()) as db:
         with app.open_resource('schema.sql', mode='r') as f:
             db.execute(f.read())
-        db.commit()
 
 @app.before_request
 def before_request():
@@ -69,7 +90,7 @@ def teardown_request(exception):
 @app.route('/')
 @app.route('/index/<int:page>')
 def show_customers(page=1):
-    customers = Customer.query.paginate(page, CUSTOMERS_PER_PAGE, False)
+    customers = CustomerWithMarket.query.paginate(page, CUSTOMERS_PER_PAGE, False)
     return render_template('show_customers.html', customers=customers)
 
 @app.route('/add_customer', methods=['POST'])
@@ -81,7 +102,7 @@ def add_customer():
     image64 = generate_customer_demand_image(demand)
 
     new_customer = Customer(name=request.form['name'],
-                            market=request.form['market'],
+                            market_id=1,
                             image64=image64)
     db.session.add(new_customer)
     db.session.commit()
@@ -117,7 +138,9 @@ def generate_customer_premium(customer_id):
         #    contract_end.append(form.contract_start + relativedelta(months=12*3+1, days=-1))
         contract_start = [form.contract_start for x in range(len(contract_end))]
         valuation_date = datetime.today()
-        run_id = 1
+        customer = CustomerWithMarket.query.filter(Customer.customer_id==customer_id).one()
+        parameters = fetch_run_parameters(customer.market_id)
+        run_id = parameters.run_id
         premium = np.random.rand()
         new_premium = Premium(customer_id=customer_id,
                               run_id=run_id,
@@ -154,7 +177,7 @@ class premium_parameters_form(Form):
 def display_customer_premiums(customer_id, page=1):
     if not session.get('logged_in'):
         abort(401)
-    customer = Customer.query.filter(Customer.customer_id==customer_id).one()
+    customer = CustomerWithMarket.query.filter(Customer.customer_id==customer_id).one()
     premiums = Premium.query.filter(Premium.customer_id==customer_id)
     premiums = premiums.paginate(page, PREMIUMS_PER_PAGE, False)
     return render_template('display_customer_premiums.html',
@@ -166,7 +189,7 @@ def display_customer_premiums(customer_id, page=1):
 def display_customer(customer_id, page=1):
     if not session.get('logged_in'):
         abort(401)
-    customer = Customer.query.filter(Customer.customer_id==customer_id).one()
+    customer = CustomerWithMarket.query.filter(Customer.customer_id==customer_id).one()
     customer_demand = CustomerDemand.query.filter(CustomerDemand.customer_id==customer_id)
     customer_demand = customer_demand.paginate(page, DEMAND_ITEMS_PER_PAGE, False)
     return render_template('display_customer.html',
@@ -263,6 +286,10 @@ def generate_customer_demand_image(demand):
     buffer.getvalue()
     _historical_demand_image64 = base64.b64encode(buffer.getvalue())
     return _historical_demand_image64
+
+def fetch_run_parameters(market_id):
+    parameters = Parameter.query.filter(Parameter.market_id==market_id).order_by(Parameter.db_upload_date).first()
+    return parameters
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000)

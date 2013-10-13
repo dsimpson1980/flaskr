@@ -19,7 +19,7 @@
             <tr>
                 <td><a href={{ url_for('display_customer', customer_id=customer.customer_id) }}>{{ customer.name }}</a></td>
                 <td><a href={{ url_for('display_customer', customer_id=customer.customer_id) }}>{{ customer.customer_id }}</a></td>
-                <td>{{ customer.market }}</td>
+                <td>{{ customer.market_name }}</td>
             </tr>
         {% endfor %}
         {% if customers.has_prev %}
