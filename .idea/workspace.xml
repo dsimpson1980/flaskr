@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Split out config parameters into separate file config.py&#10;Split out create_db into separate script file&#10;Added Profile for heroku&#10;Removed redundant import statements">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runp-heroku.py" afterPath="$PROJECT_DIR$/runp-heroku.py" />
+    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Altered runp-heroku">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/flaskr.db" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -93,10 +94,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runp-heroku.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="runp-heroku.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runp-heroku.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.089020774" vertical-offset="0" max-vertical-offset="337">
+            <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="17" selection-start="457" selection-end="457" vertical-scroll-proportion="0.2388535" vertical-offset="345" max-vertical-offset="780">
               <folding />
             </state>
           </provider>
@@ -165,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="dbtable:/6325f605/2f913edb-5ea1-4272-abb7-fb38329b63c1/flaskr.retail.premiums" />
         <option value="dbtable:/6325f605/2f913edb-5ea1-4272-abb7-fb38329b63c1/flaskr.retail.run_parameters" />
         <option value="$PROJECT_DIR$/templates/_formhelpers.html" />
         <option value="$PROJECT_DIR$/pagination.py" />
@@ -181,6 +190,7 @@
         <option value="$PROJECT_DIR$/create_db.py" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/runp-heroku.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -261,14 +271,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="125" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="136" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/retail_schema.png" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="145" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="939" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="936" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="939" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="141" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="138" />
     <property name="Database.TableEditor.Splitter" value="0.9" />
@@ -285,8 +295,8 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="TODO_SCOPE" value="All" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -364,6 +374,23 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flaskr" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="docs" factoryName="Docutils task">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -382,21 +409,7 @@
       <option name="docutils_open_in_browser" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="flaskr" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -420,9 +433,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -754,7 +764,11 @@
       <created>1381654703535</created>
       <updated>1381654703535</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Altered runp-heroku">
+      <created>1381662827659</created>
+      <updated>1381662827659</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <option name="clearContext" value="false" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
@@ -805,9 +819,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19124797" sideWeight="0.6736111" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.858885" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22609401" sideWeight="0.4565972" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23014587" sideWeight="0.4565972" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20731707" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22609401" sideWeight="0.2170139" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23014587" sideWeight="0.2170139" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263889" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.45409015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="6" y="22" width="784" height="694" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -828,7 +842,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Changed DateField import to come from wtforms.fields.html5" />
     <MESSAGE value="Fixed up redirect after submission of generate premium form&#10;This doesn't currently generate anything or enter anything to the db" />
     <MESSAGE value="Added email validation and default email address" />
     <MESSAGE value="Added default start date for contract to be the first day of the next calendar month" />
@@ -853,7 +866,8 @@
     <MESSAGE value="Merge with laptop&#10;" />
     <MESSAGE value="Added heroku support files" />
     <MESSAGE value="Split out config parameters into separate file config.py&#10;Split out create_db into separate script file&#10;Added Profile for heroku&#10;Removed redundant import statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Split out config parameters into separate file config.py&#10;Split out create_db into separate script file&#10;Added Profile for heroku&#10;Removed redundant import statements" />
+    <MESSAGE value="Altered runp-heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="Altered runp-heroku" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -861,289 +875,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://DATABASE/bde5bbea-1736-4b2b-921a-2b9778b4195a">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>bde5bbea-1736-4b2b-921a-2b9778b4195a</OriginalElement>
-          <nodes>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attrdef</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.referential_constraints</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.enabled_roles</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_seclabel</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attribute_relid_attnum_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.view_routine_usage</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.check_constraints</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_sys_tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_depend</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_language</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_user_tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_settings</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.routines</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_timezone_abbrevs</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdescription_o_c_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shseclabel</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_table_relid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.view_table_usage</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion_default_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_pltemplate</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_user_sequences</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_conname_nsp_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_inherits_relid_seqno_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_db_role_setting</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.attributes</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rewrite</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.views</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.usage_privileges</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_depend_reference_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.domain_udt_usage</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.domain_constraints</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_locks</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.administrable_role_authorizations</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_options</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject_metadata</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opclass</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_replication</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_aggregate_fnoid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_group</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_depend_depender_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries_ids_sequence</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop_opr_fam_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_index_indrelid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_views</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_matviews</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.user_defined_types</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_all_indexes</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_languages</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_sizing</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tablespace</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statistic</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_database_datname_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.schemata</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.table_privileges</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_data_wrapper_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_namespace_nspname_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_all_tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_auth_members_role_member_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_user_functions</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_domain_usage</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_event_trigger_evtname_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mapping_user_server_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tablespace_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_udt_grants</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_user_indexes</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_all_tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_server</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_authid</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_class_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.collations</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_description_o_c_o_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_database_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_servers</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_am</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_data_wrapper_name_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attribute_relid_attnam_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_roles</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_demand</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_namespace</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sequences</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.udt_privileges</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attrdef_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_sys_sequences</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_template_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cast_source_target_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customers</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_collation_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_available_extension_versions</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_sizing_profiles</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_user_mappings</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_aggregate</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_dict_dictname_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_table</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_type_typname_nsp_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_authid_rolname_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mapping</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_conrelid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_column_grants</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_database</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdepend_depender_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rewrite_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_data_wrappers</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_user_tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_inherits</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdepend</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum_typid_label_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_features</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_authid_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amproc_fam_proc_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_sys_indexes</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.constraint_table_usage</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_sys_indexes</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_table_options</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.table_constraints</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_sys_tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.view_column_usage</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_class_relname_nsp_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attrdef_adrelid_adnum_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_parser</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_default_acl_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_language_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_proc_proname_args_nsp_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_operator_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject_loid_pn_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_server_options</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdepend_reference_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rules</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_description</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_privileges</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_extension_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_event_trigger_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_extension_name_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mapping_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_ids_sequence</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_bgwriter</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.user_mapping_options</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opfamily</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_class</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opclass_am_name_nsp_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_user_indexes</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_user_tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.data_type_privileges</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_data_wrappers</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_proc</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_operator</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_template</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_range</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_language_name_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.routine_privileges</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.check_constraint_routine_usage</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opclass_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_collation</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.user_mappings</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shdescription</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tablespace_spcname_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_parser_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_all_sequences</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_user_functions</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_table_columns</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shseclabel_object_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_all_tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_implementation_info</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_type_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amproc_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.key_column_usage</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_indexes</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_auth_members_member_role_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_proc_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_pltemplate_name_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_type</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_map</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_seclabel_object_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_cfgname_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.foreign_data_wrapper_options</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_table_grants</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_collation_name_enc_nsp_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.markets</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger_tgrelid_tgname_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_parts</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_inherits_parent_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stats</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user_mappings</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_timezone_names</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.domains</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_template_tmplname_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statistic_relid_att_inh_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_seclabels</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_statio_all_indexes</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.columns</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_default_acl_role_nsp_obj_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cast_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.collation_character_set_applicability</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_available_extensions</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_activity</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_auth_members</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_prepared_xacts</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_namespace_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_dict_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.column_udt_usage</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_prepared_statements</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_parser_prsname_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_shadow</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.parameters</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.character_sets</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_range_rngtypid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_index_indexrelid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opfamily_am_name_nsp_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_dict</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema._pg_foreign_servers</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amop_fam_strat_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cast</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_usage_grants</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.information_schema_catalog_name</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_default_acl</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_rewrite_rel_rulename_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_ts_config_map_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_server_name_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_user</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_database</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.sql_packages</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_trigger_tgconstraint_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_extension</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_db_role_setting_databaseid_rol_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_server_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_largeobject_metadata_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_contypid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_cursors</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_operator_oprname_l_r_n_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.element_types</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_am_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_enum_typid_sortorder_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.constraint_column_usage</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_opfamily_oid_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_foreign_data_wrapper</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.applicable_roles</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_amproc</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion_name_nsp_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_constraint</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_xact_sys_tables</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_stat_database_conflicts</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.role_routine_grants</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_conversion</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_event_trigger</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_am_name_index</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.triggered_update_columns</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_attribute</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.information_schema.triggers</node>
-            <node x="" y="">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.pg_catalog.pg_tables</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.055016722408026755" x="2852.0" y="1560.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/bde5bbea-1736-4b2b-921a-2b9778b4195a.schema:flaskr.retail">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1154,8 +885,8 @@
             <node x="0.0" y="147.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customers</node>
             <node x="0.0" y="458.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries_ids_sequence</node>
             <node x="10.0" y="316.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.customer_demand</node>
-            <node x="10.5" y="0.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.markets</node>
             <node x="418.0" y="458.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.entries</node>
+            <node x="10.5" y="0.0">bde5bbea-1736-4b2b-921a-2b9778b4195a.table:flaskr.retail.markets</node>
           </nodes>
           <notes />
           <edges>
@@ -1200,13 +931,13 @@
           </nodes>
           <notes />
           <edges>
-            <edge source="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customer_demand" target="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customers">
-              <point x="0.0" y="-48.5" />
-              <point x="54.5" y="59.5" />
-            </edge>
             <edge source="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.premiums" target="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.run_parameters">
               <point x="-64.25000000000003" y="-81.5" />
               <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customer_demand" target="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customers">
+              <point x="0.0" y="-48.5" />
+              <point x="54.5" y="59.5" />
             </edge>
             <edge source="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.customers" target="2f913edb-5ea1-4272-abb7-fb38329b63c1.table:flaskr.retail.markets">
               <point x="0.0" y="-59.5" />
@@ -1322,7 +1053,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runp-heroku.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.089020774" vertical-offset="0" max-vertical-offset="337">
+        <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="17" selection-start="457" selection-end="457" vertical-scroll-proportion="0.2388535" vertical-offset="345" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
