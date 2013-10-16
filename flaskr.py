@@ -52,7 +52,15 @@ class CustomerWithMarket(db.Model):
                             primary_key=True)
 
 def connect_db():
-    return engine.connect()
+    import urlparse
+
+    urlparse.uses_netloc.append("postgres")
+    url = urlparse.urlparse(SQLALCHEMY_DATABASE_URI)
+    return psycopg2.connect(database=url.path[1:],
+                            user=url.username,
+                            password=url.password,
+                            host=url.hostname,
+                            port=url.port)
 
 @app.before_request
 def before_request():
@@ -157,7 +165,7 @@ class premium_parameters_form(Form):
 def display_customer_premiums(customer_id, page=1):
     if not session.get('logged_in'):
         abort(401)
-    customer = CustomerWithMarket.query.filter(Customer.customer_id==customer_id).one()
+    customer = CustomerWithMarket.query.filter(CustomerWithMarket.customer_id==customer_id).one()
     premiums = Premium.query.filter(Premium.customer_id==customer_id)
     premiums = premiums.paginate(page, PREMIUMS_PER_PAGE, False)
     return render_template('display_customer_premiums.html',
@@ -169,7 +177,7 @@ def display_customer_premiums(customer_id, page=1):
 def display_customer(customer_id, page=1):
     if not session.get('logged_in'):
         abort(401)
-    customer = CustomerWithMarket.query.filter(Customer.customer_id==customer_id).one()
+    customer = CustomerWithMarket.query.filter(CustomerWithMarket.customer_id==customer_id).one()
     customer_demand = CustomerDemand.query.filter(CustomerDemand.customer_id==customer_id)
     customer_demand = customer_demand.paginate(page, DEMAND_ITEMS_PER_PAGE, False)
     return render_template('display_customer.html',
