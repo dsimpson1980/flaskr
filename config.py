@@ -1,8 +1,10 @@
-SQLALCHEMY_DATABASE_URI = "postgresql://mapdes:default@localhost/flaskr"
+import os
+
+SQLALCHEMY_DATABASE_URI = os.environ["HEROKU_POSTGRESQL_CRIMSON_URL"]
 SQLALCHEMY_ECHO = True
 DEBUG = True
 SECRET_KEY = 'development key'
-USERNAME = 'admin'
+USERNAME = 'mapdes'
 PASSWORD = 'default'
 
 #pagination

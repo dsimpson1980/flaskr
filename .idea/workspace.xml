@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Removed workspace.xml from commit">
       <change type="DELETED" beforePath="$PROJECT_DIR$/copy_requirements.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
     </list>
     <ignored path="flaskr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="flaskr.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="flaskr.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="25" selection-start="764" selection-end="764" vertical-scroll-proportion="0.7919255" vertical-offset="165" max-vertical-offset="4215">
+            <state line="23" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="4215">
               <folding>
                 <element signature="e#18#37#0" expanded="true" />
               </folding>
@@ -62,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="config.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+            <state line="6" column="19" selection-start="167" selection-end="167" vertical-scroll-proportion="0.26865673" vertical-offset="0" max-vertical-offset="335">
               <folding />
             </state>
           </provider>
@@ -131,7 +132,6 @@
         <option value="$PROJECT_DIR$/templates/generate_customer_premium.html" />
         <option value="$PROJECT_DIR$/templates/display_customer.html" />
         <option value="$PROJECT_DIR$/templates/display_customer_premiums.html" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/Models.py" />
         <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/create_db.py" />
@@ -141,6 +141,7 @@
         <option value="$PROJECT_DIR$/flaskr.py" />
         <option value="$PROJECT_DIR$/templates/show_customers.html" />
         <option value="$PROJECT_DIR$/schema.sql" />
+        <option value="$PROJECT_DIR$/config.py" />
       </list>
     </option>
   </component>
@@ -823,7 +824,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="694" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41811848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -837,7 +838,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.858885" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25445706" sideWeight="0.45470384" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="true" weight="0.45409015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="6" y="22" width="784" height="694" />
+      <window_info id="Run" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.45409015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="6" y="22" width="784" height="694" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1016,13 +1017,6 @@
         <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="358">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/generate_customer_premium.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="540">
@@ -1058,10 +1052,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="25" selection-start="764" selection-end="764" vertical-scroll-proportion="0.7919255" vertical-offset="165" max-vertical-offset="4215">
+        <state line="23" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="4215">
           <folding>
             <element signature="e#18#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="167" selection-end="167" vertical-scroll-proportion="0.26865673" vertical-offset="0" max-vertical-offset="335">
+          <folding />
         </state>
       </provider>
     </entry>
