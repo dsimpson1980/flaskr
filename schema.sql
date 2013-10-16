@@ -37,6 +37,7 @@ CREATE VIEW retail.customer_with_market AS
   SELECT customer_id,
          name,
          market_name,
+         customers.market_id,
          image64
   FROM (retail.customers
   LEFT JOIN retail.markets

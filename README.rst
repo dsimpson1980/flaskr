@@ -3,7 +3,7 @@ Database schema structure
 
 The postgres database has the schema structure outlined in the database below:
 
-.. figure:: retail_schema.png
+.. figure:: retail_schema.jpg
    :scale: 100%
    :alt: diagram of retail schema
 
