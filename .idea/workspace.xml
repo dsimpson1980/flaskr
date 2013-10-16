@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Polished up numerous areas">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.corrupted.20131013-102119.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/retail_schema.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/testrunner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retail.uml" afterPath="$PROJECT_DIR$/retail.uml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retail_schema.png" afterPath="$PROJECT_DIR$/retail_schema.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schema.sql" afterPath="$PROJECT_DIR$/schema.sql" />
+    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Removed workspace.xml from commit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -47,7 +36,7 @@
       <file leaf-file-name="flaskr.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="19" selection-start="816" selection-end="816" vertical-scroll-proportion="0.88509315" vertical-offset="165" max-vertical-offset="4215">
+            <state line="24" column="23" selection-start="687" selection-end="687" vertical-scroll-proportion="0.60559005" vertical-offset="165" max-vertical-offset="4215">
               <folding>
                 <element signature="e#18#37#0" expanded="true" />
               </folding>
@@ -243,6 +232,24 @@
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="flaskr">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="flaskr">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -765,7 +772,15 @@
       <created>1381854516600</created>
       <updated>1381854516601</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Polished up numerous areas">
+      <created>1381889669358</created>
+      <updated>1381889669358</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Removed .idea">
+      <created>1381889716910</created>
+      <updated>1381889716910</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <option name="clearContext" value="false" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
@@ -808,7 +823,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="694" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41811848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -818,7 +833,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32752612" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25445706" sideWeight="0.21602787" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32752612" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.858885" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25445706" sideWeight="0.45470384" order="0" side_tool="false" content_ui="combo" />
@@ -839,7 +854,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added cancel button to generate premium template" />
     <MESSAGE value="Added return to customer list button to display customer" />
     <MESSAGE value="Added generate button to display customer template" />
     <MESSAGE value="Moved to extended classes for tables with declarative bases" />
@@ -864,7 +878,8 @@
     <MESSAGE value="Reduced requirements file further" />
     <MESSAGE value="Polished up numerous areas&#10;Removed .idea" />
     <MESSAGE value="Polished up numerous areas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Polished up numerous areas" />
+    <MESSAGE value="Removed .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed .idea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1043,7 +1058,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="19" selection-start="816" selection-end="816" vertical-scroll-proportion="0.88509315" vertical-offset="165" max-vertical-offset="4215">
+        <state line="24" column="23" selection-start="687" selection-end="687" vertical-scroll-proportion="0.60559005" vertical-offset="165" max-vertical-offset="4215">
           <folding>
             <element signature="e#18#37#0" expanded="true" />
           </folding>
