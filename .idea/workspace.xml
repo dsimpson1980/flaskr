@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="check with hello">
+    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="moved file to root&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -57,7 +57,7 @@
       <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+            <state line="2" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.08522727" vertical-offset="0" max-vertical-offset="352">
               <folding />
             </state>
           </provider>
@@ -903,7 +903,11 @@
       <created>1381993943773</created>
       <updated>1381993943773</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="moved file to root&#10;">
+      <created>1381993996996</created>
+      <updated>1381993996997</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <option name="clearContext" value="false" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
@@ -946,7 +950,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="22" width="1254" height="694" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41811848" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -959,7 +963,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.858885" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25993377" sideWeight="0.47560975" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25993377" sideWeight="0.47560975" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.45409015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="6" y="22" width="676" height="694" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -977,7 +981,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Cleaned up redundant import statements" />
     <MESSAGE value="Merge with laptop&#10;" />
     <MESSAGE value="Added heroku support files" />
     <MESSAGE value="Split out config parameters into separate file config.py&#10;Split out create_db into separate script file&#10;Added Profile for heroku&#10;Removed redundant import statements" />
@@ -1002,7 +1005,8 @@
     <MESSAGE value="Moved requirements.txt to root" />
     <MESSAGE value="run_server" />
     <MESSAGE value="check with hello" />
-    <option name="LAST_COMMIT_MESSAGE" value="check with hello" />
+    <MESSAGE value="moved file to root&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved file to root&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1170,7 +1174,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+        <state line="2" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.08522727" vertical-offset="0" max-vertical-offset="352">
           <folding />
         </state>
       </provider>
