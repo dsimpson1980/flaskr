@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Package upload working for Heroku&#10;Added very simple unit tests fro Customer">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/test/test_flaskr.py" afterPath="$PROJECT_DIR$/flaskr/test/test_flaskr.py" />
+    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Cleaned up test_flaskr">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/flaskr/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/flaskr/retail.uml" afterPath="$PROJECT_DIR$/retail.uml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/flaskr/retail_schema.png" afterPath="$PROJECT_DIR$/retail_schema.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -96,7 +98,7 @@
         </entry>
       </file>
       <file leaf-file-name="README.rst" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/README.rst">
+        <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state line="35" column="72" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="930">
               <folding />
@@ -898,7 +900,11 @@
       <created>1381997170211</created>
       <updated>1381997170211</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Cleaned up test_flaskr">
+      <created>1381997240369</created>
+      <updated>1381997240369</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <option name="clearContext" value="false" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
@@ -941,7 +947,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="22" width="1254" height="694" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41811848" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -954,7 +960,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.858885" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25993377" sideWeight="0.47560975" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25993377" sideWeight="0.47560975" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.45409015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="6" y="22" width="748" height="694" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -972,7 +978,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Split out config parameters into separate file config.py&#10;Split out create_db into separate script file&#10;Added Profile for heroku&#10;Removed redundant import statements" />
     <MESSAGE value="Altered runp-heroku" />
     <MESSAGE value="Reduced requirements file" />
     <MESSAGE value="Reduced requirements file further" />
@@ -997,7 +1002,8 @@
     <MESSAGE value="moved file to root&#10;" />
     <MESSAGE value="Changed to run_server:app" />
     <MESSAGE value="Package upload working for Heroku&#10;Added very simple unit tests fro Customer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Package upload working for Heroku&#10;Added very simple unit tests fro Customer" />
+    <MESSAGE value="Cleaned up test_flaskr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up test_flaskr" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1061,12 +1067,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/retail_schema.png">
+    <entry file="file://$PROJECT_DIR$/retail_schema.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/README.rst">
+    <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="72" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="930">
           <folding />
