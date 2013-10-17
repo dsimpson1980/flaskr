@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Edited Profile to point to flaskr">
+    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Edited Profile to point to run_server">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -55,7 +55,7 @@
         </entry>
       </file>
       <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flaskr/Procfile">
+        <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.08522727" vertical-offset="0" max-vertical-offset="352">
               <folding />
@@ -250,20 +250,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="flaskr">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="flaskr">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -309,6 +295,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/flaskr" />
     </key>
   </component>
@@ -850,7 +837,11 @@
       <created>1381993114560</created>
       <updated>1381993114561</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Edited Profile to point to run_server">
+      <created>1381993229864</created>
+      <updated>1381993229865</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <option name="clearContext" value="false" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
@@ -924,7 +915,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Used Customer class in display_customer" />
     <MESSAGE value="Used Customer class in add_customer" />
     <MESSAGE value="Used Customer class in generate_premium&#10;Removed customers_table" />
     <MESSAGE value="Add Premiums class&#10;Used premiums class in display_customer_premiums" />
@@ -949,7 +939,8 @@
     <MESSAGE value="Added 404 error view and template" />
     <MESSAGE value="Converted module to package" />
     <MESSAGE value="Edited Profile to point to flaskr" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited Profile to point to flaskr" />
+    <MESSAGE value="Edited Profile to point to run_server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited Profile to point to run_server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1116,7 +1107,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/Procfile">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.08522727" vertical-offset="0" max-vertical-offset="352">
           <folding />
