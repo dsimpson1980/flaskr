@@ -15,20 +15,29 @@ Authentication successful.
 
 The buildpack is located here: https://github.com/dbrgn/heroku-buildpack-python-sklearn
 
-Run $ heroku create  --buildpack https://github.com/dbrgn/heroku-buildpack-python-sklearn/
+We're creating a new app from scratch so the command is:
+
+    $ heroku create  --buildpack https://github.com/dbrgn/heroku-buildpack-python-sklearn/
+
 To create the app and add it as a remote repository for git
 
 Comment out matplotlib and pandas from requirements before pushing to heroku for first time
 Add above two pkgs back in that will now use cached numpy compilation
 
-Run $ heroku add:add heroku-postgresql:dev
-to create the database addon
+To create the database addon:
 
-Run $ heroku run init
+    $ heroku add:add heroku-postgresql:dev
+
+The initialise the database:
+
+    $ heroku run init
+
 to populate the database with the structure in schema.sql
 
-Run the below to promote the database to DEFAULT i.e. DATABASE_URL
-$ heroku pg:promote HEROKU_POSTGRESQL_color_URL
+Run the below to promote the database to DEFAULT i.e. DATABASE_URL:
+
+    $ heroku pg:promote HEROKU_POSTGRESQL_color_URL
+
 Promoting HEROKU_POSTGRESQL_COLOR_URL (DATABASE_URL) to DATABASE_URL... done
 
 Database schema structure
