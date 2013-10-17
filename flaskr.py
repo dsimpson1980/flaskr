@@ -2,15 +2,16 @@
 import pandas as pd
 import numpy as np
 import sqlalchemy as sa
-from config import *
+import psycopg2
 
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
 from flask.ext.sqlalchemy import SQLAlchemy
-from contextlib import closing
 
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
+
+from config import *
 
 app = Flask(__name__)
 app.config.from_object(__name__)
