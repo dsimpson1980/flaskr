@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Change Profile to point to flaskr.flaskr">
+    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Change Profile to point to flaskr/flaskr">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -57,7 +57,7 @@
       <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="25" selection-start="57" selection-end="57" vertical-scroll-proportion="0.042613637" vertical-offset="0" max-vertical-offset="352">
+            <state line="2" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.08522727" vertical-offset="0" max-vertical-offset="352">
               <folding />
             </state>
           </provider>
@@ -242,6 +242,20 @@
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="flaskr">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="flaskr">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -853,7 +867,11 @@
       <created>1381993511727</created>
       <updated>1381993511727</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Change Profile to point to flaskr/flaskr">
+      <created>1381993641328</created>
+      <updated>1381993641329</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <option name="clearContext" value="false" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
@@ -927,7 +945,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Used Premium class in generate_premium view" />
     <MESSAGE value="Added CustomerDemand class&#10;Used CustomerDemand class in display_customer" />
     <MESSAGE value="Cleaned up comments&#10;Added pagination to demand table on display customer&#10;Added Display premiums button to display customer page" />
     <MESSAGE value="Paginated premiums" />
@@ -952,7 +969,8 @@
     <MESSAGE value="Moved Procfile to root of package" />
     <MESSAGE value="Change Profile to point to flaskr" />
     <MESSAGE value="Change Profile to point to flaskr.flaskr" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change Profile to point to flaskr.flaskr" />
+    <MESSAGE value="Change Profile to point to flaskr/flaskr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change Profile to point to flaskr/flaskr" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -960,7 +978,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flaskr/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="17" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
@@ -1121,7 +1139,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="25" selection-start="57" selection-end="57" vertical-scroll-proportion="0.042613637" vertical-offset="0" max-vertical-offset="352">
+        <state line="2" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.08522727" vertical-offset="0" max-vertical-offset="352">
           <folding />
         </state>
       </provider>
