@@ -11,7 +11,8 @@ from flask.ext.sqlalchemy import SQLAlchemy
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
 
-from config import *
+from config import SQLALCHEMY_DATABASE_URI
+from config import CUSTOMERS_PER_PAGE, PREMIUMS_PER_PAGE, DEMAND_ITEMS_PER_PAGE
 
 app = Flask(__name__)
 app.config.from_object(__name__)
