@@ -24,15 +24,18 @@ To create the app and add it as a remote repository for git
 Comment out matplotlib and pandas from requirements before pushing to heroku for first time
 Add above two pkgs back in that will now use cached numpy compilation
 
+To be able to detect what environment the app is being run on, add the following
+environmental variable in heroku:
+
+    $ heroku config:set HEROKU=1
+
 To create the database addon:
 
     $ heroku add:add heroku-postgresql:dev
 
-The initialise the database:
+The initialise the database and to populate it with the structure in schema.sql
 
     $ heroku run init
-
-to populate the database with the structure in schema.sql
 
 Run the below to promote the database to DEFAULT i.e. DATABASE_URL:
 

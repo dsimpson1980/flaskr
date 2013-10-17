@@ -15,7 +15,7 @@ from config import SQLALCHEMY_DATABASE_URI
 from config import CUSTOMERS_PER_PAGE, PREMIUMS_PER_PAGE, DEMAND_ITEMS_PER_PAGE
 
 app = Flask(__name__)
-app.config.from_object(__name__)
+app.config.from_object('config')
 # postgres config
 engine = sa.create_engine(SQLALCHEMY_DATABASE_URI, convert_unicode=True)
 
@@ -204,7 +204,7 @@ def login():
 def logout():
     session.pop('logged_in', None)
     flash('You were logged out')
-    return redirect(url_for('show_entries'))
+    return redirect('/')
 
 def generate_random_customer_data():
     """Generates some random customer data
