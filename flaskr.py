@@ -285,5 +285,9 @@ def fetch_run_parameters(market_id):
     parameters = Parameter.query.filter(Parameter.market_id==market_id).order_by(Parameter.db_upload_date).first()
     return parameters
 
+@app.errorhandler(404)
+def internal_error(error):
+    return render_template('404.html'), 404
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000)
