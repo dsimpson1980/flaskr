@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Changed to run_server:app">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hello.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/__init__.py" afterPath="$PROJECT_DIR$/flaskr/__init__.py" />
+    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Package upload working for Heroku&#10;Added very simple unit tests fro Customer">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/test/test_flaskr.py" afterPath="$PROJECT_DIR$/flaskr/test/test_flaskr.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/views.py" afterPath="$PROJECT_DIR$/flaskr/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -79,7 +76,7 @@
       <file leaf-file-name="test_flaskr.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr/test/test_flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="14" selection-start="294" selection-end="294" vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="420">
+            <state line="15" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="0.63920456" vertical-offset="0" max-vertical-offset="352">
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -897,7 +894,11 @@
       <created>1381994330904</created>
       <updated>1381994330904</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Package upload working for Heroku&#10;Added very simple unit tests fro Customer">
+      <created>1381997170211</created>
+      <updated>1381997170211</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <option name="clearContext" value="false" />
     <option name="createBranch" value="false" />
     <option name="closeIssue" value="false" />
@@ -971,7 +972,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added heroku support files" />
     <MESSAGE value="Split out config parameters into separate file config.py&#10;Split out create_db into separate script file&#10;Added Profile for heroku&#10;Removed redundant import statements" />
     <MESSAGE value="Altered runp-heroku" />
     <MESSAGE value="Reduced requirements file" />
@@ -996,7 +996,8 @@
     <MESSAGE value="check with hello" />
     <MESSAGE value="moved file to root&#10;" />
     <MESSAGE value="Changed to run_server:app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed to run_server:app" />
+    <MESSAGE value="Package upload working for Heroku&#10;Added very simple unit tests fro Customer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Package upload working for Heroku&#10;Added very simple unit tests fro Customer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1155,7 +1156,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/test/test_flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="294" selection-end="294" vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="420">
+        <state line="15" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="0.63920456" vertical-offset="0" max-vertical-offset="352">
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

@@ -12,12 +12,4 @@ class TestCustomer(object):
                                  image64=None)
         db.session.add(test_customer)
         db.session.commit()
-        print test_customer.customer_id
         assert isinstance(test_customer.customer_id, int)
-
-    def tearDown(self):
-        db.session.remove()
-        db.drop_all()
-
-    def check_test(self):
-        assert(True)
