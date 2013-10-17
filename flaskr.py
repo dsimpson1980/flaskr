@@ -11,13 +11,11 @@ from flask.ext.sqlalchemy import SQLAlchemy
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
 
-from config import SQLALCHEMY_DATABASE_URI
-from config import CUSTOMERS_PER_PAGE, PREMIUMS_PER_PAGE, DEMAND_ITEMS_PER_PAGE
-
 app = Flask(__name__)
 app.config.from_object('config')
 # postgres config
-engine = sa.create_engine(SQLALCHEMY_DATABASE_URI, convert_unicode=True)
+engine = sa.create_engine(app.config['SQLALCHEMY_DATABASE_URI'],
+                          convert_unicode=True)
 
 meta = sa.MetaData(bind=engine, schema='retail')
 schema = 'retail'
@@ -57,7 +55,7 @@ def connect_db():
     import urlparse
 
     urlparse.uses_netloc.append("postgres")
-    url = urlparse.urlparse(SQLALCHEMY_DATABASE_URI)
+    url = urlparse.urlparse(app.config['SQLALCHEMY_DATABASE_URI'])
     return psycopg2.connect(database=url.path[1:],
                             user=url.username,
                             password=url.password,
@@ -77,7 +75,9 @@ def teardown_request(exception):
 @app.route('/')
 @app.route('/index/<int:page>')
 def show_customers(page=1):
-    customers = CustomerWithMarket.query.paginate(page, CUSTOMERS_PER_PAGE, False)
+    customers = CustomerWithMarket.query.paginate(page,
+                                                  app.config['CUSTOMERS_PER_PAGE'],
+                                                  False)
     markets = Market.query.all()
     return render_template('show_customers.html',
                            customers=customers,
@@ -169,7 +169,9 @@ def display_customer_premiums(customer_id, page=1):
         abort(401)
     customer = CustomerWithMarket.query.filter(CustomerWithMarket.customer_id==customer_id).one()
     premiums = Premium.query.filter(Premium.customer_id==customer_id)
-    premiums = premiums.paginate(page, PREMIUMS_PER_PAGE, False)
+    premiums = premiums.paginate(page,
+                                 app.config['PREMIUMS_PER_PAGE'],
+                                 False)
     return render_template('display_customer_premiums.html',
                            customer=customer,
                            premiums=premiums)
@@ -181,7 +183,9 @@ def display_customer(customer_id, page=1):
         abort(401)
     customer = CustomerWithMarket.query.filter(CustomerWithMarket.customer_id==customer_id).one()
     customer_demand = CustomerDemand.query.filter(CustomerDemand.customer_id==customer_id)
-    customer_demand = customer_demand.paginate(page, DEMAND_ITEMS_PER_PAGE, False)
+    customer_demand = customer_demand.paginate(page,
+                                               app.config['DEMAND_ITEMS_PER_PAGE'],
+                                               False)
     return render_template('display_customer.html',
                            customer_demand=customer_demand,
                            customer=customer)
