@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Changed to run_server:app">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hello.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/__init__.py" afterPath="$PROJECT_DIR$/flaskr/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/test/test_flaskr.py" afterPath="$PROJECT_DIR$/flaskr/test/test_flaskr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/views.py" afterPath="$PROJECT_DIR$/flaskr/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -14,8 +18,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/flaskr$nosetests.coverage" NAME="nosetests Coverage Results" MODIFIED="1381989812577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/flaskr$flaskr.coverage" NAME="flaskr Coverage Results" MODIFIED="1381992658473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flaskr$nosetests.coverage" NAME="nosetests Coverage Results" MODIFIED="1381997090694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flaskr/test" />
+    <SUITE FILE_PATH="coverage/flaskr$flaskr.coverage" NAME="flaskr Coverage Results" MODIFIED="1381997097288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -37,7 +41,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="20" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4425">
+            <state line="95" column="4" selection-start="2821" selection-end="2873" vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="4425">
               <folding>
                 <element signature="e#18#37#0" expanded="true" />
               </folding>
@@ -50,26 +54,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.08522727" vertical-offset="0" max-vertical-offset="352">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hello.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="12" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -92,21 +76,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
+      <file leaf-file-name="test_flaskr.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flaskr/test/test_flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="19" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <folding />
+            <state line="11" column="14" selection-start="294" selection-end="294" vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="420">
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_flaskr.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/test/test_flaskr.py">
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="27" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+            <state line="16" column="26" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/schema.sql" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/README.rst" />
         <option value="$PROJECT_DIR$/templates/login.html" />
@@ -165,11 +150,12 @@
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/flaskr/flaskr.py" />
         <option value="$PROJECT_DIR$/run_server.py" />
-        <option value="$PROJECT_DIR$/flaskr/__init__.py" />
-        <option value="$PROJECT_DIR$/flaskr/views.py" />
         <option value="$PROJECT_DIR$/flaskr/Procfile" />
         <option value="$PROJECT_DIR$/hello.py" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/flaskr/views.py" />
+        <option value="$PROJECT_DIR$/flaskr/__init__.py" />
+        <option value="$PROJECT_DIR$/flaskr/test/test_flaskr.py" />
       </list>
     </option>
   </component>
@@ -968,7 +954,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.858885" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25993377" sideWeight="0.47560975" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.45409015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="6" y="22" width="676" height="694" />
+      <window_info id="Run" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.45409015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="6" y="22" width="748" height="694" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1121,22 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/test/test_flaskr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="27" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -1144,21 +1114,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello.py">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="4425">
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
+        <state line="2" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1176,10 +1135,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.08522727" vertical-offset="0" max-vertical-offset="352">
-          <folding />
+        <state line="16" column="26" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="4" selection-start="2821" selection-end="2873" vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="4425">
+          <folding>
+            <element signature="e#18#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/test/test_flaskr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="14" selection-start="294" selection-end="294" vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="420">
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
