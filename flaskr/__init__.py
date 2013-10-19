@@ -14,8 +14,6 @@ schema = 'retail'
 meta.reflect(bind=engine, schema=schema)
 db = SQLAlchemy(app)
 
-app = Flask(__name__)
-
 def make_celery(app):
     celery = Celery(app.import_name, broker=app.config['CELERY_BROKER_URL'])
     celery.conf.update(app.config)
