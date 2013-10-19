@@ -1,9 +1,9 @@
 import numpy as np
 from celery import Celery
-from flaskr import db
+from flaskr import db, app
 from flaskr.views import Premium
 
-celery = Celery('tasks', broker='amqp://guest@localhost//')
+celery = Celery('tasks', broker=app.config['CELERY_BROKER_URL'])
 
 @celery.task
 def generate_premium(customer_id,
