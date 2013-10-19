@@ -17,7 +17,7 @@ db = SQLAlchemy(app)
 app = Flask(__name__)
 
 def make_celery(app):
-    celery = Celery(app.import_name, broker=app.config['CELERY_BROKER_URL',
+    celery = Celery(app.import_name, broker=app.config['CELERY_BROKER_URI',
                                                        'BROKER_POOL_LIMIT'])
     celery.conf.update(app.config)
     TaskBase = celery.Task
