@@ -6,7 +6,6 @@ import psycopg2
 
 from flask import request, session, g, redirect, url_for, \
      abort, render_template, flash
-from flask.ext.sqlalchemy import SQLAlchemy
 
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
@@ -114,6 +113,7 @@ def add_customer():
 def generate_customer_premium(customer_id):
     from datetime import datetime
     from dateutil.relativedelta import relativedelta
+    from flaskr.tasks import generate_premium
     if not session.get('logged_in'):
         abort(401)
     form = premium_parameters_form(request.form)
@@ -130,16 +130,15 @@ def generate_customer_premium(customer_id):
         customer = Customer.query.filter(Customer.customer_id==customer_id).one()
         parameters = fetch_run_parameters(customer.market_id)
         run_id = parameters.run_id
-        premium = np.random.rand()
-        new_premium = Premium(customer_id=customer_id,
-                              run_id=run_id,
-                              valuation_date=valuation_date,
-                              contract_start_date_utc=form.contract_start.data,
-                              contract_end_date_utc=datetime(*(contract_end[0].timetuple()[:6])),
-                              premium=premium)
-        db.session.add(new_premium)
-        db.session.commit()
-        flash('Premium has been queued for generation')
+        contract_start_date=form.contract_start.data
+        contract_end_date=datetime(*(contract_end[0].timetuple()[:6]))
+        result = generate_premium.delay(customer_id=customer_id,
+                                        run_id=run_id,
+                                        contract_start_date=contract_start_date,
+                                        contract_end_date=contract_end_date,
+                                        valuation_date=valuation_date)
+        if result:
+            flash('Premium has been queued for generation')
         return display_customer_premiums(customer_id)
     customer = CustomerWithMarket.query.filter(CustomerWithMarket.customer_id==customer_id).one()
     return render_template('generate_customer_premium.html',
