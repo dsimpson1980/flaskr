@@ -1,9 +1,11 @@
 import numpy as np
-from celery import task
+from celery import Celery
 from flaskr import db
-from views import Premium
+from flaskr.views import Premium
 
-@task
+celery = Celery('tasks', broker='amqp://guest@localhost//')
+
+@celery.task
 def generate_premium(customer_id,
                      run_id,
                      contract_start_date,
@@ -19,4 +21,3 @@ def generate_premium(customer_id,
     db.session.add(new_premium)
     db.session.commit()
     return True
-
