@@ -43,6 +43,10 @@ Run the below to promote the database to DEFAULT i.e. DATABASE_URL:
 
 Promoting HEROKU_POSTGRESQL_COLOR_URL (DATABASE_URL) to DATABASE_URL... done
 
+Run the below to start the celery worker:
+
+    $ heroku run worker
+
 Database schema structure
 =========================
 
