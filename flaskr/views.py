@@ -1,53 +1,16 @@
 # all the imports
 import pandas as pd
 import numpy as np
-import sqlalchemy as sa
 import psycopg2
 
 from flask import request, session, g, redirect, url_for, \
      abort, render_template, flash
-
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
 
-from flaskr import app, db, meta, engine
-#
-#engine = sa.create_engine(app.config['SQLALCHEMY_DATABASE_URI'],
-#                          convert_unicode=True)
-#
-#meta = sa.MetaData(bind=engine, schema='retail')
-#schema = 'retail'
-#meta.reflect(bind=engine, schema=schema)
-#db = SQLAlchemy(app)
-
-class Market(db.Model):
-    __tablename__ = 'markets'
-    metadata = meta
-
-class Customer(db.Model):
-    __tablename__ = 'customers'
-    metadata = meta
-
-class Premium(db.Model):
-    __tablename__ = 'premiums'
-    metadata = meta
-
-class CustomerDemand(db.Model):
-    __tablename__ = 'customer_demand'
-    metadata = meta
-
-class Parameter(db.Model):
-    __tablename__ = 'run_parameters'
-    metadata = meta
-
-class CustomerWithMarket(db.Model):
-    __tablename__ = 'customer_with_market'
-    __table_args__ = {'extend_existing': True,
-                      'autoload': True}
-    metadata = meta
-    customer_id = sa.Column('customer_id',
-                            sa.Integer,
-                            primary_key=True)
+from flaskr import app, db, engine
+from models import Customer, CustomerWithMarket, CustomerDemand, \
+    Market, Premium, Parameter
 
 def connect_db():
     import urlparse

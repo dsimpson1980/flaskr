@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="Moved files out into root">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/tasks.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+    <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="Config celery for heroku">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flaskr/models.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.corrupted.20131013-102119.ids" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/other.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/testrunner.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/flaskr.iml" afterPath="$PROJECT_DIR$/.idea/flaskr.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/__init__.py" afterPath="$PROJECT_DIR$/flaskr/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/views.py" afterPath="$PROJECT_DIR$/flaskr/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -17,19 +26,13 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/flaskr$nosetests.coverage" NAME="nosetests Coverage Results" MODIFIED="1381997090694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flaskr/test" />
-    <SUITE FILE_PATH="coverage/flaskr$flaskr.coverage" NAME="flaskr Coverage Results" MODIFIED="1382145051088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flaskr$flaskr.coverage" NAME="flaskr Coverage Results" MODIFIED="1382250700175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
-  </component>
-  <component name="DatabaseView">
-    <flatten value="false" />
-    <groupTables value="false" />
-    <sortChildren value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -40,56 +43,31 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="33" selection-start="3633" selection-end="3633" vertical-scroll-proportion="-0.17595308" vertical-offset="1590" max-vertical-offset="4245">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tasks.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/tasks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="50" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="58" column="23" selection-start="1921" selection-end="1921" vertical-scroll-proportion="0.53571427" vertical-offset="705" max-vertical-offset="3855">
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#18#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runp-heroku.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runp-heroku.py">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_server.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_flaskr.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/test/test_flaskr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+            <state line="8" column="31" selection-start="185" selection-end="185" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="540">
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="435">
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,7 +76,7 @@
       <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="14" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="330">
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -106,10 +84,55 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="34" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="README.rst" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="72" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="930">
+            <state line="47" column="23" selection-start="1371" selection-end="1371" vertical-scroll-proportion="-8.4" vertical-offset="495" max-vertical-offset="990">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="celeryconfig.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/celeryconfig.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="47" selection-start="84" selection-end="84" vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="180">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="14" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_server.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="40" selection-start="91" selection-end="91" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="135">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="24" selection-start="149" selection-end="172" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="405">
               <folding />
             </state>
           </provider>
@@ -122,25 +145,10 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
-  <component name="Git.Push.Settings">
-    <option name="myUpdateMethod" value="REBASE" />
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Dave" />
-        <option value="dsimpson1980" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="reflect_db_models" />
-      </map>
-    </option>
   </component>
   <component name="GitLogSettings">
-    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -148,22 +156,16 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/flaskr.py" />
-        <option value="$PROJECT_DIR$/flaskr.py" />
-        <option value="$PROJECT_DIR$/templates/404.html" />
-        <option value="$PROJECT_DIR$/test/test_flaskr.py" />
-        <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/flaskr/flaskr.py" />
-        <option value="$PROJECT_DIR$/run_server.py" />
-        <option value="$PROJECT_DIR$/flaskr/Procfile" />
-        <option value="$PROJECT_DIR$/hello.py" />
-        <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/flaskr/__init__.py" />
-        <option value="$PROJECT_DIR$/flaskr/test/test_flaskr.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/flaskr/views.py" />
-        <option value="$PROJECT_DIR$/tasks.py" />
+        <option value="$PROJECT_DIR$/flaskr/config.py" />
+        <option value="$PROJECT_DIR$/celeryconfig.py" />
         <option value="$PROJECT_DIR$/flaskr/tasks.py" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/README.rst" />
+        <option value="$PROJECT_DIR$/tasks.py" />
+        <option value="$PROJECT_DIR$/flaskr/__init__.py" />
+        <option value="$PROJECT_DIR$/flaskr/models.py" />
+        <option value="$PROJECT_DIR$/flaskr/views.py" />
       </list>
     </option>
   </component>
@@ -172,25 +174,6 @@
     <option name="width" value="1280" />
     <option name="height" value="694" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Python</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Buildout</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -198,14 +181,14 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -245,70 +228,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="flaskr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="flaskr">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="125" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="136" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/run_server.py" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="145" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="939" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="936" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="141" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="138" />
-    <property name="Database.TableEditor.Splitter" value="0.9" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="TODO_SCOPE" value="All" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/workspace.xml" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
-      <PyConsoleSettings>
-        <option name="mySdkHome" value="$USER_HOME$/anaconda/bin/python" />
-        <option name="myModuleName" value="flaskr" />
-      </PyConsoleSettings>
+      <PyConsoleSettings />
     </option>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/flaskr" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -380,24 +325,6 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="flaskr" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -413,6 +340,9 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -436,9 +366,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -481,21 +408,14 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
-      <method />
-    </configuration>
     <configuration default="false" name="flaskr" type="PythonConfigurationType" factoryName="Python" singleton="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DYLD_FALLBACK_LIBRARY_PATH" value="/Applications/Postgres.app/Contents/MacOS/lib:$DYLD_LIBRARY_PATH" />
       </envs>
       <option name="SDK_HOME" value="/Applications/anaconda/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -509,35 +429,8 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="nosetests" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="DYLD_FALLBACK_LIBRARY_PATH" value="/Applications/Postgres.app/Contents/MacOS/lib:$DYLD_LIBRARY_PATH" />
-      </envs>
-      <option name="SDK_HOME" value="/Applications/anaconda/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskr/test" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="flaskr" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$/flaskr/test" />
-      <option name="TEST_TYPE" value="TEST_FOLDER" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <list size="2">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Python.flaskr" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.nosetests" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -559,414 +452,82 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
-      <branch name="master" repository="$PROJECT_DIR$" />
-      <created>1380097697137</created>
-      <updated>1380164164954</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Changed README file">
-      <created>1380100400606</created>
-      <updated>1380100400606</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Add charting to customer display page">
-      <created>1380101911602</created>
-      <updated>1380101940712</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added Datasource link, drivers and diagram uml">
-      <created>1380104735302</created>
-      <updated>1380104735302</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added missing ids file">
-      <created>1380104780183</created>
-      <updated>1380104780183</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added retail schema diagram as png">
-      <created>1380105143641</created>
-      <updated>1380105143641</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Check rendering of readme file on github">
-      <created>1380106774009</created>
-      <updated>1380106774009</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added image link in readme file">
-      <created>1380107147027</created>
-      <updated>1380107147027</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Forgot space between .. and figure">
-      <created>1380107293749</created>
-      <updated>1380107293749</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Changed readme extension to .rst">
-      <created>1380107356279</created>
-      <updated>1380107356279</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Tidied up the readme file a little">
-      <created>1380107498845</created>
-      <updated>1380107498845</updated>
-    </task>
-    <task id="flaskr-3" summary="Add field to customer table in db to contain demand image">
-      <branch name="master" repository="$PROJECT_DIR$" original="true" />
-      <branch name="flaskr-3" repository="$PROJECT_DIR$" />
-      <created>1380066748000</created>
-      <option name="issue" value="true" />
-      <option name="type" value="BUG" />
-      <updated>1380166125638</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Added bytea column to customer">
-      <created>1380164215463</created>
-      <updated>1380164215463</updated>
-    </task>
-    <task id="flaskr-4" summary="Add method to chart and save image to string buffer">
-      <branch name="master" repository="$PROJECT_DIR$" />
-      <created>1380066765000</created>
-      <option name="issue" value="true" />
-      <option name="type" value="BUG" />
-      <updated>1380169131874</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Added new method to encode demand image">
-      <created>1380166278089</created>
-      <updated>1380166278089</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Merged flask4 branch">
-      <created>1380167013617</created>
-      <updated>1380167013617</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Merged flask4 branch">
-      <created>1380167923096</created>
-      <updated>1380167923096</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Merged flask4 branch">
-      <created>1380167995229</created>
-      <updated>1380167995229</updated>
-    </task>
-    <task id="LOCAL-00017" summary="workspace.xml">
-      <created>1380168400442</created>
-      <updated>1380168400442</updated>
-    </task>
-    <task active="true" id="flaskr-5" summary="Add method to push string buffer contents to db">
-      <branch name="master" repository="$PROJECT_DIR$" original="true" />
-      <branch name="db_demand_image" repository="$PROJECT_DIR$" />
-      <changelist id="c35f6f32-237e-4197-a190-ff264231772a" name="flaskr-5 Add method to push string buffer contents to db" comment="" />
-      <created>1380066785000</created>
-      <option name="issue" value="true" />
-      <option name="type" value="BUG" />
-      <updated>1380173414136</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Added code tp push image64 to database">
-      <created>1380169955972</created>
-      <updated>1380169955972</updated>
-    </task>
-    <task id="flaskr-6" summary="Add code to check if image exists in db and pull it if it exists">
-      <created>1380067015000</created>
-      <option name="issue" value="true" />
-      <option name="type" value="BUG" />
-      <updated>1380173414089</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Added code to auto generate image if it doesn't exist">
-      <created>1380173390742</created>
-      <updated>1380173390742</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Display image in template">
-      <created>1380173456742</created>
-      <updated>1380173456742</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Removed references to entries and tables from database">
-      <created>1380539682035</created>
-      <updated>1380539682035</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Removed redundant comments">
-      <created>1380540050056</created>
-      <updated>1380540050056</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Added run_parameters table&#10;Added premiums tables&#10;Added display_customer_premiums template">
-      <created>1380549854793</created>
-      <updated>1380549854793</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Updated schema diagram">
-      <created>1380549942992</created>
-      <updated>1380549942992</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Added foreign key constraint to premiums table&#10;Linked default for premium_id tp premiums table">
-      <created>1380584844289</created>
-      <updated>1380584844289</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Added form for entering parameters&#10;Added forms helper">
-      <created>1380594649960</created>
-      <updated>1380594649960</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Changed DateField import to come from wtforms.fields.html5">
-      <created>1380595962555</created>
-      <updated>1380595962555</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Fixed up redirect after submission of generate premium form&#10;This doesn't currently generate anything or enter anything to the db">
-      <created>1380597350996</created>
-      <updated>1380597350996</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Added email validation and default email address">
-      <created>1380600168631</created>
-      <updated>1380600168631</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Added default start date for contract to be the first day of the next calendar month">
-      <created>1380601104049</created>
-      <updated>1380601104049</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Created dummy premium for insertion into database">
-      <created>1380604541687</created>
-      <updated>1380604541687</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Added cancel button to generate premium template">
-      <created>1380604763993</created>
-      <updated>1380604763993</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Added return to customer list button to display customer">
-      <created>1380604903627</created>
-      <updated>1380604903627</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Added generate button to display customer template">
-      <created>1380605121178</created>
-      <updated>1380605121178</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Moved to extended classes for tables with declarative bases">
-      <created>1380633933505</created>
-      <updated>1380633933505</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Used extended class in display_customer_premiums">
-      <created>1380634798963</created>
-      <updated>1380634798963</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Changed extended class for MethodType on single instance of Table">
-      <created>1380707457967</created>
-      <updated>1380707457967</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Updated add customer to use insert from customer_table">
-      <created>1380776594819</created>
-      <updated>1380776594819</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Changed to SQLAlchemy models for customer&#10;Added pagination to show_customers view and template">
-      <created>1380781707215</created>
-      <updated>1380781707215</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Used Customer class in display_customer">
-      <created>1380782023455</created>
-      <updated>1380782023455</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Used Customer class in add_customer">
-      <created>1380782496141</created>
-      <updated>1380782496141</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Used Customer class in generate_premium&#10;Removed customers_table">
-      <created>1380782635962</created>
-      <updated>1380782635962</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Add Premiums class&#10;Used premiums class in display_customer_premiums">
-      <created>1380783232617</created>
-      <updated>1380783232617</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Used Premium class in generate_premium view">
-      <created>1380783718009</created>
-      <updated>1380783718009</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Added CustomerDemand class&#10;Used CustomerDemand class in display_customer">
-      <created>1380784104652</created>
-      <updated>1380784104652</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Cleaned up comments&#10;Added pagination to demand table on display customer&#10;Added Display premiums button to display customer page">
-      <created>1380801224143</created>
-      <updated>1380801224143</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Paginated premiums">
-      <created>1380802181187</created>
-      <updated>1380802181188</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Cleaned up redundant import statements">
-      <created>1380840048374</created>
-      <updated>1380840048374</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Merge with laptop&#10;">
-      <created>1381648299405</created>
-      <updated>1381648299405</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Merge with laptop&#10;">
-      <created>1381648465492</created>
-      <updated>1381648465493</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Added heroku support files">
-      <created>1381648600068</created>
-      <updated>1381648600068</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Split out config parameters into separate file config.py&#10;Split out create_db into separate script file&#10;Added Profile for heroku&#10;Removed redundant import statements">
-      <created>1381654703535</created>
-      <updated>1381654703535</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Altered runp-heroku">
-      <created>1381662827659</created>
-      <updated>1381662827659</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Reduced requirements file">
-      <created>1381705751587</created>
-      <updated>1381705751587</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Reduced requirements file further">
-      <created>1381705881273</created>
-      <updated>1381705881274</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Polished up numerous areas">
-      <created>1381854516600</created>
-      <updated>1381854516601</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Polished up numerous areas">
-      <created>1381889669358</created>
-      <updated>1381889669358</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Removed .idea">
-      <created>1381889716910</created>
-      <updated>1381889716910</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Added some documentation for how to deploy to heroku">
-      <created>1381980747091</created>
-      <updated>1381980747091</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Reformated the README">
-      <created>1381981006233</created>
-      <updated>1381981006233</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Fixed bug with login&#10;Fixed bug with logout&#10;app is now configured directly from config.py">
-      <created>1381985389884</created>
-      <updated>1381985389884</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Shifted all global variables to be read from app.config">
-      <created>1381985627099</created>
-      <updated>1381985627099</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Added 404 error view and template">
-      <created>1381986613511</created>
-      <updated>1381986613511</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Converted module to package">
-      <created>1381992875685</created>
-      <updated>1381992875685</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Edited Profile to point to flaskr">
-      <created>1381993114560</created>
-      <updated>1381993114561</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Edited Profile to point to run_server">
-      <created>1381993229864</created>
-      <updated>1381993229865</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Moved Procfile to root of package">
-      <created>1381993343424</created>
-      <updated>1381993343425</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Change Profile to point to flaskr">
-      <created>1381993462301</created>
-      <updated>1381993462301</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Change Profile to point to flaskr.flaskr">
-      <created>1381993511727</created>
-      <updated>1381993511727</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Change Profile to point to flaskr/flaskr">
-      <created>1381993641328</created>
-      <updated>1381993641329</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Moved requirements.txt to root">
-      <created>1381993745054</created>
-      <updated>1381993745054</updated>
-    </task>
-    <task id="LOCAL-00072" summary="run_server">
-      <created>1381993815333</created>
-      <updated>1381993815333</updated>
-    </task>
-    <task id="LOCAL-00073" summary="check with hello">
-      <created>1381993943773</created>
-      <updated>1381993943773</updated>
-    </task>
-    <task id="LOCAL-00074" summary="moved file to root&#10;">
-      <created>1381993996996</created>
-      <updated>1381993996997</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Changed to run_server:app">
-      <created>1381994330904</created>
-      <updated>1381994330904</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Package upload working for Heroku&#10;Added very simple unit tests fro Customer">
-      <created>1381997170211</created>
-      <updated>1381997170211</updated>
-    </task>
-    <task id="LOCAL-00077" summary="Cleaned up test_flaskr">
-      <created>1381997240369</created>
-      <updated>1381997240369</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Moved files out into root">
-      <created>1381997573727</created>
-      <updated>1381997573728</updated>
-    </task>
-    <option name="localTasksCounter" value="79" />
-    <option name="clearContext" value="false" />
-    <option name="createBranch" value="false" />
-    <option name="closeIssue" value="false" />
-    <option name="mergeBranch" value="false" />
-    <servers>
-      <GitHub shared="false" url="github.com">
-        <commitMessageFormat>{id} {summary}</commitMessageFormat>
-        <password>dfc9df9edfc6df99dfc4dfcedf9edfd8</password>
-        <token>dfcfdf9ddf9edf9adf9cdfcfdf93dfcbdf9edf9fdfc8df98df9cdf9adf98dfccdf98df99df98df9fdf9cdf93df9ddfc9df9cdf98dfcfdfc9dfcbdf9edfccdf9edf9cdf9cdfcbdfccdfccdf9fdfcfdf9a</token>
-        <option name="loginAnonymously" value="false" />
-        <option name="repoAuthor" value="dsimpson1980" />
-        <option name="repoName" value="flaskr" />
-        <option name="shouldFormatCommitMessage" value="false" />
-        <option name="useHttpAuthentication" value="true" />
-        <option name="useProxy" value="false" />
-        <option name="user" value="dsimpson1980" />
-        <username>dsimpson1980</username>
-      </GitHub>
-    </servers>
-  </component>
-  <component name="TodoView" selected-index="3">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="" />
+      <created>1382169655783</created>
+      <updated>1382169655783</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Added celery variables">
+      <created>1382170490305</created>
+      <updated>1382170490305</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed bug in requirements">
+      <created>1382170636174</created>
+      <updated>1382170636174</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added heroku default AMQP variables">
+      <created>1382172150415</created>
+      <updated>1382172150415</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changed celery from URL to URI">
+      <created>1382172204694</created>
+      <updated>1382172204694</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Config celery for heroku">
+      <created>1382172424729</created>
+      <updated>1382172424729</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Config celery for heroku">
+      <created>1382172586374</created>
+      <updated>1382172586374</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Config celery for heroku">
+      <created>1382181211477</created>
+      <updated>1382181211477</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Moved tasks to root&#10;Clery now works locally for job queuing">
+      <created>1382186317407</created>
+      <updated>1382186317407</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Made broker URL in tasks universal URL for local and heroku">
+      <created>1382186545480</created>
+      <updated>1382186545480</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added worker to start celery in Procfile">
+      <created>1382247782714</created>
+      <updated>1382247782714</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Removed redundant comments&#10;Added how to start celery worker on heroku">
+      <created>1382250429684</created>
+      <updated>1382250429684</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="694" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41811848" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19529983" sideWeight="0.703125" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.858885" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26418152" sideWeight="0.47569445" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4303136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26418152" sideWeight="0.22743055" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.296875" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.45409015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="6" y="22" width="748" height="694" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39721254" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.66898954" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33101046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32752612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -976,192 +537,98 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Reduced requirements file" />
-    <MESSAGE value="Reduced requirements file further" />
-    <MESSAGE value="Polished up numerous areas&#10;Removed .idea" />
-    <MESSAGE value="Polished up numerous areas" />
-    <MESSAGE value="Removed .idea" />
-    <MESSAGE value="Added some documentation for how to deploy to heroku" />
-    <MESSAGE value="Reformated the README" />
-    <MESSAGE value="Fixed bug with login&#10;Fixed bug with logout&#10;app is now configured directly from config.py" />
-    <MESSAGE value="Shifted all global variables to be read from app.config" />
-    <MESSAGE value="Added 404 error view and template" />
-    <MESSAGE value="Converted module to package" />
-    <MESSAGE value="Edited Profile to point to flaskr" />
-    <MESSAGE value="Edited Profile to point to run_server" />
-    <MESSAGE value="Moved Procfile to root of package" />
-    <MESSAGE value="Change Profile to point to flaskr" />
-    <MESSAGE value="Change Profile to point to flaskr.flaskr" />
-    <MESSAGE value="Change Profile to point to flaskr/flaskr" />
-    <MESSAGE value="Moved requirements.txt to root" />
-    <MESSAGE value="run_server" />
-    <MESSAGE value="check with hello" />
-    <MESSAGE value="moved file to root&#10;" />
-    <MESSAGE value="Changed to run_server:app" />
-    <MESSAGE value="Package upload working for Heroku&#10;Added very simple unit tests fro Customer" />
-    <MESSAGE value="Cleaned up test_flaskr" />
-    <MESSAGE value="Moved files out into root" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved files out into root" />
+    <MESSAGE value="Added celery variables" />
+    <MESSAGE value="Fixed bug in requirements" />
+    <MESSAGE value="Added heroku default AMQP variables" />
+    <MESSAGE value="Changed celery from URL to URI" />
+    <MESSAGE value="Config celery for heroku" />
+    <MESSAGE value="Moved tasks to root&#10;Clery now works locally for job queuing" />
+    <MESSAGE value="Made broker URL in tasks universal URL for local and heroku" />
+    <MESSAGE value="added worker to start celery in Procfile" />
+    <MESSAGE value="Removed redundant comments&#10;Added how to start celery worker on heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed redundant comments&#10;Added how to start celery worker on heroku" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="32" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://DATABASE/5c2850af-7cce-491a-84cd-f0cc0451282b.schema:flaskr.retail">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>5c2850af-7cce-491a-84cd-f0cc0451282b.schema:flaskr.retail</OriginalElement>
-          <nodes>
-            <node x="218.0" y="338.0">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.premiums</node>
-            <node x="188.125" y="0.0">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.markets</node>
-            <node x="823.8009138381201" y="567.4412532637076">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.parameter_ids_sequence</node>
-            <node x="0.0" y="568.0">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.market_ids_sequence</node>
-            <node x="0.0" y="382.0">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customer_demand</node>
-            <node x="418.0" y="568.0">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.premium_ids_sequence</node>
-            <node x="336.25" y="169.0">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.run_parameters</node>
-            <node x="0.0" y="863.0">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customer_ids_sequence</node>
-            <node x="44.5" y="169.0">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customers</node>
-            <node x="418.0" y="863.0">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.run_ids_sequence</node>
-            <node x="836.0" y="863.0">5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customer_with_market</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.premiums" target="5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customers">
-              <point x="-69.25" y="-92.5" />
-              <point x="287.25" y="313.0" />
-              <point x="208.0" y="313.0" />
-              <point x="54.5" y="59.5" />
-            </edge>
-            <edge source="5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.premiums" target="5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.run_parameters">
-              <point x="69.25" y="-92.5" />
-              <point x="0.0" y="59.5" />
-            </edge>
-            <edge source="5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customer_demand" target="5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customers">
-              <point x="0.0" y="-48.5" />
-              <point x="-54.5" y="59.5" />
-            </edge>
-            <edge source="5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.run_parameters" target="5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.markets">
-              <point x="0.0" y="-59.5" />
-              <point x="425.75" y="144.0" />
-              <point x="340.375" y="144.0" />
-              <point x="50.75" y="59.5" />
-            </edge>
-            <edge source="5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.customers" target="5c2850af-7cce-491a-84cd-f0cc0451282b.table:flaskr.retail.markets">
-              <point x="0.0" y="-59.5" />
-              <point x="153.5" y="144.0" />
-              <point x="238.875" y="144.0" />
-              <point x="-50.75" y="59.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.3718446601941747" x="253.0" y="687.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retail_schema.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.rst">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="72" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/display_customer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="11.875" vertical-offset="285" max-vertical-offset="870" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="143" selection-end="143" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/show_customers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1573" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="690" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="57" selection-end="57" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="150" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runp-heroku.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+        <state line="12" column="14" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+        <state line="3" column="40" selection-start="91" selection-end="91" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="135">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/test/test_flaskr.py">
+    <entry file="file://$PROJECT_DIR$/flaskr/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+        <state line="4" column="24" selection-start="149" selection-end="172" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
+    <entry file="file://$PROJECT_DIR$/celeryconfig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state line="1" column="47" selection-start="84" selection-end="84" vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="180">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/tasks.py">
+    <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="50" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+        <state line="47" column="23" selection-start="1371" selection-end="1371" vertical-scroll-proportion="-8.4" vertical-offset="495" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="435">
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="330">
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="31" selection-start="185" selection-end="185" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="540">
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="33" selection-start="3633" selection-end="3633" vertical-scroll-proportion="-0.17595308" vertical-offset="1590" max-vertical-offset="4245">
-          <folding />
+        <state line="58" column="23" selection-start="1921" selection-end="1921" vertical-scroll-proportion="0.53571427" vertical-offset="705" max-vertical-offset="3855">
+          <folding>
+            <element signature="e#18#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
