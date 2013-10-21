@@ -157,9 +157,9 @@ doctest:
 gh-pages:
 	git checkout gh-pages
 	rm -rf build _sources _static _modules
-	git checkout master $(GH_PAGES_SOURCES)
+	git checkout master docs
 	git reset HEAD
-	mv -fv docs/* ./
+	cp -fv docs/* ./
 	make html
 	mv -fv build/html/* ./
 	rm -rf build source Makefile
