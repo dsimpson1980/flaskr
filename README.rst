@@ -1,6 +1,6 @@
 Documentation for this package can be found here:
 
-    http://davidsimpson1980.github.io/flaskr
+    http://dsimpson1980.github.io/flaskr
 
 From start to finish (for Mac OSX)
 ==================================

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="Cleaned up some redundant files&#10;Added .gitignore for *.pyc">
+    <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,7 +32,7 @@
       <file leaf-file-name="README.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="19" selection-start="347" selection-end="347" vertical-scroll-proportion="0.40785497" vertical-offset="0" max-vertical-offset="1965">
+            <state line="2" column="12" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09063444" vertical-offset="0" max-vertical-offset="1965">
               <folding />
             </state>
           </provider>
@@ -404,7 +404,11 @@
       <created>1382342759113</created>
       <updated>1382342759152</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added link to github pages">
+      <created>1382350184917</created>
+      <updated>1382350184917</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -452,7 +456,8 @@
     <MESSAGE value="Removed redundant comments&#10;Separated out classes/models into models.py" />
     <MESSAGE value="Added more detail to the README file" />
     <MESSAGE value="Cleaned up some redundant files&#10;Added .gitignore for *.pyc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up some redundant files&#10;Added .gitignore for *.pyc" />
+    <MESSAGE value="Added link to github pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added link to github pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -462,7 +467,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="347" selection-end="347" vertical-scroll-proportion="0.40785497" vertical-offset="0" max-vertical-offset="1965">
+        <state line="2" column="12" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09063444" vertical-offset="0" max-vertical-offset="1965">
           <folding />
         </state>
       </provider>
