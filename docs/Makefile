@@ -159,7 +159,7 @@ gh-pages:
 	rm -rf build _sources _static _modules
 	git checkout master docs
 	git reset HEAD
-	cp -fv docs/* ./
+	cp -R docs/* ./
 	make html
 	mv -fv build/html/* ./
 	rm -rf build source Makefile
