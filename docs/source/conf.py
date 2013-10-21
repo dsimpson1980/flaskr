@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # flaskr documentation build configuration file, created by
-# sphinx-quickstart on Mon Oct 21 21:51:01 2013.
+# sphinx-quickstart on Mon Oct 21 22:53:37 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #

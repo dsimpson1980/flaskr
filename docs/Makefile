@@ -1,7 +1,7 @@
-GH_PAGES_SOURCES = docs/source docs/Makefile
-
 # Makefile for Sphinx documentation
 #
+
+GH_PAGES_SOURCES = docs/source docs/Makefile
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
@@ -164,4 +164,4 @@ gh-pages:
 	rm -rf $(GH_PAGES_SOURCES) build
 	git add -A
 	git commit -m "Generated gh-pages for `git log master -1 --pretty=short \
---abbrev-commit`" && git push origin gh-pages ; git checkout master
+	--abbrev-commit`" && git push origin gh-pages ; git checkout master
