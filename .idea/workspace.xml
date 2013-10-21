@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -408,7 +407,11 @@
       <created>1382350184917</created>
       <updated>1382350184917</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Corrected link to docs">
+      <created>1382350248360</created>
+      <updated>1382350248360</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -457,7 +460,8 @@
     <MESSAGE value="Added more detail to the README file" />
     <MESSAGE value="Cleaned up some redundant files&#10;Added .gitignore for *.pyc" />
     <MESSAGE value="Added link to github pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added link to github pages" />
+    <MESSAGE value="Corrected link to docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected link to docs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
