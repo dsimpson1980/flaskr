@@ -10,6 +10,9 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+   conda_setup
+   heroku_setup
+   db_setup
 
 
 
