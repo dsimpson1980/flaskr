@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="Added more detail to the README file">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runp-heroku.py" afterPath="" />
+    <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="Cleaned up some redundant files&#10;Added .gitignore for *.pyc">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -29,99 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="38" selection-start="1999" selection-end="1999" vertical-scroll-proportion="-36.0" vertical-offset="0" max-vertical-offset="3855">
-              <folding>
-                <element signature="e#18#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="31" selection-start="185" selection-end="185" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="540">
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tasks.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="435">
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="330">
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="34" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="773" selection-end="773" vertical-scroll-proportion="0.6818182" vertical-offset="135" max-vertical-offset="1905">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="celeryconfig.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/celeryconfig.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="47" selection-start="84" selection-end="84" vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_server.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="40" selection-start="91" selection-end="91" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="135">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="24" selection-start="149" selection-end="172" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="405">
+            <state line="9" column="19" selection-start="347" selection-end="347" vertical-scroll-proportion="0.40785497" vertical-offset="0" max-vertical-offset="1965">
               <folding />
             </state>
           </provider>
@@ -136,6 +47,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
+      </map>
+    </option>
   </component>
   <component name="GitLogSettings">
     <option name="myDateState">
@@ -201,20 +117,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="flaskr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flaskr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flaskr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flaskr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="flaskr" />
@@ -498,7 +400,11 @@
       <created>1382257591924</created>
       <updated>1382257591924</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Cleaned up some redundant files&#10;Added .gitignore for *.pyc">
+      <created>1382342759113</created>
+      <updated>1382342759152</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -545,7 +451,8 @@
     <MESSAGE value="Removed redundant comments&#10;Added how to start celery worker on heroku" />
     <MESSAGE value="Removed redundant comments&#10;Separated out classes/models into models.py" />
     <MESSAGE value="Added more detail to the README file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more detail to the README file" />
+    <MESSAGE value="Cleaned up some redundant files&#10;Added .gitignore for *.pyc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up some redundant files&#10;Added .gitignore for *.pyc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -553,80 +460,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="40" selection-start="91" selection-end="91" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="149" selection-end="172" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/celeryconfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="47" selection-start="84" selection-end="84" vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="435">
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="330">
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="31" selection-start="185" selection-end="185" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="540">
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="38" selection-start="1999" selection-end="1999" vertical-scroll-proportion="-36.0" vertical-offset="0" max-vertical-offset="3855">
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="773" selection-end="773" vertical-scroll-proportion="0.6818182" vertical-offset="135" max-vertical-offset="1905">
+        <state line="9" column="19" selection-start="347" selection-end="347" vertical-scroll-proportion="0.40785497" vertical-offset="0" max-vertical-offset="1965">
           <folding />
         </state>
       </provider>
