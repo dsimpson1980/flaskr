@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Welcome to flaskr’s documentation! &mdash; flaskr 0 documentation</title>
+    <title>Deployment to Heroku &mdash; flaskr 0 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,7 +26,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="flaskr 0 documentation" href="#" /> 
+    <link rel="top" title="flaskr 0 documentation" href="index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -35,7 +35,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="#">flaskr 0 documentation</a> &raquo;</li> 
+        <li><a href="index.html">flaskr 0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -44,17 +44,40 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="welcome-to-flaskr-s-documentation">
-<h1>Welcome to flaskr&#8217;s documentation!<a class="headerlink" href="#welcome-to-flaskr-s-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Contents:</p>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
-<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
-<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
-</ul>
+  <div class="section" id="deployment-to-heroku">
+<h1>Deployment to Heroku<a class="headerlink" href="#deployment-to-heroku" title="Permalink to this headline">¶</a></h1>
+<p>Sign up to an account on Heroku</p>
+<p>Open a terminal and naviagate to the root of your project</p>
+<p>Download and install the heroku toolbelt</p>
+<p>Run $ heroku login
+Enter your Heroku credentials.
+Email: <a class="reference external" href="mailto:mapdes&#37;&#52;&#48;gmail&#46;com">mapdes<span>&#64;</span>gmail<span>&#46;</span>com</a>
+Password (typing will be hidden):
+Authentication successful.</p>
+<p>The buildpack is located here: <a class="reference external" href="https://github.com/dbrgn/heroku-buildpack-python-sklearn">https://github.com/dbrgn/heroku-buildpack-python-sklearn</a></p>
+<p>We&#8217;re creating a new app from scratch so the command is:</p>
+<blockquote>
+<div>$ heroku create  &#8211;buildpack <a class="reference external" href="https://github.com/dbrgn/heroku-buildpack-python-sklearn/">https://github.com/dbrgn/heroku-buildpack-python-sklearn/</a></div></blockquote>
+<p>To create the app and add it as a remote repository for git</p>
+<p>Comment out matplotlib and pandas from requirements before pushing to heroku for first time
+Add above two pkgs back in that will now use cached numpy compilation</p>
+<p>To be able to detect what environment the app is being run on, add the following
+environmental variable in heroku:</p>
+<blockquote>
+<div>$ heroku config:set HEROKU=1</div></blockquote>
+<p>To create the database addon:</p>
+<blockquote>
+<div>$ heroku add:add heroku-postgresql:dev</div></blockquote>
+<p>The initialise the database and to populate it with the structure in schema.sql</p>
+<blockquote>
+<div>$ heroku run init</div></blockquote>
+<p>Run the below to promote the database to DEFAULT i.e. DATABASE_URL:</p>
+<blockquote>
+<div>$ heroku pg:promote HEROKU_POSTGRESQL_color_URL</div></blockquote>
+<p>Promoting HEROKU_POSTGRESQL_COLOR_URL (DATABASE_URL) to DATABASE_URL... done</p>
+<p>Run the below to start the celery worker:</p>
+<blockquote>
+<div>$ heroku run worker</div></blockquote>
 </div>
 
 
@@ -63,15 +86,9 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Welcome to flaskr&#8217;s documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
-</ul>
-
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/index.txt"
+    <li><a href="_sources/heroku_setup.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -97,7 +114,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="#">flaskr 0 documentation</a> &raquo;</li> 
+        <li><a href="index.html">flaskr 0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
