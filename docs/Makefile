@@ -1,4 +1,4 @@
-GH_PAGES_SOURCES = source Makefile
+GH_PAGES_SOURCES = docs/source docs/Makefile
 
 # Makefile for Sphinx documentation
 #
