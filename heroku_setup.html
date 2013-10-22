@@ -73,8 +73,7 @@ Authentication successful.</div></blockquote>
 <div>$ heroku create  &#8211;buildpack <a class="reference external" href="https://github.com/dbrgn/heroku-buildpack-python-sklearn/">https://github.com/dbrgn/heroku-buildpack-python-sklearn/</a></div></blockquote>
 <p>This creates the app and adds it as a remote repository in .git/config.</p>
 <p>The first requirements.txt file resembles the following:</p>
-<blockquote>
-<div>requests
+<p>requests
 gunicorn==0.17.2
 SQLAlchemy==0.8.2
 Flask-SQLAlchemy==1.0
@@ -82,7 +81,7 @@ WTForms==1.0.4
 psycopg2==2.4.4
 Babel==0.9.6
 Flask-Babel==0.8
-numpy==1.7</div></blockquote>
+numpy==1.7</p>
 <p>I say the first requirements.txt file because unfortunately Heroku seems to have a problem
 with precompiled cached packages in the same run.  This means that even if numpy is
 compiled first it isn&#8217;t available when it comes to compiling matplotlib and pandas.  First
@@ -91,11 +90,10 @@ push to Heroku:</p>
 <div>$ git push heroku master</div></blockquote>
 <p>which should compile everything and return a successful push.  Now add the following four
 lines to the requirements.txt file:</p>
-<blockquote>
-<div>matplotlib==1.3.0
+<p>matplotlib==1.3.0
 pandas==0.12.0
 python-dateutil==2.1
-celery==3.0.24</div></blockquote>
+celery==3.0.24</p>
 <p>and push again:</p>
 <blockquote>
 <div>$ git push heroku master</div></blockquote>

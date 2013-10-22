@@ -28,15 +28,15 @@ This creates the app and adds it as a remote repository in .git/config.
 
 The first requirements.txt file resembles the following:
 
-	requests
-	gunicorn==0.17.2
-	SQLAlchemy==0.8.2
-	Flask-SQLAlchemy==1.0
-	WTForms==1.0.4
-	psycopg2==2.4.4
-	Babel==0.9.6
-	Flask-Babel==0.8
-	numpy==1.7
+requests
+gunicorn==0.17.2
+SQLAlchemy==0.8.2
+Flask-SQLAlchemy==1.0
+WTForms==1.0.4
+psycopg2==2.4.4
+Babel==0.9.6
+Flask-Babel==0.8
+numpy==1.7
 
 I say the first requirements.txt file because unfortunately Heroku seems to have a problem
 with precompiled cached packages in the same run.  This means that even if numpy is
@@ -48,10 +48,10 @@ push to Heroku:
 which should compile everything and return a successful push.  Now add the following four
 lines to the requirements.txt file:
 
-	matplotlib==1.3.0
-	pandas==0.12.0
-	python-dateutil==2.1
-	celery==3.0.24
+matplotlib==1.3.0
+pandas==0.12.0
+python-dateutil==2.1
+celery==3.0.24
 
 and push again:
 	
