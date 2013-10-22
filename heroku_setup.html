@@ -57,33 +57,84 @@
 <p>Sign up to an account on Heroku</p>
 <p>Open a terminal and naviagate to the root of your project</p>
 <p>Download and install the heroku toolbelt</p>
-<p>Run $ heroku login
-Enter your Heroku credentials.
+<blockquote>
+<div>$ heroku login</div></blockquote>
+<p>When asked enter your Heroku login details:</p>
+<blockquote>
+<div>Enter your Heroku credentials.
 Email: <a class="reference external" href="mailto:mapdes&#37;&#52;&#48;gmail&#46;com">mapdes<span>&#64;</span>gmail<span>&#46;</span>com</a>
 Password (typing will be hidden):
-Authentication successful.</p>
-<p>The buildpack is located here: <a class="reference external" href="https://github.com/dbrgn/heroku-buildpack-python-sklearn">https://github.com/dbrgn/heroku-buildpack-python-sklearn</a></p>
-<p>We&#8217;re creating a new app from scratch so the command is:</p>
+Authentication successful.</div></blockquote>
+<p>The buildpack we will be using for Heroku is located here:</p>
+<blockquote>
+<div><a class="reference external" href="https://github.com/dbrgn/heroku-buildpack-python-sklearn">https://github.com/dbrgn/heroku-buildpack-python-sklearn</a></div></blockquote>
+<p>Create a new Heroku app from scratch using this buildpack:</p>
 <blockquote>
 <div>$ heroku create  &#8211;buildpack <a class="reference external" href="https://github.com/dbrgn/heroku-buildpack-python-sklearn/">https://github.com/dbrgn/heroku-buildpack-python-sklearn/</a></div></blockquote>
-<p>To create the app and add it as a remote repository for git</p>
-<p>Comment out matplotlib and pandas from requirements before pushing to heroku for first time
-Add above two pkgs back in that will now use cached numpy compilation</p>
+<p>This creates the app and adds it as a remote repository in .git/config.</p>
+<p>The first requirements.txt file resembles the following:</p>
+<blockquote>
+<div>requests
+gunicorn==0.17.2
+SQLAlchemy==0.8.2
+Flask-SQLAlchemy==1.0
+WTForms==1.0.4
+psycopg2==2.4.4
+Babel==0.9.6
+Flask-Babel==0.8
+numpy==1.7</div></blockquote>
+<p>I say the first requirements.txt file because unfortunately Heroku seems to have a problem
+with precompiled cached packages in the same run.  This means that even if numpy is
+compiled first it isn&#8217;t available when it comes to compiling matplotlib and pandas.  First
+push to Heroku:</p>
+<blockquote>
+<div>$ git push heroku master</div></blockquote>
+<p>which should compile everything and return a successful push.  Now add the following four
+lines to the requirements.txt file:</p>
+<blockquote>
+<div>matplotlib==1.3.0
+pandas==0.12.0
+python-dateutil==2.1
+celery==3.0.24</div></blockquote>
+<p>and push again:</p>
+<blockquote>
+<div>$ git push heroku master</div></blockquote>
+<p>This push will use the precompiled buildpack on heroku with the compiled numpy package.
+matplotlib and pandas will now compile successfully.</p>
 <p>To be able to detect what environment the app is being run on, add the following
 environmental variable in heroku:</p>
 <blockquote>
 <div>$ heroku config:set HEROKU=1</div></blockquote>
-<p>To create the database addon:</p>
+<p>We also need to create the database addon:</p>
 <blockquote>
 <div>$ heroku add:add heroku-postgresql:dev</div></blockquote>
-<p>The initialise the database and to populate it with the structure in schema.sql</p>
+<p>Note: postgresql can be added for free without entering any credit card details.  However,
+almost all other apps, even when using the free versions, will require you to add a credit
+card.</p>
+<p>Toi be able to run our web app we need to add a Procfile:</p>
+<blockquote>
+<div>web: gunicorn run_server:app
+init: python flaskr/db_create.py
+worker: celery -A tasks worker -B &#8211;loglevel=info</div></blockquote>
+<p>This is simply a list of shortcut commands to run on the Heroku shell.  So, for instance,
+to initialise the database and populate it with the structure in schema.sql you can run:</p>
 <blockquote>
 <div>$ heroku run init</div></blockquote>
-<p>Run the below to promote the database to DEFAULT i.e. DATABASE_URL:</p>
+<p>This will return the URL of the database in the form:</p>
 <blockquote>
-<div>$ heroku pg:promote HEROKU_POSTGRESQL_color_URL</div></blockquote>
-<p>Promoting HEROKU_POSTGRESQL_COLOR_URL (DATABASE_URL) to DATABASE_URL... done</p>
-<p>Run the below to start the celery worker:</p>
+<div>HEROKU_POSTGRESQL_color_URL</div></blockquote>
+<p>We can then promote this database to DEFAULT i.e. DATABASE_URL:</p>
+<blockquote>
+<div><p>$ heroku pg:promote HEROKU_POSTGRESQL_color_URL</p>
+<blockquote>
+<div>Promoting HEROKU_POSTGRESQL_COLOR_URL (DATABASE_URL) to DATABASE_URL... done</div></blockquote>
+</div></blockquote>
+<p>Before running a celery worker we need to add a message handler.  I&#8217;ve used CloudAMQP:</p>
+<blockquote>
+<div>$ heroku addons:add cloudamqp:lemur</div></blockquote>
+<p>Note that this will fail (even though little lemur is free) with a card verification error.
+So if you haven&#8217;t already, you&#8217;ll need to add your credit card details to Heroku.</p>
+<p>Finally we can run the last command to start the celery worker on the Heroku remote</p>
 <blockquote>
 <div>$ heroku run worker</div></blockquote>
 </div>
