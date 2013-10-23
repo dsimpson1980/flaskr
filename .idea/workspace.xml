@@ -37,7 +37,7 @@
       <file leaf-file-name="README.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="9" selection-start="53" selection-end="53" vertical-scroll-proportion="0.030120483" vertical-offset="0" max-vertical-offset="498">
+            <state line="3" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.090361446" vertical-offset="0" max-vertical-offset="498">
               <folding />
             </state>
           </provider>
@@ -531,7 +531,11 @@
       <created>1382515937158</created>
       <updated>1382515937158</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Edited readme for link pointing to new tab">
+      <created>1382516471185</created>
+      <updated>1382516471185</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -585,7 +589,8 @@
     <MESSAGE value="Refactored module from flaskr to web_ui&#10;Added docs/build/* to .ignore in case any files are compiled" />
     <MESSAGE value="Edited name on layout.html" />
     <MESSAGE value="Edited readme to point to correct docs after renaming repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited readme to point to correct docs after renaming repo" />
+    <MESSAGE value="Edited readme for link pointing to new tab" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited readme for link pointing to new tab" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -602,7 +607,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="540">
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -611,7 +616,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="17" selection-start="347" selection-end="347" vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="330">
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -627,7 +632,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="20" selection-start="470" selection-end="470" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="435">
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -708,7 +713,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="9" selection-start="53" selection-end="53" vertical-scroll-proportion="0.030120483" vertical-offset="0" max-vertical-offset="498">
+        <state line="3" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.090361446" vertical-offset="0" max-vertical-offset="498">
           <folding />
         </state>
       </provider>
