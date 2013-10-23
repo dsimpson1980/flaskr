@@ -49,7 +49,7 @@
       <file leaf-file-name="README.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="48" selection-start="288" selection-end="288" vertical-scroll-proportion="0.3398058" vertical-offset="0" max-vertical-offset="309">
+            <state line="6" column="18" selection-start="196" selection-end="196" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="309">
               <folding />
             </state>
           </provider>
@@ -637,7 +637,11 @@
       <created>1382531112121</created>
       <updated>1382531112121</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added links to heroku apps in readme">
+      <created>1382531584074</created>
+      <updated>1382531584074</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -695,7 +699,8 @@
     <MESSAGE value="Removed tab for now and just added here as text for link" />
     <MESSAGE value="Fixed bug in link" />
     <MESSAGE value="Added env variable check for web framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added env variable check for web framework" />
+    <MESSAGE value="Added links to heroku apps in readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added links to heroku apps in readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -822,7 +827,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="48" selection-start="288" selection-end="288" vertical-scroll-proportion="0.3398058" vertical-offset="0" max-vertical-offset="309">
+        <state line="6" column="18" selection-start="196" selection-end="196" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="309">
           <folding />
         </state>
       </provider>
