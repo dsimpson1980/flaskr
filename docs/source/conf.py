@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# flaskr documentation build configuration file, created by
+# simple_web_ui documentation build configuration file, created by
 # sphinx-quickstart on Mon Oct 21 22:53:37 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'flaskr'
+project = u'simple_web_ui'
 copyright = u'2013, David Simpson'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -183,7 +183,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'flaskr.tex', u'flaskr Documentation',
+  ('index', 'simple_web_ui.tex', u'simple_web_ui Documentation',
    u'David Simpson', 'manual'),
 ]
 
@@ -213,7 +213,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'flaskr', u'flaskr Documentation',
+    ('index', 'simple_web_ui', u'simple_web_ui Documentation',
      [u'David Simpson'], 1)
 ]
 
@@ -227,8 +227,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'flaskr', u'flaskr Documentation',
-   u'David Simpson', 'flaskr', 'One line description of project.',
+  ('index', 'simple_web_ui', u'simple_web_ui Documentation',
+   u'David Simpson', 'simple_web_ui', 'One line description of project.',
    'Miscellaneous'),
 ]
 
