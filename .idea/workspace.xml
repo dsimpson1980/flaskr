@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/source/heroku_setup.rst" afterPath="$PROJECT_DIR$/docs/source/heroku_setup.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -654,7 +653,11 @@
       <created>1382533524053</created>
       <updated>1382533524053</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Added link to PyCharm docs">
+      <created>1382533719929</created>
+      <updated>1382533719929</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -690,7 +693,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Moved tasks to root&#10;Clery now works locally for job queuing" />
     <MESSAGE value="Made broker URL in tasks universal URL for local and heroku" />
     <MESSAGE value="added worker to start celery in Procfile" />
     <MESSAGE value="Removed redundant comments&#10;Added how to start celery worker on heroku" />
@@ -715,7 +717,8 @@
     <MESSAGE value="workspace changes" />
     <MESSAGE value="Added removal of old _images and copied docs directory" />
     <MESSAGE value="Removed django server link" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed django server link" />
+    <MESSAGE value="Added link to PyCharm docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added link to PyCharm docs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
