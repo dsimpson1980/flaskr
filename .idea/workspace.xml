@@ -38,7 +38,7 @@
       <file leaf-file-name="README.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="72" selection-start="178" selection-end="178" vertical-scroll-proportion="0.19417475" vertical-offset="0" max-vertical-offset="309">
+            <state line="6" column="60" selection-start="240" selection-end="240" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="309">
               <folding />
             </state>
           </provider>
@@ -634,7 +634,11 @@
       <created>1382531794360</created>
       <updated>1382531794360</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="debug, forgot underscore">
+      <created>1382531912616</created>
+      <updated>1382531912616</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -694,7 +698,8 @@
     <MESSAGE value="Added env variable check for web framework" />
     <MESSAGE value="Added links to heroku apps in readme" />
     <MESSAGE value="Swapped out links using backquotes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Swapped out links using backquotes" />
+    <MESSAGE value="debug, forgot underscore" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug, forgot underscore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -821,7 +826,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="72" selection-start="178" selection-end="178" vertical-scroll-proportion="0.19417475" vertical-offset="0" max-vertical-offset="309">
+        <state line="6" column="60" selection-start="240" selection-end="240" vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="309">
           <folding />
         </state>
       </provider>
