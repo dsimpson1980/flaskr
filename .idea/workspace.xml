@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
+    <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="Fixed bug in link">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/__init__.py" afterPath="$PROJECT_DIR$/flask_ui/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/models.py" afterPath="$PROJECT_DIR$/flask_ui/models.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/static/bootstrap/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/flask_ui/static/bootstrap/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/static/bootstrap/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/flask_ui/static/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/static/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/flask_ui/static/bootstrap/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/static/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/flask_ui/static/bootstrap/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/flask_ui/static/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/flask_ui/static/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/flask_ui/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/flask_ui/static/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/static/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/flask_ui/static/bootstrap/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/static/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/flask_ui/static/bootstrap/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/static/style.css" afterPath="$PROJECT_DIR$/flask_ui/static/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/templates/404.html" afterPath="$PROJECT_DIR$/flask_ui/templates/404.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/templates/_formhelpers.html" afterPath="$PROJECT_DIR$/flask_ui/templates/_formhelpers.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/templates/display_customer.html" afterPath="$PROJECT_DIR$/flask_ui/templates/display_customer.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/templates/display_customer_premiums.html" afterPath="$PROJECT_DIR$/flask_ui/templates/display_customer_premiums.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/templates/generate_customer_premium.html" afterPath="$PROJECT_DIR$/flask_ui/templates/generate_customer_premium.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/templates/layout.html" afterPath="$PROJECT_DIR$/flask_ui/templates/layout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/templates/login.html" afterPath="$PROJECT_DIR$/flask_ui/templates/login.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/templates/show_customers.html" afterPath="$PROJECT_DIR$/flask_ui/templates/show_customers.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/test/__init__.py" afterPath="$PROJECT_DIR$/flask_ui/test/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/test/test_flaskr.py" afterPath="$PROJECT_DIR$/flask_ui/test/test_flaskr.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_ui/views.py" afterPath="$PROJECT_DIR$/flask_ui/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_server.py" afterPath="$PROJECT_DIR$/run_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks.py" afterPath="$PROJECT_DIR$/tasks.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -15,6 +40,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/simple_web_ui$flaskr.coverage" NAME="flaskr Coverage Results" MODIFIED="1382531018274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flaskr$flaskr.coverage" NAME="flaskr Coverage Results" MODIFIED="1382512488618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -34,29 +60,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.rst" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.rst">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.090361446" vertical-offset="0" max-vertical-offset="498">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db_create.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db_create.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="29" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_ui/templates/layout.html">
+        <entry file="file://$PROJECT_DIR$/flask_ui/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="21" selection-start="304" selection-end="304" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="390">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask_ui/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="17" selection-start="347" selection-end="347" vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="330">
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask_ui/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="540">
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,10 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_server.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="run_server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+            <state line="7" column="32" selection-start="216" selection-end="216" vertical-scroll-proportion="0.3398058" vertical-offset="0" max-vertical-offset="309">
               <folding />
             </state>
           </provider>
@@ -112,7 +142,7 @@
       <file leaf-file-name="requirements.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state line="12" column="14" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -121,7 +151,7 @@
       <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="22" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
+            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
               <folding />
             </state>
           </provider>
@@ -150,8 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/flaskr/config.py" />
         <option value="$PROJECT_DIR$/celeryconfig.py" />
         <option value="$PROJECT_DIR$/flaskr/tasks.py" />
         <option value="$PROJECT_DIR$/tasks.py" />
@@ -166,6 +194,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/web_ui/templates/layout.html" />
         <option value="$PROJECT_DIR$/README.rst" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/run_server.py" />
       </list>
     </option>
   </component>
@@ -216,6 +246,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="simple_web_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple_web_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple_web_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flask_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple_web_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple_web_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flask_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple_web_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple_web_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flask_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -406,6 +490,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
+        <env name="WEB_FRAMEWORK" value="flask" />
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/Applications/anaconda/bin/python" />
@@ -535,7 +620,15 @@
       <created>1382516471185</created>
       <updated>1382516471185</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Removed tab for now and just added here as text for link">
+      <created>1382516840439</created>
+      <updated>1382516840439</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fixed bug in link">
+      <created>1382516897252</created>
+      <updated>1382516897252</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -548,13 +641,13 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6701389" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39721254" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27147487" sideWeight="0.2857143" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27147487" sideWeight="0.66898954" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3305509" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27147487" sideWeight="0.38327527" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -590,33 +683,21 @@
     <MESSAGE value="Edited name on layout.html" />
     <MESSAGE value="Edited readme to point to correct docs after renaming repo" />
     <MESSAGE value="Edited readme for link pointing to new tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited readme for link pointing to new tab" />
+    <MESSAGE value="Removed tab for now and just added here as text for link" />
+    <MESSAGE value="Fixed bug in link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug in link" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web_ui/views.py">
+    <entry file="file://$PROJECT_DIR$/flask_ui/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="426" selection-end="426" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="3855" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_ui/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="540">
+        <state line="14" column="17" selection-start="426" selection-end="426" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="3855">
           <folding>
-            <element signature="e#0#23#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_ui/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="347" selection-end="347" vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="330">
-          <folding>
-            <element signature="e#0#23#0" expanded="false" />
+            <element signature="e#18#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -643,20 +724,6 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1260" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="548">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="333">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
@@ -690,30 +757,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+        <state line="1" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.030120483" vertical-offset="0" max-vertical-offset="498">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db_create.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="29" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+        <state line="6" column="29" selection-start="202" selection-end="202" vertical-scroll-proportion="0.15060242" vertical-offset="0" max-vertical-offset="498">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_ui/templates/layout.html">
+    <entry file="file://$PROJECT_DIR$/flask_ui/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="21" selection-start="304" selection-end="304" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="390">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.rst">
+    <entry file="file://$PROJECT_DIR$/flask_ui/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.090361446" vertical-offset="0" max-vertical-offset="498">
+        <state line="11" column="17" selection-start="347" selection-end="347" vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="330">
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_ui/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="540">
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="32" selection-start="216" selection-end="216" vertical-scroll-proportion="0.3398058" vertical-offset="0" max-vertical-offset="309">
           <folding />
         </state>
       </provider>
