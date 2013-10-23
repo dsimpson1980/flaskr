@@ -645,7 +645,11 @@
       <created>1382533014278</created>
       <updated>1382533014278</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="workspace changes">
+      <created>1382533055341</created>
+      <updated>1382533055341</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -681,7 +685,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added heroku default AMQP variables" />
     <MESSAGE value="Changed celery from URL to URI" />
     <MESSAGE value="Config celery for heroku" />
     <MESSAGE value="Moved tasks to root&#10;Clery now works locally for job queuing" />
@@ -706,7 +709,8 @@
     <MESSAGE value="debug, forgot underscore" />
     <MESSAGE value="Removed django link as it's not yet up there" />
     <MESSAGE value="Added instructions for multiple heroku apps from one directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added instructions for multiple heroku apps from one directory" />
+    <MESSAGE value="workspace changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
