@@ -3,7 +3,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 from flask import Flask
 
 app = Flask(__name__)
-app.config.from_object('flaskr.config')
+app.config.from_object('config')
 
 # Reflect database
 engine = sa.create_engine(app.config['SQLALCHEMY_DATABASE_URI'],

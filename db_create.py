@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
-from views.config import SQLALCHEMY_DATABASE_URI
+from config import SQLALCHEMY_DATABASE_URI
 
 engine = create_engine(SQLALCHEMY_DATABASE_URI, echo=False)
 
 with engine.connect() as conn:
-    conn.execute(open('schema.sql', 'r').read())
+    conn.execute(open('flaskr/schema.sql', 'r').read())
