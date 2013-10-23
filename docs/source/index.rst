@@ -13,8 +13,8 @@ Contents:
    
    conda_setup
    heroku_setup
+   django_setup
    db_setup
-
 
 
 Indices and tables
