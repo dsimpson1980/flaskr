@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="">
+    <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="workspace changes">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -657,7 +657,11 @@
       <created>1382533719929</created>
       <updated>1382533719929</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="workspace changes">
+      <created>1382533750781</created>
+      <updated>1382533750781</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -714,11 +718,11 @@
     <MESSAGE value="debug, forgot underscore" />
     <MESSAGE value="Removed django link as it's not yet up there" />
     <MESSAGE value="Added instructions for multiple heroku apps from one directory" />
-    <MESSAGE value="workspace changes" />
     <MESSAGE value="Added removal of old _images and copied docs directory" />
     <MESSAGE value="Removed django server link" />
     <MESSAGE value="Added link to PyCharm docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added link to PyCharm docs" />
+    <MESSAGE value="workspace changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
