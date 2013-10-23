@@ -7,9 +7,13 @@ Open a terminal and naviagate to the root of your project
 
 Download and install the heroku toolbelt
 
+.. code-block:: none
+
 	$ heroku login
 	
 When asked enter your Heroku login details:
+
+.. code-block:: none
 
 	Enter your Heroku credentials.
 	Email: mapdes@gmail.com
@@ -28,25 +32,31 @@ This creates the app and adds it as a remote repository in .git/config.
 
 The first requirements.txt file resembles the following:
 
-	| requests
-	| gunicorn==0.17.2
-	| SQLAlchemy==0.8.2
-	| Flask-SQLAlchemy==1.0
-	| WTForms==1.0.4
-	| psycopg2==2.4.4
-	| Babel==0.9.6
-	| Flask-Babel==0.8
-	| numpy==1.7
+.. code-block:: none
+
+	requests
+	gunicorn==0.17.2
+	SQLAlchemy==0.8.2
+	Flask-SQLAlchemy==1.0
+	WTForms==1.0.4
+	psycopg2==2.4.4
+	Babel==0.9.6
+	Flask-Babel==0.8
+	numpy==1.7
 
 I say the first requirements.txt file because unfortunately Heroku seems to have a problem
 with precompiled cached packages in the same run.  This means that even if numpy is
 compiled first it isn't available when it comes to compiling matplotlib and pandas.  First
 push to Heroku:
 
+.. code-block:: none
+
 	$ git push heroku master
 	
 which should compile everything and return a successful push.  Now add the following four
 lines to the requirements.txt file:
+
+.. code-block:: none
 
 	| matplotlib==1.3.0
 	| pandas==0.12.0
@@ -54,7 +64,9 @@ lines to the requirements.txt file:
 	| celery==3.0.24
 
 and push again:
-	
+
+.. code-block:: console
+
 	$ git push heroku master
 	
 This push will use the precompiled buildpack on heroku with the compiled numpy package.

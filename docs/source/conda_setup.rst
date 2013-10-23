@@ -21,7 +21,7 @@ If you used the standalone anconda installer this should already be the case.  I
 not you will need to add the following line to the start of your .bash_profile
 in your home directory:
 
-.. code-block::
+.. code-block:: none
 
     export PATH="/Applications/anaconda/bin:$PATH"
 
