@@ -7,13 +7,13 @@ that you install it to the /Applications/ folder
 
 You can check which version of python is being used by running the following:
 
-.. code-block:: none
+.. code-block:: console
 
     $ which python
 
 Which should return:
 
-.. code-block:: none
+.. code-block:: console
 
     /Applications/anaconda/bin/python
 
@@ -21,7 +21,7 @@ If you used the standalone anconda installer this should already be the case.  I
 not you will need to add the following line to the start of your .bash_profile
 in your home directory:
 
-.. code-block:: none
+.. code-block:: console
 
     export PATH="/Applications/anaconda/bin:$PATH"
 
@@ -37,7 +37,7 @@ found here.
 To make sure conda is aware of this repository you will need to make a .condarc
 file in your user directory.  This can be done quite easily by running:
 
-.. code-block:: none
+.. code-block:: console
 
     $ cd
     $ touch .condarc
@@ -46,7 +46,7 @@ file in your user directory.  This can be done quite easily by running:
 The detailed instructions can be found here but in brief the .condarc file
 should look something like this:
 
-.. code-block:: python
+.. code-block:: console
 
     # This is the default conda runtime configuration
 
@@ -60,7 +60,7 @@ should look something like this:
 
 you will need to install the following packages:
 
-.. code-block:: none
+.. code-block:: console
 
     $ conda install pandas (this will install numpy)
     $ conda install flask-sqlalchemy (this will install flask and sqlalchemy)
@@ -69,6 +69,6 @@ you will need to install the following packages:
 Unfortunately, I haven't yet compiled the celery <link> package so it will need
 to be installed using pip:
 
-.. code-block:: none
+.. code-block:: console
 
     $ pip install celery
