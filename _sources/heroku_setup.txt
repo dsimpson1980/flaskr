@@ -7,13 +7,13 @@ Open a terminal and naviagate to the root of your project
 
 Download and install the heroku toolbelt
 
-.. code-block:: none
+.. code-block:: console
 
 	$ heroku login
 	
 When asked enter your Heroku login details:
 
-.. code-block:: none
+.. code-block:: console
 
 	Enter your Heroku credentials.
 	Email: mapdes@gmail.com
@@ -26,13 +26,15 @@ The buildpack we will be using for Heroku is located here:
 
 Create a new Heroku app from scratch using this buildpack:
 
+.. code-block:: console
+
     $ heroku create  --buildpack https://github.com/dbrgn/heroku-buildpack-python-sklearn/
 
 This creates the app and adds it as a remote repository in .git/config.
 
 The first requirements.txt file resembles the following:
 
-.. code-block:: none
+.. code-block:: console
 
 	requests
 	gunicorn==0.17.2
@@ -49,19 +51,19 @@ with precompiled cached packages in the same run.  This means that even if numpy
 compiled first it isn't available when it comes to compiling matplotlib and pandas.  First
 push to Heroku:
 
-.. code-block:: none
+.. code-block:: console
 
 	$ git push heroku master
 	
 which should compile everything and return a successful push.  Now add the following four
 lines to the requirements.txt file:
 
-.. code-block:: none
+.. code-block:: console
 
-	| matplotlib==1.3.0
-	| pandas==0.12.0
-	| python-dateutil==2.1
-	| celery==3.0.24
+	matplotlib==1.3.0
+	pandas==0.12.0
+	python-dateutil==2.1
+	celery==3.0.24
 
 and push again:
 
@@ -75,9 +77,13 @@ matplotlib and pandas will now compile successfully.
 To be able to detect what environment the app is being run on, add the following
 environmental variable in heroku:
 
+.. code-block:: console
+
     $ heroku config:set HEROKU=1
 
 We also need to create the database addon:
+
+.. code-block:: console
 
     $ heroku add:add heroku-postgresql:dev
 
@@ -87,6 +93,8 @@ card.
 
 Toi be able to run our web app we need to add a Procfile:
 
+.. code-block:: none
+
 	web: gunicorn run_server:app
 	init: python flaskr/db_create.py
 	worker: celery -A tasks worker -B --loglevel=info
@@ -94,19 +102,26 @@ Toi be able to run our web app we need to add a Procfile:
 This is simply a list of shortcut commands to run on the Heroku shell.  So, for instance,
 to initialise the database and populate it with the structure in schema.sql you can run:
 
+.. code-block:: console
+
     $ heroku run init
 
 This will return the URL of the database in the form:
 
-	HEROKU_POSTGRESQL_color_URL
+.. code-block:: console
+
+	HEROKU_POSTGRESQL_color_URL=
 
 We can then promote this database to DEFAULT i.e. DATABASE_URL:
 
-    $ heroku pg:promote HEROKU_POSTGRESQL_color_URL
+.. code-block:: console
 
+    $ heroku pg:promote HEROKU_POSTGRESQL_color_URL
 	Promoting HEROKU_POSTGRESQL_COLOR_URL (DATABASE_URL) to DATABASE_URL... done
 
 Before running a celery worker we need to add a message handler.  I've used CloudAMQP:
+
+.. code-block:: console
 
 	$ heroku addons:add cloudamqp:lemur
 	
@@ -114,6 +129,8 @@ Note that this will fail (even though little lemur is free) with a card verifica
 So if you haven't already, you'll need to add your credit card details to Heroku.
 
 Finally we can run the last command to start the celery worker on the Heroku remote
+
+.. code-block:: console
 
     $ heroku run worker
     

@@ -58,17 +58,17 @@
 use Anaconda from continuum which you can download here &lt;link&gt;.  I will assume
 that you install it to the /Applications/ folder</p>
 <p>You can check which version of python is being used by running the following:</p>
-<div class="highlight-none"><div class="highlight"><pre>$ which python
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> which python
 </pre></div>
 </div>
 <p>Which should return:</p>
-<div class="highlight-none"><div class="highlight"><pre>/Applications/anaconda/bin/python
+<div class="highlight-console"><div class="highlight"><pre><span class="go">/Applications/anaconda/bin/python</span>
 </pre></div>
 </div>
 <p>If you used the standalone anconda installer this should already be the case.  If
 not you will need to add the following line to the start of your .bash_profile
 in your home directory:</p>
-<div class="highlight-none"><div class="highlight"><pre>export PATH=&quot;/Applications/anaconda/bin:$PATH&quot;
+<div class="highlight-console"><div class="highlight"><pre><span class="go">export PATH=&quot;/Applications/anaconda/bin:$PATH&quot;</span>
 </pre></div>
 </div>
 <p>this adds the path to your python installation to the start of the PATH
@@ -79,33 +79,33 @@ have compiled a number of packages and uploaded them to binstar that can be
 found here.</p>
 <p>To make sure conda is aware of this repository you will need to make a .condarc
 file in your user directory.  This can be done quite easily by running:</p>
-<div class="highlight-none"><div class="highlight"><pre>$ cd
-$ touch .condarc
-$ nano .condarc
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> <span class="nb">cd</span>
+<span class="gp">$</span><span class="nb"> </span>touch .condarc
+<span class="gp">$</span> nano .condarc
 </pre></div>
 </div>
 <p>The detailed instructions can be found here but in brief the .condarc file
 should look something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="c"># This is the default conda runtime configuration</span>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">#</span> This is the default conda runtime configuration
 
-<span class="c"># channel locations. These override conda defaults, i.e., conda will</span>
-<span class="c"># search *only* the channels listed here, in the order given here</span>
+<span class="gp">#</span> channel locations. These override conda defaults, i.e., conda will
+<span class="gp">#</span> search *only* the channels listed here, in the order given here
 
-<span class="n">channels</span><span class="p">:</span>
-  <span class="o">-</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">repo</span><span class="o">.</span><span class="n">continuum</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">pkgs</span><span class="o">/</span><span class="n">free</span><span class="o">/</span>
-  <span class="o">-</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">repo</span><span class="o">.</span><span class="n">continuum</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">pkgs</span><span class="o">/</span><span class="n">pro</span><span class="o">/</span>
-  <span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">conda</span><span class="o">.</span><span class="n">binstar</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">dsimpson1980</span><span class="o">/</span>
+<span class="go">channels:</span>
+<span class="go">  - http://repo.continuum.io/pkgs/free/</span>
+<span class="go">  - http://repo.continuum.io/pkgs/pro/</span>
+<span class="go">  - https://conda.binstar.org/dsimpson1980/</span>
 </pre></div>
 </div>
 <p>you will need to install the following packages:</p>
-<div class="highlight-none"><div class="highlight"><pre>$ conda install pandas (this will install numpy)
-$ conda install flask-sqlalchemy (this will install flask and sqlalchemy)
-$ conda install wtforms (from my repo above)
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> conda install pandas <span class="o">(</span>this will install numpy<span class="o">)</span>
+<span class="gp">$</span> conda install flask-sqlalchemy <span class="o">(</span>this will install flask and sqlalchemy<span class="o">)</span>
+<span class="gp">$</span> conda install wtforms <span class="o">(</span>from my repo above<span class="o">)</span>
 </pre></div>
 </div>
 <p>Unfortunately, I haven&#8217;t yet compiled the celery &lt;link&gt; package so it will need
 to be installed using pip:</p>
-<div class="highlight-none"><div class="highlight"><pre>$ pip install celery
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> pip install celery
 </pre></div>
 </div>
 </div>

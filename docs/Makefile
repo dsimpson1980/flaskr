@@ -156,7 +156,7 @@ doctest:
 
 gh-pages:
 	git checkout gh-pages
-	rm -rf build _sources _static _modules
+	rm -rf build _images _sources _static _modules
 	git checkout master docs
 	git reset HEAD
 	cp -R docs/* ./
