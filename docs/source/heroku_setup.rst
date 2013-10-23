@@ -133,4 +133,72 @@ Finally we can run the last command to start the celery worker on the Heroku rem
 .. code-block:: console
 
     $ heroku run worker
-    
+
+TYPSET THIS
+
+To run two heroku apps from the same repo we need to first create another heroku app:
+
+.. code-block:: console
+
+    $ heroku create
+
+Then add a new remote repository with a suitable name e.g heroku-django
+
+    $ code here
+
+As we now have two apps running from the same master branch/directory we now need
+to specify which app to use when running heroku commands.  The first example of
+this is setting an environment variable in each app so that we can distinguish
+between the two from python:
+
+.. code-block:: console
+
+    $ heroku config:set --app still-dawn-2729 WEB_FRAMEWORK='django'
+    Setting config vars and restarting still-dawn-2729... done, v5
+    WEB_FRAMEWORK: django
+
+Then run the same for the app to be used for teh flask setup:
+
+.. code-block:: console
+
+    $ heroku config:set --app pacific-river-9803 WEB_FRAMEWORK='flask'
+    Setting config vars and restarting pacific-river-9803... done, v29
+    WEB_FRAMEWORK: flask
+
+You can check that these environment variables have been set correctly by running
+bash on the app:
+
+.. code-block:: console
+
+    $ heroku run --app still-dawn-2729 bash
+    Running `bash` attached to terminal... up, run.8431
+    ~ $ printenv
+    ..
+    SHLVL=2
+    WEB_FRAMEWORK=django
+    PYTHONPATH=/app/
+    ..
+
+We now simply need to change the contents of run_server.py to point to the
+correct app for each setting of the WEB_FRAMEWORK:
+
+.. code-block:: python
+
+    import os
+    if os.environ['WEB_FRAMEWORK'] == 'flask':
+        from flask_ui import app
+    if os.environ['WEB_FRAMEWORK'] is 'django':
+        from django_ui import app
+
+    if __name__ == '__main__':
+        app.run(host='127.0.0.1', port=5000)
+
+In PyCharm for local testing we can set up two configurations each with a
+different setting for WEB_FRAMEWORK.  Simply follow:
+
+    | Run > Edit Configurations
+    | Add (+) run configuration
+    | Name the configuration something suitable
+    | Click ... beside Enviromental variables
+    | Add (+) and environmental variable called WEB_FRAMEWORK
+    | Set WEB_FRAMEWORK to the desired framework

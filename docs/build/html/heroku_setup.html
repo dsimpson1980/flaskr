@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Deployment to Heroku &mdash; simple_web_ui 0 documentation</title>
+    <title>Deployment to Heroku &mdash; flaskr 0 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,7 +26,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="simple_web_ui 0 documentation" href="index.html" />
+    <link rel="top" title="flaskr 0 documentation" href="index.html" />
     <link rel="next" title="Database schema structure" href="db_setup.html" />
     <link rel="prev" title="From start to finish (for Mac OSX)" href="conda_setup.html" /> 
   </head>
@@ -43,7 +43,7 @@
         <li class="right" >
           <a href="conda_setup.html" title="From start to finish (for Mac OSX)"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">simple_web_ui 0 documentation</a> &raquo;</li> 
+        <li><a href="index.html">flaskr 0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -150,65 +150,6 @@ So if you haven&#8217;t already, you&#8217;ll need to add your credit card detai
 <div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> heroku run worker
 </pre></div>
 </div>
-<p>TYPSET THIS</p>
-<p>To run two heroku apps from the same repo we need to first create another heroku app:</p>
-<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> heroku create
-</pre></div>
-</div>
-<p>Then add a new remote repository with a suitable name e.g heroku-django</p>
-<blockquote>
-<div>$ code here</div></blockquote>
-<p>As we now have two apps running from the same master branch/directory we now need
-to specify which app to use when running heroku commands.  The first example of
-this is setting an environment variable in each app so that we can distinguish
-between the two from python:</p>
-<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> heroku config:set --app still-dawn-2729 <span class="nv">WEB_FRAMEWORK</span><span class="o">=</span><span class="s1">&#39;django&#39;</span>
-<span class="go">Setting config vars and restarting still-dawn-2729... done, v5</span>
-<span class="go">WEB_FRAMEWORK: django</span>
-</pre></div>
-</div>
-<p>Then run the same for the app to be used for teh flask setup:</p>
-<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> heroku config:set --app pacific-river-9803 <span class="nv">WEB_FRAMEWORK</span><span class="o">=</span><span class="s1">&#39;flask&#39;</span>
-<span class="go">Setting config vars and restarting pacific-river-9803... done, v29</span>
-<span class="go">WEB_FRAMEWORK: flask</span>
-</pre></div>
-</div>
-<p>You can check that these environment variables have been set correctly by running
-bash on the app:</p>
-<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> heroku run --app still-dawn-2729 bash
-<span class="go">Running `bash` attached to terminal... up, run.8431</span>
-<span class="go">~ $ printenv</span>
-<span class="go">..</span>
-<span class="go">SHLVL=2</span>
-<span class="go">WEB_FRAMEWORK=django</span>
-<span class="go">PYTHONPATH=/app/</span>
-<span class="go">..</span>
-</pre></div>
-</div>
-<p>We now simply need to change the contents of run_server.py to point to the
-correct app for each setting of the WEB_FRAMEWORK:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">os</span>
-<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s">&#39;WEB_FRAMEWORK&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;flask&#39;</span><span class="p">:</span>
-    <span class="kn">from</span> <span class="nn">flask_ui</span> <span class="kn">import</span> <span class="n">app</span>
-<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s">&#39;WEB_FRAMEWORK&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="s">&#39;django&#39;</span><span class="p">:</span>
-    <span class="kn">from</span> <span class="nn">django_ui</span> <span class="kn">import</span> <span class="n">app</span>
-
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>In PyCharm for local testing we can set up two configurations each with a
-different setting for WEB_FRAMEWORK.  Simply follow:</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">Run &gt; Edit Configurations</div>
-<div class="line">Add (+) run configuration</div>
-<div class="line">Name the configuration something suitable</div>
-<div class="line">Click ... beside Enviromental variables</div>
-<div class="line">Add (+) and environmental variable called WEB_FRAMEWORK</div>
-<div class="line">Set WEB_FRAMEWORK to the desired framework</div>
-</div>
-</div></blockquote>
 </div>
 
 
@@ -257,7 +198,7 @@ different setting for WEB_FRAMEWORK.  Simply follow:</p>
         <li class="right" >
           <a href="conda_setup.html" title="From start to finish (for Mac OSX)"
              >previous</a> |</li>
-        <li><a href="index.html">simple_web_ui 0 documentation</a> &raquo;</li> 
+        <li><a href="index.html">flaskr 0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
