@@ -1,7 +1,7 @@
 import numpy as np
 from celery import Celery
-from flaskr import db, app
-from flaskr.views import Premium
+from web_ui import db, app
+from web_ui.views import Premium
 
 celery = Celery('tasks', broker=app.config['CELERY_BROKER_URL'])
 

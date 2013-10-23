@@ -1,5 +1,5 @@
 import sqlalchemy as sa
-from flaskr import db, meta
+from web_ui import db, meta
 
 class Market(db.Model):
     __tablename__ = 'markets'

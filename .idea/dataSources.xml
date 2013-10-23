@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2243302831">
+    <data-source source="LOCAL" name="retail" uuid="c464ed7e-abb9-4402-ad39-0eb4c7c737f8">
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/flaskr</jdbc-url>
+      <user-name>mapdes</user-name>
+      <user-password>dfcedfcfdfccdfcbdfdfdfc6dfde</user-password>
+      <libraries>
+        <library>
+          <url>jar://$PROJECT_DIR$/.idea/postgresql-9.2-1002.jdbc4.jar!/</url>
+        </library>
+        <library>
+          <url>file://$PROJECT_DIR$/.idea/postgresql-driver-license.txt</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

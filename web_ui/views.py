@@ -8,7 +8,7 @@ from flask import request, session, g, redirect, url_for, \
 from wtforms import Form, validators, TextField, BooleanField
 from wtforms.fields.html5 import DateField
 
-from flaskr import app, db, engine
+from web_ui import app, db, engine
 from models import Customer, CustomerWithMarket, CustomerDemand, \
     Market, Premium, Parameter
 

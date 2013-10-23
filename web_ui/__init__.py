@@ -13,4 +13,4 @@ schema = 'retail'
 meta.reflect(bind=engine, schema=schema)
 db = SQLAlchemy(app)
 
-import flaskr.views
+import web_ui.views

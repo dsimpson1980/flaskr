@@ -1,2 +1,3 @@
 *.pyc
-flaskr/*.pyc
+web_ui/*.pyc
+docs/build/*
