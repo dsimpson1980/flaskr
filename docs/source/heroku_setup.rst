@@ -194,11 +194,7 @@ correct app for each setting of the WEB_FRAMEWORK:
         app.run(host='127.0.0.1', port=5000)
 
 In PyCharm for local testing we can set up two configurations each with a
-different setting for WEB_FRAMEWORK.  Simply follow:
+different setting for WEB_FRAMEWORK.  Simply follow the instructions in the
+pycharm documentation covering `environmental variables`_
 
-    | Run > Edit Configurations
-    | Add (+) run configuration
-    | Name the configuration something suitable
-    | Click ... beside Enviromental variables
-    | Add (+) and environmental variable called WEB_FRAMEWORK
-    | Set WEB_FRAMEWORK to the desired framework
+.. _environmental variables: http://www.jetbrains.com/pycharm/webhelp/run-debug-configuration-python.html

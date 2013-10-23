@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed9b7e79-ff7f-466a-a340-d1e584762008" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rst" afterPath="$PROJECT_DIR$/README.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/source/heroku_setup.rst" afterPath="$PROJECT_DIR$/docs/source/heroku_setup.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flaskr.iws" />
@@ -35,10 +35,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.rst" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.rst" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="51" selection-start="157" selection-end="157" vertical-scroll-proportion="0.12048193" vertical-offset="0" max-vertical-offset="498">
+            <state line="6" column="60" selection-start="219" selection-end="219" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="180">
               <folding />
             </state>
           </provider>
@@ -62,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heroku_setup.rst" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="heroku_setup.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/source/heroku_setup.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="27" selection-start="5420" selection-end="5420" vertical-scroll-proportion="-15.2" vertical-offset="2635" max-vertical-offset="3135">
+            <state line="193" column="44" selection-start="5151" selection-end="5151" vertical-scroll-proportion="0.6385542" vertical-offset="2577" max-vertical-offset="3075">
               <folding />
             </state>
           </provider>
@@ -164,9 +164,9 @@
         <option value="$PROJECT_DIR$/web_ui/templates/layout.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/run_server.py" />
-        <option value="$PROJECT_DIR$/docs/source/heroku_setup.rst" />
         <option value="$PROJECT_DIR$/docs/Makefile" />
         <option value="$PROJECT_DIR$/README.rst" />
+        <option value="$PROJECT_DIR$/docs/source/heroku_setup.rst" />
       </list>
     </option>
   </component>
@@ -650,7 +650,11 @@
       <created>1382533482746</created>
       <updated>1382533482746</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Removed django server link">
+      <created>1382533524053</created>
+      <updated>1382533524053</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -686,7 +690,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Config celery for heroku" />
     <MESSAGE value="Moved tasks to root&#10;Clery now works locally for job queuing" />
     <MESSAGE value="Made broker URL in tasks universal URL for local and heroku" />
     <MESSAGE value="added worker to start celery in Procfile" />
@@ -711,7 +714,8 @@
     <MESSAGE value="Added instructions for multiple heroku apps from one directory" />
     <MESSAGE value="workspace changes" />
     <MESSAGE value="Added removal of old _images and copied docs directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added removal of old _images and copied docs directory" />
+    <MESSAGE value="Removed django server link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed django server link" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -807,13 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/source/heroku_setup.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="27" selection-start="5420" selection-end="5420" vertical-scroll-proportion="-15.2" vertical-offset="2635" max-vertical-offset="3135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/Makefile">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -826,7 +823,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="51" selection-start="157" selection-end="157" vertical-scroll-proportion="0.12048193" vertical-offset="0" max-vertical-offset="498">
+        <state line="6" column="60" selection-start="219" selection-end="219" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/source/heroku_setup.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="193" column="44" selection-start="5151" selection-end="5151" vertical-scroll-proportion="0.6385542" vertical-offset="2577" max-vertical-offset="3075">
           <folding />
         </state>
       </provider>
