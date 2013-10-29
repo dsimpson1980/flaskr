@@ -1,5 +1,19 @@
 {% extends "layout.html" %}
 {% block body %}
+    <form action="/add_customer/" method=post class=add-customer>
+        {% csrf_token %}
+        <dl>
+        <dt>Name:
+        <dd><input type=text size=30 name=name>
+        <dt>Market:
+        <dd><select name=market_id>
+        {% for market in markets %}
+            <option value={{ market.market_id }}>{{ market.market_name }}</option>
+        {% endfor %}
+            </select>
+        <dd><input type=submit value=Add>
+        </dl>
+    </form>
     <ul class=customers>
         <table class="table table-striped">
             <tr><th>Name</th><th>Customer ID</th><th>Market</th></tr>
