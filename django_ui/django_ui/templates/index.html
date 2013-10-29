@@ -1,26 +1,27 @@
 {% extends "layout.html" %}
 {% block body %}
-    <ul>
-    {% for customer in customers %}
-        <li><a href="/display_customer/{{ customer.customer_id }}/1">{{ customer.name}}</a></li>
-    {% endfor %}
-    </ul>
-    <div class="pagination">
-        <span class="step-links">
+    <ul class=customers>
+        <table class="table table-striped">
+            <tr><th>Name</th><th>Customer ID</th><th>Market</th></tr>
+            <!-- customers is a pagination object -->
+            {% for customer in customers.object_list %}
+                <tr>
+                    <td><a href="display_customer/{{ customer.customer_id }}/1">{{ customer.name }}</a></td>
+                    <td><a href="display_customer/{{ customer.customer_id }}/1">{{ customer.customer_id }}</a></td>
+                    <td>{{ customer.market_name }}</td>
+                </tr>
+            {% endfor %}
             {% if customers.has_previous %}
-                <a href="?page={{ customers.previous_page_number }}">previous</a>
+                <a href="/{{ customers.previous_page_number }}"><< Newer customers</a>
+            {% else %}
+                << Newer customers
             {% endif %}
-
-            <span class="current">
-                Page {{ customers.number }} of {{ customers.paginator.num_pages }}.
-            </span>
-            {% if customers.has_next %}
-                <a href="?page={{ customers.next_page_number }}">next</a>
+                {% if customers.has_next %}
+                    <a href="/{{ customers.next_page_number }}">Older customers >></a>
+            {% else %}
+                Older customers >>
             {% endif %}
-            <form action="?page={{ page }}" method="GET">
-                <input type='submit' value="Go to page"/><input type="text" name="page">
-            </form>
-        </span>
-    </div>
+        </table>
+    </ul>
 {% endblock %}
 
