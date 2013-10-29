@@ -12,12 +12,12 @@
                 </tr>
             {% endfor %}
             {% if customers.has_previous %}
-                <a href="/{{ customers.previous_page_number }}"><< Newer customers</a>
+                <a href="/show_customers/{{ customers.previous_page_number }}"><< Newer customers</a>
             {% else %}
                 << Newer customers
             {% endif %}
                 {% if customers.has_next %}
-                    <a href="/{{ customers.next_page_number }}">Older customers >></a>
+                    <a href="/show_customers/{{ customers.next_page_number }}">Older customers >></a>
             {% else %}
                 Older customers >>
             {% endif %}
