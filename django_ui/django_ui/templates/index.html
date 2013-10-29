@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block body %}
+    <ul>
+    {% for customer in customers %}
+        <li><a href="/display_customer/{{ customer.customer_id }}/1">{{ customer.name}}</a></li>
+    {% endfor %}
+    </ul>
+    <div class="pagination">
+        <span class="step-links">
+            {% if customers.has_previous %}
+                <a href="?page={{ customers.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ customers.number }} of {{ customers.paginator.num_pages }}.
+            </span>
+            {% if customers.has_next %}
+                <a href="?page={{ customers.next_page_number }}">next</a>
+            {% endif %}
+            <form action="?page={{ page }}" method="GET">
+                <input type='submit' value="Go to page"/><input type="text" name="page">
+            </form>
+        </span>
+    </div>
+{% endblock %}
+

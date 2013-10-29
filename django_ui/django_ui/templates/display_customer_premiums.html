@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block body %}
+    <ul class=customer_meta_data>
+        <table class="table table-striped">
+            <tr><th>Name</th><th>Customer ID</th><th>Market</th></tr>
+            <tr>
+                <td>{{ customer.name }}</td>
+                <td>{{ customer.customer_id }}</td>
+                <td>{{ customer.market_name }}</td>
+            </tr>
+        </table>
+    </ul>
+    <form action="/">
+        <input type="submit" value="Return to customer list">
+    </form>
+    <form action="/generate_customer_premium/{{ customer.customer_id }}">
+        <input type="submit" value="Generate premium">
+    </form>
+    <ul class=customer_premiums>
+        <table class="table table-striped">
+            <tr><th>Premium ID</th><th>Run ID</th><th>Start Date</th><th>End Date</th><th>Premium</th></tr>
+            <!-- premiums is a pagination object -->
+            {% for premium in premiums.object_list %}
+                <tr>
+                    <td>{{ premium.premium_id }}</td>
+                    <td>{{ premium.run_id}}</td>
+                    <td>{{ premium.contract_start_date_utc }}</td>
+                    <td>{{ premium.contract_end_date_utc }}</td>
+                    <td>{{ premium.premium}}</td>
+                </tr>
+            {% endfor %}
+            {% if premiums.has_previous %}
+                <a href="/display_customer_premiums/{{ customer.customer_id }}/{{ premiums.previous_page_number }}"><< Next Page</a>
+            {% else %}
+                << Next Page
+            {% endif %}
+            {% if premiums.has_next %}
+                <a href="/display_customer_premiums/{{ customer.customer_id }}/{{ premiums.next_page_number }}">Last Page >></a>
+            {% else %}
+                Last Page >>
+            {% endif %}
+        </table>
+    </ul>
+{% endblock %}

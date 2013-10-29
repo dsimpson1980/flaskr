@@ -2,12 +2,8 @@ import os
 import numpy as np
 from celery import Celery
 
-if os.environ['WEB_FRAMEWORK'] == 'flask':
-    from flask_ui import db, app
-    from flask_ui.views import Premium
-if os.environ['WEB_FRAMEWORK'] == 'django':
-    from django_ui import db, app
-    from django_ui.views import Premium
+from flask_ui import db, app
+from flask_ui.views import Premium
 
 celery = Celery('tasks', broker=app.config['CELERY_BROKER_URL'])
 
