@@ -77,7 +77,7 @@ def add_customer():
 def generate_customer_premium(customer_id):
     from datetime import datetime
     from dateutil.relativedelta import relativedelta
-    from flask.ext.ui.tasks import generate_premium
+    from tasks import generate_premium
     if not session.get('logged_in'):
         abort(401)
     form = premium_parameters_form(request.form)
