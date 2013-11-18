@@ -103,7 +103,7 @@ def generate_customer_premium(customer_id):
                                         valuation_date=valuation_date)
         if result:
             flash('Premium has been queued for generation')
-        return display_customer_premiums(customer_id)
+        return redirect(url_for('display_customer_premiums', customer_id=customer_id))
     customer = CustomerWithMarket.query.filter(CustomerWithMarket.customer_id==customer_id).one()
     return render_template('generate_customer_premium.html',
                            form=form,
