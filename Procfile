@@ -1,3 +1,1 @@
-web: gunicorn run_server:app
-init: python db_create.py
-worker: celery -A tasks worker -B --loglevel=info
+web: env > .env; env GEM_HOME=$HOME/.ruby-gems env PATH=PATH:$HOME/.ruby-gems/bin foreman start -f ProcfileFree

@@ -179,6 +179,12 @@ bash on the app:
     PYTHONPATH=/app/
     ..
 
+If we wish to start the clery worker we need to run the worker tag from our Procfile:
+
+.. code-block:: console
+
+    $ heroku run
+
 We now simply need to change the contents of run_server.py to point to the
 correct app for each setting of the WEB_FRAMEWORK:
 
